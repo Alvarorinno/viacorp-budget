@@ -2,12 +2,29 @@ import { useEffect, useState, useMemo } from 'react';
 import { getEvents, updateEvent, createEvent, deleteEvent } from '../api';
 import { useAuth } from '../context/AuthContext';
 import type { Event } from '../types';
-import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown } from 'lucide-react';
+import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown, AlertCircle } from 'lucide-react';
 
 const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 const fmtCLP = (n: number | null) => n != null ? `$${n.toLocaleString('es-CL')}` : '—';
-const fmtDate = (s: string | null) => s ? new Date(s).toLocaleDateString('es-CL') : '—';
+const fmtDate = (s: string | null) => {
+  if (!s) return '—';
+  const dateOnly = s.split('T')[0].split(' ')[0]; // Soporta "YYYY-MM-DD" y "YYYY-MM-DD HH:MM:SS"
+  const d = new Date(dateOnly + 'T12:00:00');
+  return isNaN(d.getTime()) ? s : d.toLocaleDateString('es-CL');
+};
 const mbPct = (e: Event) => e.presupuesto > 0 ? ((e.mb / e.presupuesto) * 100).toFixed(1) + '%' : '—';
+
+// Deriva el mes en español desde una fecha string "YYYY-MM-DD"
+const getMesFromDate = (dateStr: string | null | undefined): string => {
+  if (!dateStr) return '';
+  const dateOnly = dateStr.split('T')[0].split(' ')[0];
+  const d = new Date(dateOnly + 'T12:00:00');
+  return isNaN(d.getTime()) ? '' : MONTHS[d.getMonth()];
+};
+
+// Muestra el mes de facturación: prioriza el calculado desde la fecha
+const mesFact = (e: Event) =>
+  e.fecha_facturacion ? getMesFromDate(e.fecha_facturacion) : (e.mes_facturacion || '—');
 
 const EMPTY: Partial<Event> = {
   estimacion: '', cliente: '', descripcion: '', presupuesto: 0, costo: 0,
@@ -28,8 +45,12 @@ export default function Events() {
   const [filterMonth, setFilterMonth] = useState('');
   const [filterClient, setFilterClient] = useState('');
   const [sort, setSort] = useState<{ key: SortKey; dir: 'asc' | 'desc' }>({ key: 'mes_evento', dir: 'asc' });
+  const [saving, setSaving] = useState(false);
+  const [formError, setFormError] = useState('');
+  const [editError, setEditError] = useState('');
 
   const isDirector = user?.role === 'director';
+  const isFinance  = user?.role === 'finanzas';
 
   const load = () => getEvents().then(setEvents).finally(() => setLoading(false));
   useEffect(() => { load(); }, []);
@@ -56,22 +77,42 @@ export default function Events() {
     setSort(prev => prev.key === key ? { key, dir: prev.dir === 'asc' ? 'desc' : 'asc' } : { key, dir: 'asc' });
   };
 
-  const startEdit = (e: Event) => { setEditId(e.id); setEditData({ ...e }); };
-  const cancelEdit = () => { setEditId(null); setEditData({}); };
+  const startEdit = (e: Event) => { setEditId(e.id); setEditData({ ...e }); setEditError(''); };
+  const cancelEdit = () => { setEditId(null); setEditData({}); setEditError(''); };
 
   const saveEdit = async () => {
     if (!editId) return;
-    const updated = await updateEvent(editId, editData);
-    setEvents(prev => prev.map(e => e.id === editId ? updated : e));
-    cancelEdit();
+    setSaving(true);
+    setEditError('');
+    try {
+      const updated = await updateEvent(editId, editData);
+      setEvents(prev => prev.map(e => e.id === editId ? updated : e));
+      cancelEdit();
+    } catch (err: any) {
+      setEditError(err?.response?.data?.error || 'Error al guardar. Intenta nuevamente.');
+    } finally {
+      setSaving(false);
+    }
   };
 
   const saveNew = async () => {
-    const created = await createEvent(newData);
-    setEvents(prev => [...prev, created]);
-    setShowNew(false);
-    setNewData(EMPTY);
+    setFormError('');
+    if (!newData.cliente?.trim()) { setFormError('El campo Cliente es obligatorio.'); return; }
+    if (!newData.presupuesto || newData.presupuesto <= 0) { setFormError('Ingresa un Presupuesto válido mayor a 0.'); return; }
+    setSaving(true);
+    try {
+      const created = await createEvent(newData);
+      setEvents(prev => [...prev, created]);
+      setShowNew(false);
+      setNewData(EMPTY);
+    } catch (err: any) {
+      setFormError(err?.response?.data?.error || 'Error al crear el evento. Verifica los datos e intenta nuevamente.');
+    } finally {
+      setSaving(false);
+    }
   };
+
+  const handleCancelNew = () => { setShowNew(false); setNewData(EMPTY); setFormError(''); };
 
   const handleDelete = async (id: number) => {
     if (!confirm('¿Eliminar este evento?')) return;
@@ -90,34 +131,6 @@ export default function Events() {
       </span>
     </th>
   );
-
-  const dirField = (field: keyof Event, val: any, type = 'text') => {
-    if (editId && editData.id === editId && isDirector) {
-      return (
-        <input
-          type={type}
-          value={val ?? ''}
-          onChange={e => setEditData(p => ({ ...p, [field]: type === 'number' ? Number(e.target.value) : e.target.value }))}
-          className="w-full text-xs border border-blue-300 rounded px-1.5 py-1 focus:ring-1 focus:ring-blue-400 outline-none"
-        />
-      );
-    }
-    return null;
-  };
-
-  const finField = (field: keyof Event, val: any, type = 'text') => {
-    if (editId && editData.id === editId) {
-      return (
-        <input
-          type={type}
-          value={val ?? ''}
-          onChange={e => setEditData(p => ({ ...p, [field]: e.target.value }))}
-          className="w-full text-xs border border-emerald-300 rounded px-1.5 py-1 focus:ring-1 focus:ring-emerald-400 outline-none"
-        />
-      );
-    }
-    return null;
-  };
 
   const isEditing = (e: Event) => editId === e.id;
 
@@ -170,9 +183,13 @@ export default function Events() {
       </div>
 
       {/* Leyenda roles */}
-      <div className="flex gap-3 text-xs">
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-200 inline-block" /> Campos Director</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-emerald-200 inline-block" /> Campos Finanzas</span>
+      <div className="flex gap-4 text-xs items-center">
+        <span className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full font-medium ${isDirector ? 'bg-blue-100 text-blue-700 ring-1 ring-blue-300' : 'text-gray-400'}`}>
+          <span className="w-2.5 h-2.5 rounded bg-blue-400 inline-block" /> Campos Director {isDirector && '← tú editas estos'}
+        </span>
+        <span className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full font-medium ${isFinance ? 'bg-emerald-100 text-emerald-700 ring-1 ring-emerald-300' : 'text-gray-400'}`}>
+          <span className="w-2.5 h-2.5 rounded bg-emerald-400 inline-block" /> Campos Finanzas {isFinance && '← tú editas estos'}
+        </span>
       </div>
 
       {/* New event form */}
@@ -180,18 +197,70 @@ export default function Events() {
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
           <h3 className="text-sm font-semibold text-blue-800 mb-3">Nuevo Evento</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <input placeholder="Estimación" value={newData.estimacion || ''} onChange={e => setNewData(p => ({ ...p, estimacion: e.target.value }))} className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none" />
-            <input placeholder="Cliente *" value={newData.cliente || ''} onChange={e => setNewData(p => ({ ...p, cliente: e.target.value }))} className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none" />
-            <input placeholder="Descripción" value={newData.descripcion || ''} onChange={e => setNewData(p => ({ ...p, descripcion: e.target.value }))} className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none col-span-2" />
-            <input type="number" placeholder="Presupuesto" value={newData.presupuesto || ''} onChange={e => setNewData(p => ({ ...p, presupuesto: Number(e.target.value) }))} className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none" />
-            <input type="number" placeholder="Costo" value={newData.costo || ''} onChange={e => setNewData(p => ({ ...p, costo: Number(e.target.value) }))} className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none" />
-            <select value={newData.mes_evento || 'Enero'} onChange={e => setNewData(p => ({ ...p, mes_evento: e.target.value }))} className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none bg-white">
+            <input
+              placeholder="Estimación"
+              value={newData.estimacion || ''}
+              onChange={e => setNewData(p => ({ ...p, estimacion: e.target.value }))}
+              className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+            />
+            <input
+              placeholder="Cliente *"
+              value={newData.cliente || ''}
+              onChange={e => { setNewData(p => ({ ...p, cliente: e.target.value })); setFormError(''); }}
+              className={`text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none ${formError && !newData.cliente?.trim() ? 'border-red-400 bg-red-50' : ''}`}
+            />
+            <input
+              placeholder="Descripción"
+              value={newData.descripcion || ''}
+              onChange={e => setNewData(p => ({ ...p, descripcion: e.target.value }))}
+              className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none col-span-2"
+            />
+            <input
+              type="number"
+              placeholder="Presupuesto *"
+              value={newData.presupuesto || ''}
+              onChange={e => { setNewData(p => ({ ...p, presupuesto: Number(e.target.value) })); setFormError(''); }}
+              className={`text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none ${formError && !newData.presupuesto ? 'border-red-400 bg-red-50' : ''}`}
+            />
+            <input
+              type="number"
+              placeholder="Costo"
+              value={newData.costo || ''}
+              onChange={e => setNewData(p => ({ ...p, costo: Number(e.target.value) }))}
+              className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+            />
+            <select
+              value={newData.mes_evento || 'Enero'}
+              onChange={e => setNewData(p => ({ ...p, mes_evento: e.target.value }))}
+              className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none bg-white"
+            >
               {MONTHS.map(m => <option key={m}>{m}</option>)}
             </select>
           </div>
+
+          {formError && (
+            <div className="flex items-center gap-2 mt-3 text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+              <AlertCircle size={14} className="shrink-0" />
+              {formError}
+            </div>
+          )}
+
           <div className="flex gap-2 mt-3">
-            <button onClick={saveNew} className="flex items-center gap-1 bg-blue-700 text-white px-4 py-1.5 rounded-lg text-sm hover:bg-blue-800"><Check size={14} /> Guardar</button>
-            <button onClick={() => setShowNew(false)} className="flex items-center gap-1 border border-gray-300 px-4 py-1.5 rounded-lg text-sm hover:bg-gray-50"><X size={14} /> Cancelar</button>
+            <button
+              onClick={saveNew}
+              disabled={saving}
+              className="flex items-center gap-1 bg-blue-700 text-white px-4 py-1.5 rounded-lg text-sm hover:bg-blue-800 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <Check size={14} />
+              {saving ? 'Guardando...' : 'Guardar'}
+            </button>
+            <button
+              onClick={handleCancelNew}
+              disabled={saving}
+              className="flex items-center gap-1 border border-gray-300 px-4 py-1.5 rounded-lg text-sm hover:bg-gray-50 disabled:opacity-50"
+            >
+              <X size={14} /> Cancelar
+            </button>
           </div>
         </div>
       )}
@@ -266,28 +335,47 @@ export default function Events() {
                     </span>
                   </td>
 
-                  {/* Finance fields */}
+                  {/* Finance fields — solo editables por rol Finanzas */}
                   <td className="py-2 px-3 bg-emerald-50/30">
-                    {isEditing(e)
-                      ? <input value={editData.factura ?? ''} onChange={ev => setEditData(p => ({ ...p, factura: ev.target.value }))} className="w-20 text-xs border border-emerald-300 rounded px-1.5 py-1 outline-none" />
+                    {isEditing(e) && isFinance
+                      ? <input value={editData.factura ?? ''} onChange={ev => setEditData(p => ({ ...p, factura: ev.target.value }))} className="w-24 text-xs border border-emerald-300 rounded px-1.5 py-1 outline-none" placeholder="N° Factura" />
                       : <span className="text-gray-600 font-mono text-xs">{e.factura || <span className="text-orange-400">Pendiente</span>}</span>}
                   </td>
                   <td className="py-2 px-3 bg-emerald-50/30">
-                    {isEditing(e)
-                      ? <input type="date" value={editData.fecha_facturacion ?? ''} onChange={ev => setEditData(p => ({ ...p, fecha_facturacion: ev.target.value }))} className="text-xs border border-emerald-300 rounded px-1.5 py-1 outline-none" />
+                    {isEditing(e) && isFinance
+                      ? <input
+                          type="date"
+                          value={editData.fecha_facturacion ?? ''}
+                          onChange={ev => {
+                            const fecha = ev.target.value;
+                            const mes = getMesFromDate(fecha);
+                            setEditData(p => ({ ...p, fecha_facturacion: fecha, mes_facturacion: mes }));
+                          }}
+                          className="text-xs border border-emerald-300 rounded px-1.5 py-1 outline-none"
+                        />
                       : <span className="text-gray-500 text-xs">{fmtDate(e.fecha_facturacion)}</span>}
                   </td>
+                  {/* Mes facturación: siempre auto-derivado de la fecha, solo lectura */}
                   <td className="py-2 px-3 bg-emerald-50/30">
-                    {isEditing(e)
-                      ? <select value={editData.mes_facturacion ?? ''} onChange={ev => setEditData(p => ({ ...p, mes_facturacion: ev.target.value }))} className="text-xs border border-emerald-300 rounded px-1 py-1 outline-none bg-white">
-                          <option value="">—</option>
-                          {MONTHS.map(m => <option key={m}>{m}</option>)}
-                        </select>
-                      : <span className="text-gray-500 text-xs">{e.mes_facturacion || '—'}</span>}
+                    {isEditing(e) && isFinance
+                      ? <span className="text-xs px-2 py-1 bg-emerald-100 text-emerald-700 rounded font-medium">
+                          {getMesFromDate(editData.fecha_facturacion) || '—'}
+                        </span>
+                      : <span className="text-gray-500 text-xs">{mesFact(e)}</span>}
                   </td>
                   <td className="py-2 px-3 bg-emerald-50/30">
-                    {isEditing(e)
-                      ? <input value={editData.estado_pago ?? ''} onChange={ev => setEditData(p => ({ ...p, estado_pago: ev.target.value }))} className="w-28 text-xs border border-emerald-300 rounded px-1.5 py-1 outline-none" placeholder="PAGADO / PENDIENTE" />
+                    {isEditing(e) && isFinance
+                      ? <select
+                          value={editData.estado_pago ?? ''}
+                          onChange={ev => setEditData(p => ({ ...p, estado_pago: ev.target.value }))}
+                          className="text-xs border border-emerald-300 rounded px-1.5 py-1 outline-none bg-white"
+                        >
+                          <option value="">— Seleccionar —</option>
+                          <option value="PAGADO">PAGADO</option>
+                          <option value="PENDIENTE">PENDIENTE</option>
+                          <option value="SALDO X FACTURAR">SALDO X FACTURAR</option>
+                          <option value="PARCIAL">PARCIAL</option>
+                        </select>
                       : <span className={`text-xs px-2 py-0.5 rounded-full ${
                           e.estado_pago?.toLowerCase() === 'pagado' ? 'bg-emerald-100 text-emerald-700' :
                           e.estado_pago ? 'bg-amber-100 text-amber-700' : 'text-gray-400'
@@ -297,13 +385,24 @@ export default function Events() {
                   {/* Actions */}
                   <td className="py-2 px-3">
                     {isEditing(e) ? (
-                      <div className="flex gap-1">
-                        <button onClick={saveEdit} className="p-1.5 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600"><Check size={13} /></button>
-                        <button onClick={cancelEdit} className="p-1.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"><X size={13} /></button>
+                      <div className="flex flex-col gap-1">
+                        <div className="flex gap-1">
+                          <button onClick={saveEdit} disabled={saving} className="p-1.5 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 disabled:opacity-50"><Check size={13} /></button>
+                          <button onClick={cancelEdit} disabled={saving} className="p-1.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"><X size={13} /></button>
+                        </div>
+                        {editError && editId === e.id && (
+                          <p className="text-xs text-red-500 max-w-[120px] leading-tight">{editError}</p>
+                        )}
                       </div>
                     ) : (
                       <div className="flex gap-1">
-                        <button onClick={() => startEdit(e)} className="p-1.5 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200"><Pencil size={13} /></button>
+                        <button
+                          onClick={() => startEdit(e)}
+                          title={isDirector ? 'Editar datos del evento' : 'Editar facturación'}
+                          className={`p-1.5 rounded-lg ${isDirector ? 'bg-blue-100 text-blue-700 hover:bg-blue-200' : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'}`}
+                        >
+                          <Pencil size={13} />
+                        </button>
                         {isDirector && (
                           <button onClick={() => handleDelete(e.id)} className="p-1.5 bg-red-100 text-red-600 rounded-lg hover:bg-red-200"><Trash2 size={13} /></button>
                         )}

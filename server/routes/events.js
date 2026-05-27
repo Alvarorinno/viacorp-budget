@@ -6,7 +6,7 @@ const router = Router();
 router.use(authMiddleware);
 
 const DIRECTOR_FIELDS = ['estimacion', 'cliente', 'descripcion', 'presupuesto', 'costo', 'mes_evento'];
-const FINANCE_FIELDS = ['factura', 'fecha_facturacion', 'mes_facturacion', 'por_cobrar', 'estado_pago'];
+const FINANCE_FIELDS  = ['factura', 'fecha_facturacion', 'mes_facturacion', 'estado_pago'];
 
 const toObj = row => row ? { ...row } : null;
 
@@ -32,7 +32,7 @@ router.put('/:id', (req, res) => {
   if (!event) return res.status(404).json({ error: 'Evento no encontrado' });
 
   const allowedFields = req.user.role === 'director'
-    ? [...DIRECTOR_FIELDS, ...FINANCE_FIELDS]
+    ? DIRECTOR_FIELDS
     : FINANCE_FIELDS;
 
   const updates = {};
