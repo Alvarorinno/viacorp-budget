@@ -32,7 +32,7 @@ export default function Login() {
             <Building2 className="text-white" size={36} />
           </div>
           <h1 className="text-2xl font-bold text-gray-900">VíaCorp</h1>
-          <p className="text-gray-500 text-sm mt-1">Control de Presupuesto & Facturación 2026</p>
+          <p className="text-gray-600 text-sm font-medium mt-1">Control presupuesto Fauna BTL</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -81,19 +81,6 @@ export default function Login() {
           </button>
         </form>
 
-        <div className="mt-6 pt-4 border-t border-gray-100">
-          <p className="text-xs text-gray-400 text-center">Usuarios de acceso</p>
-          <div className="mt-2 grid grid-cols-2 gap-2">
-            <div className="bg-gray-50 rounded-lg p-2.5 text-center">
-              <p className="text-xs font-semibold text-gray-700">Director</p>
-              <p className="text-xs text-gray-500">director / dir2026</p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-2.5 text-center">
-              <p className="text-xs font-semibold text-gray-700">Finanzas</p>
-              <p className="text-xs text-gray-500">finanzas / fin2026</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
