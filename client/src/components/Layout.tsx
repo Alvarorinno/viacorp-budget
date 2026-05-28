@@ -39,7 +39,8 @@ export default function Layout({ page, setPage, children }: Props) {
             </div>
             <div>
               <h1 className="font-bold text-base leading-tight">VíaCorp</h1>
-              <p className="text-brand-300 text-xs">Presupuesto 2026</p>
+              <p className="text-brand-200 text-xs leading-tight">Presupuesto Fauna BTL</p>
+              <p className="text-brand-400 text-xs">2026</p>
             </div>
           </div>
         </div>
