@@ -10,7 +10,7 @@ import { useAuth } from '../context/AuthContext';
 import {
   TrendingUp, DollarSign, BarChart2, Receipt, AlertCircle, Layers, FileDown, X, Download, Building2, Mail, CheckCircle
 } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ResponsiveContainer, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, Cell } from 'recharts';
 import { sendReportByEmail } from '../api';
 
 const fmt  = (n: number) => `$${n.toLocaleString('es-CL')}`;
@@ -61,19 +61,29 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
     if (!reportRef.current) return null;
     const html2canvas = (await import('html2canvas')).default;
     const { jsPDF } = await import('jspdf');
-    const canvas = await html2canvas(reportRef.current, { scale: 2, useCORS: true, backgroundColor: '#ffffff' });
+    const el = reportRef.current;
+    const canvas = await html2canvas(el, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: '#ffffff',
+      width: el.scrollWidth,
+      height: el.scrollHeight,
+      windowWidth: el.scrollWidth,
+    });
     const imgData = canvas.toDataURL('image/png');
     const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
     const pdfW = pdf.internal.pageSize.getWidth();   // 210mm
     const pdfH = pdf.internal.pageSize.getHeight();  // 297mm
     const ratio = canvas.height / canvas.width;
     const imgH = pdfW * ratio;
-    // Si entra en una página, usamos el alto real; si no, escalamos para que quepa
+    // Escalar manteniendo proporción para que quepa en una sola página
     if (imgH <= pdfH) {
       pdf.addImage(imgData, 'PNG', 0, 0, pdfW, imgH);
     } else {
-      const scale = pdfH / imgH;
-      pdf.addImage(imgData, 'PNG', 0, 0, pdfW * scale, pdfH);
+      // Escalar por alto: mantiene aspect ratio centrado horizontalmente
+      const scaledW = pdfH / ratio;
+      const x = (pdfW - scaledW) / 2;
+      pdf.addImage(imgData, 'PNG', x, 0, scaledW, pdfH);
     }
     const blob = pdf.output('blob');
     const base64 = pdf.output('datauristring').split(',')[1];
@@ -198,7 +208,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
               <div className="animate-spin rounded-full h-10 w-10 border-4 border-brand-500 border-t-transparent" />
             </div>
           ) : (
-            <div ref={reportRef} className="bg-white rounded-xl p-8" style={{ fontFamily: 'system-ui, sans-serif' }}>
+            <div ref={reportRef} className="bg-white rounded-xl p-8" style={{ fontFamily: 'system-ui, sans-serif', width: '720px', minWidth: '720px' }}>
 
               {/* Encabezado */}
               <div className="flex items-center justify-between pb-5 border-b border-gray-200 mb-6">
@@ -256,8 +266,8 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
                 </div>
                 <div className="bg-gray-50 rounded-xl border border-gray-100 p-4">
                   <p className="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-3">MB por Trimestre {year}</p>
-                  <ResponsiveContainer width="100%" height={160}>
-                    <BarChart data={quarterData} margin={{ top: 5, right: 5, left: 0, bottom: 0 }}>
+                  <div style={{ width: '100%', overflowX: 'auto' }}>
+                    <BarChart width={320} height={160} data={quarterData} margin={{ top: 5, right: 5, left: 0, bottom: 0 }}>
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                       <XAxis dataKey="label" tick={{ fontSize: 11, fontWeight: 600 }} axisLine={false} tickLine={false} />
                       <YAxis tickFormatter={fmtM} tick={{ fontSize: 10 }} axisLine={false} tickLine={false} width={50} />
@@ -269,7 +279,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
                         {quarterData.map((q, i) => <Cell key={i} fill={q.has ? q.color : '#e2e8f0'} />)}
                       </Bar>
                     </BarChart>
-                  </ResponsiveContainer>
+                  </div>
                   {/* Leyenda líneas de referencia */}
                   <div className="flex flex-wrap gap-x-3 gap-y-1 mt-2">
                     {sortedSc.map(s => (
