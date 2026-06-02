@@ -5,6 +5,7 @@ import { dirname, join } from 'path';
 import authRouter from './routes/auth.js';
 import eventsRouter from './routes/events.js';
 import statsRouter from './routes/stats.js';
+import budgetRouter from './routes/budget.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.json());
 app.use('/api/auth', authRouter);
 app.use('/api/events', eventsRouter);
 app.use('/api/stats', statsRouter);
+app.use('/api/budget', budgetRouter);
 app.get('/api/health', (_, res) => res.json({ ok: true, env: isProd ? 'production' : 'development' }));
 
 // En producción: servir el frontend compilado

@@ -3,9 +3,10 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Events from './pages/Events';
+import BudgetMO from './pages/BudgetMO';
 import Layout from './components/Layout';
 
-type Page = 'dashboard' | 'events';
+type Page = 'dashboard' | 'events' | 'budget';
 
 function AppContent() {
   const { user } = useAuth();
@@ -15,7 +16,7 @@ function AppContent() {
 
   return (
     <Layout page={page} setPage={setPage}>
-      {page === 'dashboard' ? <Dashboard /> : <Events />}
+      {page === 'dashboard' ? <Dashboard /> : page === 'budget' ? <BudgetMO /> : <Events />}
     </Layout>
   );
 }

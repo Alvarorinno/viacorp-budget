@@ -37,3 +37,13 @@ export const getStats = async (): Promise<Stats> => {
   const { data } = await api.get('/stats');
   return data;
 };
+
+export const getBudget = async (year: number) => {
+  const { data } = await api.get(`/budget/${year}`);
+  return data;
+};
+
+export const updateScenario = async (id: number, payload: { amount: number; name?: string }) => {
+  const { data } = await api.put(`/budget/scenarios/${id}`, payload);
+  return data;
+};

@@ -37,7 +37,26 @@ db.exec(`
     role TEXT NOT NULL,
     nombre TEXT
   );
+
+  CREATE TABLE IF NOT EXISTS budget_scenarios (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    year INTEGER NOT NULL DEFAULT 2026,
+    name TEXT NOT NULL,
+    amount REAL NOT NULL,
+    color TEXT NOT NULL,
+    sort_order INTEGER NOT NULL DEFAULT 0
+  );
 `);
+
+// Escenarios de presupuesto por defecto (2026)
+const scenarioCount = db.prepare('SELECT COUNT(*) as n FROM budget_scenarios WHERE year = 2026').get();
+if (scenarioCount.n === 0) {
+  const ins = db.prepare(`INSERT INTO budget_scenarios (year, name, amount, color, sort_order) VALUES (?, ?, ?, ?, ?)`);
+  ins.run(2026, 'Break Even',          33800000, 'green',  1);
+  ins.run(2026, 'Promedio Histórico',  39500000, 'blue',   2);
+  ins.run(2026, 'Promedio + 15%',      45425000, 'yellow', 3);
+  ins.run(2026, '2023',                55000000, 'orange', 4);
+}
 
 // Usuarios por defecto
 const insertUser = db.prepare(`INSERT OR IGNORE INTO users (username, password, role, nombre) VALUES (?, ?, ?, ?)`);

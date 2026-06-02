@@ -1,8 +1,8 @@
 import { ReactNode, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { BarChart3, Table2, LogOut, Building2, Menu, X } from 'lucide-react';
+import { BarChart3, Table2, LogOut, Building2, Menu, TrendingUp } from 'lucide-react';
 
-type Page = 'dashboard' | 'events';
+type Page = 'dashboard' | 'events' | 'budget';
 
 interface Props {
   page: Page;
@@ -17,6 +17,9 @@ export default function Layout({ page, setPage, children }: Props) {
   const navItems = [
     { id: 'dashboard' as Page, label: 'Dashboard', icon: BarChart3 },
     { id: 'events' as Page, label: 'Eventos / Proyectos', icon: Table2 },
+    ...(user?.role === 'director'
+      ? [{ id: 'budget' as Page, label: 'Presupuesto MO', icon: TrendingUp }]
+      : []),
   ];
 
   return (
