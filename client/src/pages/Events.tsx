@@ -65,6 +65,13 @@ export default function Events() {
         && (!filterClient || e.cliente === filterClient);
     });
     data = [...data].sort((a, b) => {
+      // Para columnas de mes, ordenar por orden calendario en vez de alfabético
+      if (sort.key === 'mes_evento' || sort.key === 'mes_facturacion') {
+        const ai = MONTHS.indexOf(String(a[sort.key] ?? ''));
+        const bi = MONTHS.indexOf(String(b[sort.key] ?? ''));
+        const cmp = (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+        return sort.dir === 'asc' ? cmp : -cmp;
+      }
       const av = a[sort.key] ?? '';
       const bv = b[sort.key] ?? '';
       const cmp = String(av).localeCompare(String(bv), 'es', { numeric: true });
@@ -267,9 +274,9 @@ export default function Events() {
 
       {/* Table */}
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto overflow-y-auto max-h-[calc(100vh-260px)]">
           <table className="w-full text-sm min-w-[1200px]">
-            <thead className="bg-gray-50 border-b border-gray-200">
+            <thead className="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
               <tr>
                 <Th k="estimacion" label="Estim." />
                 <Th k="cliente" label="Cliente" />
