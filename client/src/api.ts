@@ -47,3 +47,8 @@ export const updateScenario = async (id: number, payload: { amount: number; name
   const { data } = await api.put(`/budget/scenarios/${id}`, payload);
   return data;
 };
+
+export const sendReportByEmail = async (payload: { to: string; pdfBase64: string; filename: string }) => {
+  const { data } = await api.post('/report/email', payload);
+  return data;
+};
