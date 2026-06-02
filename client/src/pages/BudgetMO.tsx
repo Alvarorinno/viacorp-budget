@@ -395,13 +395,7 @@ export default function BudgetMO() {
                   </td>
                 );
               })}
-              <td className="py-3 px-5 text-center">
-                {scenarioReachedTotal && (
-                  <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold text-white ${SCENARIO_STYLES[scenarioReachedTotal.color]?.badge}`}>
-                    {scenarioReachedTotal.name}
-                  </span>
-                )}
-              </td>
+              <td className="py-3 px-5 text-center text-xs text-gray-400">—</td>
               <td className="py-3 px-5 text-center text-xs text-gray-500">
                 {monthly.reduce((s, m) => s + m.eventos, 0)}
               </td>
