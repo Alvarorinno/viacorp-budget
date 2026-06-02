@@ -349,11 +349,11 @@ export default function BudgetMO() {
               const style = reached ? (SCENARIO_STYLES[reached.color] ?? SCENARIO_STYLES.green) : null;
 
               return (
-                <tr key={row.mes} className={`transition-colors ${style ? style.bg : 'hover:bg-gray-50'}`}>
-                  <td className={`py-3 px-5 font-semibold ${style ? style.text : 'text-gray-400 italic'}`}>
+                <tr key={row.mes} className="hover:bg-gray-50 transition-colors">
+                  <td className={`py-3 px-5 font-semibold ${row.mb_real != null ? 'text-gray-800' : 'text-gray-400 italic'}`}>
                     {row.mes}
                   </td>
-                  <td className={`py-3 px-5 text-right font-bold text-base ${style ? style.text : 'text-gray-400'}`}>
+                  <td className={`py-3 px-5 text-right font-bold text-base ${row.mb_real != null ? 'text-gray-900' : 'text-gray-400'}`}>
                     {fmtCLP(row.mb_real)}
                   </td>
                   {scenarios.map(s => {
@@ -370,12 +370,12 @@ export default function BudgetMO() {
                         {reached.name}
                       </span>
                     ) : (
-                      <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-600">
-                        {row.mb_real != null ? 'Bajo Break Even' : 'Sin datos'}
+                      <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-400">
+                        {row.mb_real != null ? 'Bajo Break Even' : '—'}
                       </span>
                     )}
                   </td>
-                  <td className={`py-3 px-5 text-center text-xs ${style ? style.text : 'text-gray-400'}`}>
+                  <td className="py-3 px-5 text-center text-xs text-gray-400">
                     {row.eventos > 0 ? row.eventos : '—'}
                   </td>
                 </tr>
