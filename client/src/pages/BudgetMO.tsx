@@ -234,8 +234,7 @@ export default function BudgetMO() {
 
         {/* Columna derecha — Gráfico Trimestral */}
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-          <p className="text-sm font-semibold text-gray-700 mb-1">MB por Trimestre {year}</p>
-          <p className="text-xs text-gray-400 mb-4">Incide directamente en el bono del director</p>
+          <p className="text-sm font-semibold text-gray-700 mb-4">MB por Trimestre {year}</p>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={quarterData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
