@@ -63,12 +63,18 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
     const { jsPDF } = await import('jspdf');
     const canvas = await html2canvas(reportRef.current, { scale: 2, useCORS: true, backgroundColor: '#ffffff' });
     const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
-    const pdfW = pdf.internal.pageSize.getWidth();
-    const pdfH = pdf.internal.pageSize.getHeight();
+    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+    const pdfW = pdf.internal.pageSize.getWidth();   // 210mm
+    const pdfH = pdf.internal.pageSize.getHeight();  // 297mm
     const ratio = canvas.height / canvas.width;
     const imgH = pdfW * ratio;
-    pdf.addImage(imgData, 'PNG', 0, 0, pdfW, imgH <= pdfH ? imgH : pdfH);
+    // Si entra en una página, usamos el alto real; si no, escalamos para que quepa
+    if (imgH <= pdfH) {
+      pdf.addImage(imgData, 'PNG', 0, 0, pdfW, imgH);
+    } else {
+      const scale = pdfH / imgH;
+      pdf.addImage(imgData, 'PNG', 0, 0, pdfW * scale, pdfH);
+    }
     const blob = pdf.output('blob');
     const base64 = pdf.output('datauristring').split(',')[1];
     return { base64, blob };
@@ -122,7 +128,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
 
   return (
     <div className="fixed inset-0 z-50 bg-black/60 flex items-start justify-center overflow-y-auto p-4">
-      <div className="bg-gray-100 rounded-2xl w-full max-w-6xl my-4 shadow-2xl">
+      <div className="bg-gray-100 rounded-2xl w-full max-w-3xl my-4 shadow-2xl">
         {/* Barra superior del modal */}
         <div className="flex items-center justify-between px-6 py-4 bg-white rounded-t-2xl border-b border-gray-200">
           <div>
