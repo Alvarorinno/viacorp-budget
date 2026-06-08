@@ -44,6 +44,7 @@ export default function Events() {
   const [search, setSearch] = useState('');
   const [filterMonth, setFilterMonth] = useState('');
   const [filterClient, setFilterClient] = useState('');
+  const [filterFactura, setFilterFactura] = useState('');
   const [sort, setSort] = useState<{ key: SortKey; dir: 'asc' | 'desc' }>({ key: 'mes_evento', dir: 'asc' });
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState('');
@@ -57,12 +58,18 @@ export default function Events() {
 
   const clients = useMemo(() => [...new Set(events.map(e => e.cliente))].sort(), [events]);
 
+  const pendingCount = useMemo(() => events.filter(e => !e.factura).length, [events]);
+
   const filtered = useMemo(() => {
     let data = events.filter(e => {
       const term = search.toLowerCase();
+      const matchFactura = filterFactura === 'pending' ? !e.factura
+                         : filterFactura === 'invoiced' ? !!e.factura
+                         : true;
       return (!term || e.cliente.toLowerCase().includes(term) || (e.descripcion || '').toLowerCase().includes(term) || (e.estimacion || '').includes(term))
         && (!filterMonth || e.mes_evento === filterMonth)
-        && (!filterClient || e.cliente === filterClient);
+        && (!filterClient || e.cliente === filterClient)
+        && matchFactura;
     });
     data = [...data].sort((a, b) => {
       // Para columnas de mes, ordenar por orden calendario en vez de alfabético
@@ -78,7 +85,7 @@ export default function Events() {
       return sort.dir === 'asc' ? cmp : -cmp;
     });
     return data;
-  }, [events, search, filterMonth, filterClient, sort]);
+  }, [events, search, filterMonth, filterClient, filterFactura, sort]);
 
   const handleSort = (key: SortKey) => {
     setSort(prev => prev.key === key ? { key, dir: prev.dir === 'asc' ? 'desc' : 'asc' } : { key, dir: 'asc' });
@@ -177,6 +184,25 @@ export default function Events() {
             <option value="">Todos los clientes</option>
             {clients.map(c => <option key={c}>{c}</option>)}
           </select>
+          <div className="relative">
+            <select
+              value={filterFactura}
+              onChange={e => setFilterFactura(e.target.value)}
+              className={`text-sm border rounded-lg px-3 py-2 focus:ring-2 outline-none bg-white pr-8
+                ${filterFactura === 'pending' ? 'border-orange-400 text-orange-700 focus:ring-orange-300 font-semibold' :
+                  filterFactura === 'invoiced' ? 'border-emerald-400 text-emerald-700 focus:ring-emerald-300 font-semibold' :
+                  'border-gray-300 focus:ring-brand-400'}`}
+            >
+              <option value="">Todas las facturas</option>
+              <option value="pending">⚠ Sin factura ({pendingCount})</option>
+              <option value="invoiced">✓ Facturadas</option>
+            </select>
+            {filterFactura === 'pending' && (
+              <span className="absolute -top-1.5 -right-1.5 bg-orange-500 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center pointer-events-none">
+                {filtered.length}
+              </span>
+            )}
+          </div>
           <span className="text-xs text-gray-400">{filtered.length} registros</span>
         </div>
         {isDirector && (
