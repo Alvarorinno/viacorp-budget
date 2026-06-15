@@ -31,7 +31,7 @@ export default function Login() {
           <div className="bg-brand-800 p-4 rounded-2xl mb-4">
             <Building2 className="text-white" size={36} />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">VíaCorp</h1>
+          <h1 className="text-2xl font-bold text-gray-900">MrTom</h1>
           <p className="text-gray-600 text-sm font-medium mt-1">Control presupuesto Fauna BTL</p>
         </div>
 

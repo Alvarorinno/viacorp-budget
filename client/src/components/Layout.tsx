@@ -41,7 +41,7 @@ export default function Layout({ page, setPage, children }: Props) {
               <Building2 size={22} />
             </div>
             <div>
-              <h1 className="font-bold text-base leading-tight">VíaCorp</h1>
+              <h1 className="font-bold text-base leading-tight">MrTom</h1>
               <p className="text-brand-200 text-xs leading-tight">Presupuesto Fauna BTL</p>
               <p className="text-brand-400 text-xs">2026</p>
             </div>

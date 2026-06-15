@@ -71,7 +71,7 @@ export default function Report() {
         const scale = pdfH / imgH;
         pdf.addImage(imgData, 'PNG', 0, 0, pdfW * scale, pdfH);
       }
-      pdf.save(`VíaCorp_Reporte_${year}_${new Date().toISOString().slice(0,10)}.pdf`);
+      pdf.save(`MrTom_Reporte_${year}_${new Date().toISOString().slice(0,10)}.pdf`);
     } finally {
       setDownloading(false);
     }
@@ -138,7 +138,7 @@ export default function Report() {
               <Building2 size={22} className="text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">VíaCorp</h1>
+              <h1 className="text-xl font-bold text-gray-900">MrTom</h1>
               <p className="text-xs text-gray-500">Control Presupuesto Fauna BTL</p>
             </div>
           </div>

@@ -54,7 +54,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
     getBudget(year).then(d => { setScenarios(d.scenarios); setMonthly(d.monthly); }).finally(() => setLoadingB(false));
   }, []);
 
-  const filename = `VíaCorp_Reporte_${year}_${new Date().toISOString().slice(0,10)}.pdf`;
+  const filename = `MrTom_Reporte_${year}_${new Date().toISOString().slice(0,10)}.pdf`;
 
   const generatePdfBase64 = async (): Promise<{ base64: string; blob: Blob } | null> => {
     const { jsPDF } = await import('jspdf');
@@ -90,7 +90,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
     fc(C.brand); doc.roundedRect(ML, y, CW, 15, 2, 2, 'F');
     doc.setTextColor(255,255,255);
     doc.setFont('helvetica','bold'); doc.setFontSize(13);
-    doc.text('VíaCorp', ML+4, y+7);
+    doc.text('MrTom', ML+4, y+7);
     doc.setFont('helvetica','normal'); doc.setFontSize(7.5);
     doc.text('Control Presupuesto Fauna BTL', ML+4, y+12);
     doc.setFont('helvetica','bold'); doc.setFontSize(10);
@@ -289,7 +289,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
     // ── FOOTER ────────────────────────────────────────────
     dc(C.g200); doc.setLineWidth(0.2); doc.line(ML, PH-9, PW-MR, PH-9);
     tc(C.g400); doc.setFont('helvetica','normal'); doc.setFontSize(6);
-    doc.text('VíaCorp — Control Presupuesto Fauna BTL', ML, PH-5.5);
+    doc.text('MrTom — Control Presupuesto Fauna BTL', ML, PH-5.5);
     doc.text(`Generado el ${today}`, PW-MR, PH-5.5, { align:'right' });
 
     const blob = doc.output('blob');
@@ -424,7 +424,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
                     <Building2 size={22} className="text-white" />
                   </div>
                   <div>
-                    <h1 className="text-xl font-bold text-gray-900">VíaCorp</h1>
+                    <h1 className="text-xl font-bold text-gray-900">MrTom</h1>
                     <p className="text-xs text-gray-500">Control Presupuesto Fauna BTL</p>
                   </div>
                 </div>
