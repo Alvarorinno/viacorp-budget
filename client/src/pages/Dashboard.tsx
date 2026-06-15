@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getStats, getBudget } from '../api';
 import type { Stats } from '../types';
 import SalesByClientPie from '../components/charts/SalesByClientPie';
@@ -41,7 +41,6 @@ function scenarioReached(mb: number | null, scenarios: Scenario[]): Scenario | n
 function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) {
   const year = new Date().getFullYear();
   const today = new Date().toLocaleDateString('es-CL', { day: '2-digit', month: 'long', year: 'numeric' });
-  const reportRef = useRef<HTMLDivElement>(null);
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
   const [monthly, setMonthly]     = useState<MonthRow[]>([]);
   const [downloading, setDownloading] = useState(false);
@@ -58,35 +57,243 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
   const filename = `VíaCorp_Reporte_${year}_${new Date().toISOString().slice(0,10)}.pdf`;
 
   const generatePdfBase64 = async (): Promise<{ base64: string; blob: Blob } | null> => {
-    if (!reportRef.current) return null;
-    const html2canvas = (await import('html2canvas')).default;
     const { jsPDF } = await import('jspdf');
-    const el = reportRef.current;
-    const canvas = await html2canvas(el, {
-      scale: 2,
-      useCORS: true,
-      backgroundColor: '#ffffff',
-      width: el.scrollWidth,
-      height: el.scrollHeight,
-      windowWidth: el.scrollWidth,
+    const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+
+    // ── Helpers ──────────────────────────────────────────
+    type RGB = [number, number, number];
+    const fc = (r: RGB) => doc.setFillColor(r[0], r[1], r[2]);
+    const tc = (r: RGB) => doc.setTextColor(r[0], r[1], r[2]);
+    const dc = (r: RGB) => doc.setDrawColor(r[0], r[1], r[2]);
+    const hex2rgb = (h: string): RGB => [parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)];
+
+    // ── Paleta colores ────────────────────────────────────
+    const C: Record<string,RGB> = {
+      brand:  [30,58,95],   g900:[17,24,39],    g700:[55,65,81],
+      g500:   [107,114,128],g400:[156,163,175],  g200:[229,231,235],
+      g100:   [243,244,246],g50: [249,250,251],
+      green:  [22,163,74],  blue:[29,78,216],    violet:[109,40,217], slate:[71,85,105],
+    };
+    const SC: Record<string,{ bg:RGB; text:RGB; dot:RGB }> = {
+      green:  { bg:[220,252,231], text:[22,101,52],  dot:[34,197,94]  },
+      blue:   { bg:[219,234,254], text:[30,64,175],  dot:[59,130,246] },
+      yellow: { bg:[254,249,195], text:[133,77,14],  dot:[234,179,8]  },
+      orange: { bg:[255,237,213], text:[154,52,18],  dot:[249,115,22] },
+    };
+    const scOf = (color: string) => SC[color] ?? SC.green;
+
+    // ── Layout ────────────────────────────────────────────
+    const PW=210, PH=297, ML=12, MR=12, CW=PW-ML-MR;
+    let y = 12;
+
+    // ── HEADER ────────────────────────────────────────────
+    fc(C.brand); doc.roundedRect(ML, y, CW, 15, 2, 2, 'F');
+    doc.setTextColor(255,255,255);
+    doc.setFont('helvetica','bold'); doc.setFontSize(13);
+    doc.text('VíaCorp', ML+4, y+7);
+    doc.setFont('helvetica','normal'); doc.setFontSize(7.5);
+    doc.text('Control Presupuesto Fauna BTL', ML+4, y+12);
+    doc.setFont('helvetica','bold'); doc.setFontSize(10);
+    doc.text(`Reporte Ejecutivo ${year}`, PW-MR-4, y+7, { align:'right' });
+    doc.setFont('helvetica','normal'); doc.setFontSize(7);
+    doc.text(today, PW-MR-4, y+12, { align:'right' });
+    y += 19;
+
+    // ── KPI ROW (4 tarjetas) ──────────────────────────────
+    const kW = (CW-6)/4;
+    [
+      { label:'PRESUPUESTO', val:fmtCLP(kpis.totalPresupuesto), sub:`${kpis.totalEventos} eventos`, c:C.blue   },
+      { label:'COSTO TOTAL', val:fmtCLP(kpis.totalCosto),       sub:'acumulado año',                c:C.slate  },
+      { label:'MB TOTAL',    val:fmtCLP(kpis.totalMB),          sub:`MB% ${kpis.mbPct.toFixed(1)}%`,c:C.green  },
+      { label:'FACTURADO',   val:fmtCLP(kpis.totalFacturado),   sub:`Pdte: ${fmtCLP(kpis.pendienteFacturar)}`, c:C.violet },
+    ].forEach((k,i) => {
+      const kx = ML + i*(kW+2);
+      fc(C.g100); doc.roundedRect(kx, y, kW, 18, 2, 2, 'F');
+      tc(C.g500); doc.setFont('helvetica','bold'); doc.setFontSize(5.5);
+      doc.text(k.label, kx+3, y+5);
+      tc(k.c); doc.setFontSize(8);
+      doc.text(k.val, kx+3, y+11);
+      tc(C.g400); doc.setFont('helvetica','normal'); doc.setFontSize(6);
+      doc.text(k.sub, kx+3, y+15.5);
     });
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-    const pdfW = pdf.internal.pageSize.getWidth();   // 210mm
-    const pdfH = pdf.internal.pageSize.getHeight();  // 297mm
-    const ratio = canvas.height / canvas.width;
-    const imgH = pdfW * ratio;
-    // Escalar manteniendo proporción para que quepa en una sola página
-    if (imgH <= pdfH) {
-      pdf.addImage(imgData, 'PNG', 0, 0, pdfW, imgH);
-    } else {
-      // Escalar por alto: mantiene aspect ratio centrado horizontalmente
-      const scaledW = pdfH / ratio;
-      const x = (pdfW - scaledW) / 2;
-      pdf.addImage(imgData, 'PNG', x, 0, scaledW, pdfH);
+    y += 22;
+
+    // ── SECCIÓN 2: Acumulado + Brecha | Gráfico trimestral ─
+    const s2LW=82, s2RW=CW-s2LW-4, s2Y=y;
+
+    // MB Acumulado
+    const acSt = scOf(scAcumOrig?.color ?? 'green');
+    fc(acSt.bg); dc(acSt.dot); doc.setLineWidth(0.4);
+    doc.roundedRect(ML, y, s2LW, 22, 2, 2, 'FD');
+    tc(acSt.text); doc.setFont('helvetica','bold'); doc.setFontSize(6);
+    doc.text(`MB ACUMULADO (${nMeses} MESES)`, ML+3, y+5.5);
+    doc.setFontSize(11.5);
+    doc.text(fmtCLP(mbAcum), ML+3, y+13.5);
+    if (scAcumOrig) {
+      fc(acSt.dot); doc.roundedRect(ML+3, y+16, 34, 4.5, 1.5, 1.5, 'F');
+      doc.setTextColor(255,255,255); doc.setFontSize(5.5);
+      doc.text(`✓ ${scAcumOrig.name}`, ML+5, y+19.3);
     }
-    const blob = pdf.output('blob');
-    const base64 = pdf.output('datauristring').split(',')[1];
+
+    // Brecha al siguiente escenario
+    if (nextSc && gapToNext != null) {
+      const nSt = scOf(nextSc.color);
+      const bY = y+25;
+      fc(nSt.bg); dc(nSt.dot); doc.setLineWidth(0.4);
+      doc.roundedRect(ML, bY, s2LW, 22, 2, 2, 'FD');
+      tc(nSt.text); doc.setFont('helvetica','bold'); doc.setFontSize(6);
+      doc.text(`BRECHA -> ${nextSc.name.toUpperCase()}`, ML+3, bY+5.5);
+      doc.setFontSize(11.5);
+      tc(gapToNext>=0 ? C.green : nSt.text);
+      doc.text(`${gapToNext>=0?'+':''}${fmtCLP(gapToNext)}`, ML+3, bY+13.5);
+      tc(nSt.text); doc.setFont('helvetica','normal'); doc.setFontSize(6);
+      doc.text(gapToNext>=0 ? 'Superado ✓' : `Faltan ${fmtCLP(Math.abs(gapToNext))}`, ML+3, bY+18);
+      tc(C.g400); doc.setFontSize(5.5);
+      doc.text(`Objetivo: ${fmtCLP(nextSc.amount*nMeses)} (${nMeses} meses)`, ML+3, bY+21.5);
+    }
+
+    // Gráfico de barras trimestral
+    const cX=ML+s2LW+4, cH=50;
+    fc(C.g100); doc.roundedRect(cX, s2Y, s2RW, cH, 2, 2, 'F');
+    tc(C.g700); doc.setFont('helvetica','bold'); doc.setFontSize(6.5);
+    doc.text(`MB POR TRIMESTRE ${year}`, cX+3, s2Y+5.5);
+
+    const bAX=cX+13, bAY=s2Y+9, bAW=s2RW-18, bAH=cH-20;
+    const maxQ = Math.max(...quarterData.map(q=>q.mb), 1);
+
+    // Líneas de cuadrícula Y
+    [0.25,0.5,0.75,1].forEach(pct => {
+      const gy = bAY+bAH*(1-pct);
+      dc(C.g200); doc.setLineWidth(0.1); doc.line(bAX, gy, bAX+bAW, gy);
+      tc(C.g400); doc.setFont('helvetica','normal'); doc.setFontSize(4.8);
+      doc.text(fmtM(maxQ*pct), bAX-1, gy+1.5, { align:'right' });
+    });
+
+    // Líneas de referencia de escenarios
+    sortedSc.forEach(s => {
+      const ry = bAY+bAH-(s.amount*3/maxQ)*bAH;
+      if (ry>=bAY && ry<=bAY+bAH) {
+        dc(scOf(s.color).dot); doc.setLineWidth(0.25);
+        doc.setLineDashPattern([1,1], 0);
+        doc.line(bAX, ry, bAX+bAW, ry);
+        doc.setLineDashPattern([], 0);
+      }
+    });
+
+    // Barras
+    const bW=bAW/4*0.45, bGap=bAW/4;
+    quarterData.forEach((q,i) => {
+      const bx=bAX+i*bGap+(bGap-bW)/2;
+      const bh=q.has ? Math.max((q.mb/maxQ)*bAH,1.5) : 2;
+      const by=bAY+bAH-bh;
+      fc(q.has ? hex2rgb(q.color) : C.g200);
+      doc.roundedRect(bx, by, bW, bh, 0.8, 0.8, 'F');
+      tc(C.g700); doc.setFont('helvetica','bold'); doc.setFontSize(6.5);
+      doc.text(q.label, bx+bW/2, bAY+bAH+4, { align:'center' });
+      if (q.has && q.mb>0) {
+        tc(C.g500); doc.setFont('helvetica','normal'); doc.setFontSize(5);
+        doc.text(fmtM(q.mb), bx+bW/2, by-1, { align:'center' });
+      }
+    });
+
+    // Leyenda del gráfico
+    const legY=s2Y+cH-7, legW=s2RW/4;
+    sortedSc.forEach((s,i) => {
+      const lx=cX+3+i*legW;
+      fc(scOf(s.color).dot); doc.circle(lx+1.5, legY+1.5, 1.5, 'F');
+      tc(C.g500); doc.setFont('helvetica','normal'); doc.setFontSize(4.8);
+      doc.text(`${s.name} (${fmtM(s.amount*3)})`, lx+4.5, legY+2.5);
+    });
+
+    y = s2Y+cH+5;
+
+    // ── SECCIÓN 3: Tabla mensual | Top clientes ───────────
+    const tW=108, rW=CW-tW-4, tX=ML, rX=ML+tW+4, s3Y=y;
+
+    // Título tabla
+    tc(C.g700); doc.setFont('helvetica','bold'); doc.setFontSize(6.5);
+    doc.text('MB REAL POR MES', tX, y+4);
+    y += 7;
+
+    // Encabezado tabla
+    fc(C.g100); doc.rect(tX, y, tW, 5, 'F');
+    dc(C.g200); doc.setLineWidth(0.15); doc.rect(tX, y, tW, 5, 'S');
+    tc(C.g500); doc.setFont('helvetica','bold'); doc.setFontSize(6);
+    doc.text('MES', tX+3, y+3.5);
+    doc.text('MB REAL', tX+50, y+3.5, { align:'right' });
+    doc.text('ESCENARIO', tX+tW-3, y+3.5, { align:'right' });
+    y += 5;
+
+    // Filas de meses
+    monthly.forEach((row, idx) => {
+      const r = scenarioReached(row.mb_real, scenarios);
+      const st = r ? scOf(r.color) : null;
+      const rH = 5;
+      if (st) { fc(st.bg); doc.rect(tX, y, tW, rH, 'F'); }
+      else if (idx%2===0) { fc(C.g50); doc.rect(tX, y, tW, rH, 'F'); }
+
+      tc(st?.text ?? C.g400);
+      doc.setFont('helvetica', st?'bold':'normal'); doc.setFontSize(6.5);
+      doc.text(row.mes, tX+3, y+3.5);
+      doc.setFont('helvetica','bold');
+      doc.text(row.mb_real!=null ? fmtCLP(row.mb_real) : '—', tX+50, y+3.5, { align:'right' });
+
+      if (r && st) {
+        fc(st.dot); doc.roundedRect(tX+tW-28, y+0.8, 25, rH-1.6, 1.2, 1.2, 'F');
+        doc.setTextColor(255,255,255); doc.setFontSize(5.2);
+        doc.text(r.name, tX+tW-15.5, y+3.5, { align:'center' });
+      } else {
+        tc(C.g400); doc.setFont('helvetica','normal'); doc.setFontSize(6);
+        doc.text(row.mb_real!=null?'Bajo BE':'—', tX+tW-3, y+3.5, { align:'right' });
+      }
+
+      dc(C.g200); doc.setLineWidth(0.1); doc.line(tX, y+rH, tX+tW, y+rH);
+      y += rH;
+    });
+
+    // ── Columna derecha: Top 5 + Escenarios ──────────────
+    let rY = s3Y;
+    tc(C.g700); doc.setFont('helvetica','bold'); doc.setFontSize(6.5);
+    doc.text('TOP 5 CLIENTES POR MB', rX, rY+4);
+    rY += 7;
+
+    const maxMb5 = top5[0]?.mb ?? 1;
+    top5.forEach((cl,i) => {
+      tc(C.g400); doc.setFont('helvetica','bold'); doc.setFontSize(6.5);
+      doc.text(`${i+1}`, rX+2, rY+3.5, { align:'center' });
+      tc(C.g700);
+      const nm = cl.cliente.length>18 ? cl.cliente.slice(0,17)+'…' : cl.cliente;
+      doc.text(nm, rX+5, rY+3.5);
+      tc(C.g900); doc.text(fmtM(cl.mb), rX+rW, rY+3.5, { align:'right' });
+      fc(C.g200); doc.roundedRect(rX+5, rY+5, rW-5, 2, 0.5, 0.5, 'F');
+      fc(C.brand); doc.roundedRect(rX+5, rY+5, (cl.mb/maxMb5)*(rW-5), 2, 0.5, 0.5, 'F');
+      rY += 11;
+    });
+
+    rY += 3;
+    dc(C.g200); doc.setLineWidth(0.3); doc.line(rX, rY, rX+rW, rY);
+    rY += 5;
+    tc(C.g500); doc.setFont('helvetica','bold'); doc.setFontSize(6.5);
+    doc.text('ESCENARIOS', rX, rY+3);
+    rY += 6;
+
+    sortedSc.forEach(s => {
+      fc(scOf(s.color).dot); doc.circle(rX+2, rY+2, 2, 'F');
+      tc(C.g700); doc.setFont('helvetica','normal'); doc.setFontSize(6.5);
+      doc.text(s.name, rX+6, rY+3);
+      doc.setFont('helvetica','bold');
+      doc.text(`${fmtM(s.amount)}/mes`, rX+rW, rY+3, { align:'right' });
+      rY += 7;
+    });
+
+    // ── FOOTER ────────────────────────────────────────────
+    dc(C.g200); doc.setLineWidth(0.2); doc.line(ML, PH-9, PW-MR, PH-9);
+    tc(C.g400); doc.setFont('helvetica','normal'); doc.setFontSize(6);
+    doc.text('VíaCorp — Control Presupuesto Fauna BTL', ML, PH-5.5);
+    doc.text(`Generado el ${today}`, PW-MR, PH-5.5, { align:'right' });
+
+    const blob = doc.output('blob');
+    const base64 = doc.output('datauristring').split(',')[1];
     return { base64, blob };
   };
 
@@ -208,7 +415,7 @@ function ReportModal({ onClose, stats }: { onClose: () => void; stats: Stats }) 
               <div className="animate-spin rounded-full h-10 w-10 border-4 border-brand-500 border-t-transparent" />
             </div>
           ) : (
-            <div ref={reportRef} className="bg-white rounded-xl p-8" style={{ fontFamily: 'system-ui, sans-serif', width: '720px', minWidth: '720px' }}>
+            <div className="bg-white rounded-xl p-8" style={{ fontFamily: 'system-ui, sans-serif' }}>
 
               {/* Encabezado */}
               <div className="flex items-center justify-between pb-5 border-b border-gray-200 mb-6">
