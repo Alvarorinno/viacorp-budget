@@ -8,7 +8,7 @@ import BillingStatusChart from '../components/charts/BillingStatusChart';
 import FacturadoVsPresupuesto from '../components/charts/FacturadoVsPresupuesto';
 import { useAuth } from '../context/AuthContext';
 import {
-  TrendingUp, DollarSign, BarChart2, Receipt, AlertCircle, Layers, FileDown, X, Download, Building2, Mail, CheckCircle
+  TrendingUp, DollarSign, BarChart2, Receipt, AlertCircle, Layers, FileDown, X, Download, Building2, Mail, CheckCircle, ArrowRight
 } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, Cell } from 'recharts';
 import { sendReportByEmail } from '../api';
@@ -606,7 +606,7 @@ function ChartCard({ title, children }: { title: string; children: React.ReactNo
   );
 }
 
-export default function Dashboard() {
+export default function Dashboard({ onMonthClick }: { onMonthClick?: (month: string) => void }) {
   const { user } = useAuth();
   const [stats, setStats] = useState<Stats | null>(null);
   const [loading, setLoading] = useState(true);
@@ -751,7 +751,10 @@ export default function Dashboard() {
 
       {/* Row 4: Tabla resumen mensual */}
       <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
-        <h3 className="text-sm font-semibold text-gray-700 mb-4">Resumen Mensual</h3>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold text-gray-700">Resumen Mensual</h3>
+          {onMonthClick && <p className="text-xs text-gray-400 flex items-center gap-1"><ArrowRight size={11} /> Clic en un mes para ver sus eventos</p>}
+        </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -768,8 +771,17 @@ export default function Dashboard() {
             </thead>
             <tbody>
               {monthlyData.map(m => (
-                <tr key={m.mes} className="border-b border-gray-50 hover:bg-gray-50 transition-colors">
-                  <td className="py-2.5 px-3 font-medium text-gray-700">{m.mes}</td>
+                <tr
+                  key={m.mes}
+                  onClick={() => onMonthClick?.(m.mes)}
+                  className={`border-b border-gray-50 transition-colors group ${onMonthClick ? 'cursor-pointer hover:bg-brand-50' : 'hover:bg-gray-50'}`}
+                >
+                  <td className="py-2.5 px-3 font-medium text-gray-700">
+                    <span className="flex items-center gap-1.5">
+                      {m.mes}
+                      {onMonthClick && <ArrowRight size={11} className="text-brand-400 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                    </span>
+                  </td>
                   <td className="py-2.5 px-3 text-right text-gray-600">{fmtM(m.presupuesto)}</td>
                   <td className="py-2.5 px-3 text-right text-gray-500">{fmtM(m.costo)}</td>
                   <td className="py-2.5 px-3 text-right text-emerald-600 font-medium">{fmtM(m.mb)}</td>

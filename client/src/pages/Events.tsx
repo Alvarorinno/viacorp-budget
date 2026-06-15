@@ -33,7 +33,7 @@ const EMPTY: Partial<Event> = {
 
 type SortKey = keyof Event;
 
-export default function Events() {
+export default function Events({ initialMonth = '' }: { initialMonth?: string }) {
   const { user } = useAuth();
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
@@ -42,9 +42,12 @@ export default function Events() {
   const [showNew, setShowNew] = useState(false);
   const [newData, setNewData] = useState<Partial<Event>>(EMPTY);
   const [search, setSearch] = useState('');
-  const [filterMonth, setFilterMonth] = useState('');
+  const [filterMonth, setFilterMonth] = useState(initialMonth);
   const [filterClient, setFilterClient] = useState('');
   const [filterFactura, setFilterFactura] = useState('');
+
+  // Sincroniza el filtro si el padre cambia initialMonth (navegación desde Dashboard)
+  useEffect(() => { setFilterMonth(initialMonth); }, [initialMonth]);
   const [sort, setSort] = useState<{ key: SortKey; dir: 'asc' | 'desc' }>({ key: 'mes_evento', dir: 'asc' });
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState('');
