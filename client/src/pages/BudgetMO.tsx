@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getBudget, updateScenario } from '../api';
+import { useAuth } from '../context/AuthContext';
 import { Pencil, Check, X, TrendingUp, TrendingDown, Target } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ResponsiveContainer, Cell } from 'recharts';
 
@@ -61,6 +62,8 @@ const SCENARIO_COLORS_HEX: Record<string, string> = {
 };
 
 export default function BudgetMO() {
+  const { user } = useAuth();
+  const canEdit = user?.role === 'director';
   const currentYear = new Date().getFullYear();
   const [year, setYear] = useState(currentYear);
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
@@ -312,13 +315,15 @@ export default function BudgetMO() {
                       <p className={`text-xs font-semibold ${style.text} mb-1`}>{s.name}</p>
                       <p className={`text-base font-bold ${style.text}`}>{fmtCLP(s.amount)}</p>
                     </div>
-                    <button
-                      onClick={() => startEdit(s)}
-                      className={`p-1.5 rounded-lg hover:bg-white/50 ${style.text}`}
-                      title="Editar escenario"
-                    >
-                      <Pencil size={13} />
-                    </button>
+                    {canEdit && (
+                      <button
+                        onClick={() => startEdit(s)}
+                        className={`p-1.5 rounded-lg hover:bg-white/50 ${style.text}`}
+                        title="Editar escenario"
+                      >
+                        <Pencil size={13} />
+                      </button>
+                    )}
                   </div>
                 )}
               </div>

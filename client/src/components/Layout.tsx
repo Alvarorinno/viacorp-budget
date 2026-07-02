@@ -94,7 +94,7 @@ export default function Layout({ page, setPage, children }: Props) {
             <Menu size={22} />
           </button>
           <div className="text-sm text-gray-500">
-            {page === 'dashboard' ? 'Dashboard — Vista general 2026' : 'Gestión de Eventos & Proyectos'}
+            {page === 'dashboard' ? 'Dashboard — Vista general 2026' : page === 'budget' ? 'Presupuesto MO 2026' : 'Gestión de Eventos & Proyectos'}
           </div>
         </header>
         <main className="flex-1 overflow-auto p-6">
