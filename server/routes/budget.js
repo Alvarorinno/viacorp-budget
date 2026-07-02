@@ -9,7 +9,7 @@ const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto
 
 // GET /api/budget/:year — escenarios + MB real por mes
 router.get('/:year', (req, res) => {
-  if (req.user.role !== 'director') return res.status(403).json({ error: 'Solo el director puede ver esta sección' });
+  if (!['director', 'viewer'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso' });
 
   const year = Number(req.params.year);
 
@@ -49,7 +49,7 @@ router.get('/:year', (req, res) => {
 
 // PUT /api/budget/scenarios/:id — editar monto de un escenario
 router.put('/scenarios/:id', (req, res) => {
-  if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso' });
+  if (!['director'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso para editar escenarios' });
   const { amount, name } = req.body;
   const id = Number(req.params.id);
   if (amount == null || isNaN(amount)) return res.status(400).json({ error: 'Monto inválido' });

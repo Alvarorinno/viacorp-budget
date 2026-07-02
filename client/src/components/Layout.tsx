@@ -17,7 +17,7 @@ export default function Layout({ page, setPage, children }: Props) {
   const navItems = [
     { id: 'dashboard' as Page, label: 'Dashboard', icon: BarChart3 },
     { id: 'events' as Page, label: 'Eventos / Proyectos', icon: Table2 },
-    ...(user?.role === 'director'
+    ...(['director', 'viewer'].includes(user?.role ?? '')
       ? [{ id: 'budget' as Page, label: 'Presupuesto MO', icon: TrendingUp }]
       : []),
   ];
@@ -70,9 +70,11 @@ export default function Layout({ page, setPage, children }: Props) {
             <p className="text-xs text-brand-400">Sesión activa</p>
             <p className="text-sm font-semibold">{user?.nombre}</p>
             <span className={`text-xs px-2 py-0.5 rounded-full mt-1 inline-block ${
-              user?.role === 'director' ? 'bg-amber-500/20 text-amber-300' : 'bg-emerald-500/20 text-emerald-300'
+              user?.role === 'director' ? 'bg-amber-500/20 text-amber-300' :
+              user?.role === 'viewer'   ? 'bg-purple-500/20 text-purple-300' :
+                                          'bg-emerald-500/20 text-emerald-300'
             }`}>
-              {user?.role === 'director' ? 'Director' : 'Gte. Finanzas'}
+              {user?.role === 'director' ? 'Director' : user?.role === 'viewer' ? 'Solo lectura' : 'Gte. Finanzas'}
             </span>
           </div>
           <button

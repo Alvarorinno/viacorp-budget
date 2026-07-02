@@ -633,8 +633,8 @@ export default function Dashboard({ onMonthClick }: { onMonthClick?: (month: str
       {/* Modal reporte */}
       {showReport && <ReportModal onClose={() => setShowReport(false)} stats={stats!} />}
 
-      {/* Botón Generar Reporte (solo Director) */}
-      {user?.role === 'director' && (
+      {/* Botón Generar Reporte (Director y Viewer) */}
+      {(user?.role === 'director' || user?.role === 'viewer') && (
         <div className="flex justify-end">
           <button
             onClick={() => setShowReport(true)}

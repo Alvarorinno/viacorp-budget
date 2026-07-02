@@ -55,6 +55,7 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
 
   const isDirector = user?.role === 'director';
   const isFinance  = user?.role === 'finanzas';
+  const isViewer   = user?.role === 'viewer';
 
   const load = () => getEvents().then(setEvents).finally(() => setLoading(false));
   useEffect(() => { load(); }, []);
@@ -432,13 +433,15 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
                       </div>
                     ) : (
                       <div className="flex gap-1">
-                        <button
-                          onClick={() => startEdit(e)}
-                          title={isDirector ? 'Editar datos del evento' : 'Editar facturación'}
-                          className={`p-1.5 rounded-lg ${isDirector ? 'bg-blue-100 text-blue-700 hover:bg-blue-200' : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'}`}
-                        >
-                          <Pencil size={13} />
-                        </button>
+                        {!isViewer && (
+                          <button
+                            onClick={() => startEdit(e)}
+                            title={isDirector ? 'Editar datos del evento' : 'Editar facturación'}
+                            className={`p-1.5 rounded-lg ${isDirector ? 'bg-blue-100 text-blue-700 hover:bg-blue-200' : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'}`}
+                          >
+                            <Pencil size={13} />
+                          </button>
+                        )}
                         {isDirector && (
                           <button onClick={() => handleDelete(e.id)} className="p-1.5 bg-red-100 text-red-600 rounded-lg hover:bg-red-200"><Trash2 size={13} /></button>
                         )}

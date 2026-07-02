@@ -62,6 +62,7 @@ if (scenarioCount.n === 0) {
 const insertUser = db.prepare(`INSERT OR IGNORE INTO users (username, password, role, nombre) VALUES (?, ?, ?, ?)`);
 insertUser.run('director', process.env.DIRECTOR_PASS || 'dir2026', 'director', 'Director');
 insertUser.run('finanzas', process.env.FINANZAS_PASS || 'fin2026', 'finanzas', 'Gerente de Finanzas');
+insertUser.run('coto',     process.env.COTO_PASS     || 'cotobtl',  'viewer',   'Coto');
 
 // Auto-seed en primer arranque si la BD está vacía
 const count = db.prepare('SELECT COUNT(*) as n FROM events').get();

@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  if (req.user.role !== 'director') return res.status(403).json({ error: 'Solo el director puede crear eventos' });
+  if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso para crear eventos' });
   const { estimacion, cliente, descripcion, presupuesto, costo, mes_evento } = req.body;
   if (!cliente) return res.status(400).json({ error: 'Cliente es requerido' });
   const result = db.prepare(`
@@ -31,6 +31,7 @@ router.put('/:id', (req, res) => {
   const event = db.prepare('SELECT * FROM events WHERE id = ?').get(Number(req.params.id));
   if (!event) return res.status(404).json({ error: 'Evento no encontrado' });
 
+  if (req.user.role === 'viewer') return res.status(403).json({ error: 'Sin permiso para editar' });
   const allowedFields = req.user.role === 'director'
     ? DIRECTOR_FIELDS
     : FINANCE_FIELDS;
