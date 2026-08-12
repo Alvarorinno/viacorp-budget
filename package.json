@@ -2,8 +2,9 @@
   "name": "viacorp-budget",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "npm install --prefix client --include=dev && npm run build --prefix client && npm install --prefix server",
+    "build": "npm install --prefix client --include=dev && npm run build --prefix client",
     "start": "node server/index.js",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
@@ -14,6 +15,11 @@
     "node": ">=22.0.0"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^1.1.0"
+    "@neondatabase/serverless": "^1.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^8.0.10",
+    "resend": "^6.12.4"
   }
 }
