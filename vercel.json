@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm install --prefix client --include=dev && npm run build --prefix client && npm install --prefix server",
+  "outputDirectory": "client/dist",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/server" }
+  ]
+}

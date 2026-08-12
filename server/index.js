@@ -12,35 +12,32 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 3001;
 const isProd = process.env.NODE_ENV === 'production';
+const isVercel = !!process.env.VERCEL;
 
-// CORS solo en desarrollo (en prod el frontend lo sirve el mismo Express)
-if (!isProd) {
+if (!isVercel) {
   app.use(cors({
     origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
     credentials: true
   }));
 }
 
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 
-// API routes
 app.use('/api/auth', authRouter);
 app.use('/api/events', eventsRouter);
 app.use('/api/stats', statsRouter);
 app.use('/api/budget', budgetRouter);
 app.use('/api/report', reportRouter);
-app.get('/api/health', (_, res) => res.json({ ok: true, env: isProd ? 'production' : 'development' }));
+app.get('/api/health', (_, res) => res.json({ ok: true, platform: isVercel ? 'vercel' : 'local' }));
 
-// En producción: servir el frontend compilado
-if (isProd) {
+if (isProd && !isVercel) {
   const distPath = join(__dirname, '../client/dist');
   app.use(express.static(distPath));
-  // SPA fallback — cualquier ruta no-API devuelve index.html
-  app.get('*', (req, res) => {
-    res.sendFile(join(distPath, 'index.html'));
-  });
+  app.get('*', (req, res) => res.sendFile(join(distPath, 'index.html')));
 }
 
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT} [${isProd ? 'PRODUCTION' : 'development'}]`);
-});
+if (!isVercel) {
+  app.listen(PORT, () => console.log(`Server on http://localhost:${PORT}`));
+}
+
+export default app;

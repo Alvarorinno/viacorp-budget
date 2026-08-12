@@ -7,9 +7,13 @@
     "start": "node server/index.js",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
+    "init-db": "node scripts/init-neon.js",
     "seed": "node server/seed.js"
   },
   "engines": {
     "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
   }
 }

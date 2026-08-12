@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import db from '../db.js';
+import sql, { query } from '../db.js';
 import { authMiddleware } from './auth.js';
 
 const router = Router();
@@ -7,75 +7,64 @@ router.use(authMiddleware);
 
 const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
-// GET /api/budget/:year — escenarios + MB real por mes
-router.get('/:year', (req, res) => {
+router.get('/:year', async (req, res) => {
   if (!['director', 'viewer'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso' });
-
   const year = Number(req.params.year);
+  try {
+    const countRes = await sql`SELECT COUNT(*) as n FROM budget_scenarios WHERE year = ${year}`;
+    if (Number(countRes[0].n) === 0) {
+      const base = await sql`SELECT * FROM budget_scenarios WHERE year = 2026 ORDER BY sort_order`;
+      for (const s of base) {
+        await sql`INSERT INTO budget_scenarios (year, name, amount, color, sort_order) VALUES (${year}, ${s.name}, ${s.amount}, ${s.color}, ${s.sort_order})`;
+      }
+    }
 
-  // Si no existen escenarios para este año, copiar desde 2026 (o crear vacíos)
-  const count = db.prepare('SELECT COUNT(*) as n FROM budget_scenarios WHERE year = ?').get(year);
-  if (count.n === 0) {
-    const base = db.prepare('SELECT * FROM budget_scenarios WHERE year = 2026 ORDER BY sort_order').all();
-    const ins = db.prepare(`INSERT INTO budget_scenarios (year, name, amount, color, sort_order) VALUES (?, ?, ?, ?, ?)`);
-    db.exec('BEGIN');
-    for (const s of base) ins.run(year, s.name, s.amount, s.color, s.sort_order);
-    db.exec('COMMIT');
-  }
+    const scenarios = await sql`SELECT * FROM budget_scenarios WHERE year = ${year} ORDER BY sort_order`;
+    const mbByMonth = await sql`
+      SELECT mes_evento, SUM(presupuesto - costo) as mb_real, COUNT(*) as eventos
+      FROM events
+      WHERE mes_evento IS NOT NULL AND mes_evento != ''
+      GROUP BY mes_evento
+    `;
 
-  const scenarios = db.prepare('SELECT * FROM budget_scenarios WHERE year = ? ORDER BY sort_order').all(year);
+    const mbMap = {};
+    for (const row of mbByMonth) mbMap[row.mes_evento] = { mb_real: Number(row.mb_real), eventos: Number(row.eventos) };
 
-  // MB real por mes (todos los eventos del año filtrados por mes_evento)
-  const mbByMonth = db.prepare(`
-    SELECT mes_evento, SUM(presupuesto - costo) as mb_real, COUNT(*) as eventos
-    FROM events
-    WHERE mes_evento IS NOT NULL AND mes_evento != ''
-    GROUP BY mes_evento
-  `).all();
+    const monthly = MONTHS.map(mes => ({
+      mes,
+      mb_real: mbMap[mes]?.mb_real ?? null,
+      eventos: mbMap[mes]?.eventos ?? 0,
+    }));
 
-  // Convertir a mapa mes → datos
-  const mbMap = {};
-  for (const row of mbByMonth) mbMap[row.mes_evento] = { mb_real: row.mb_real, eventos: row.eventos };
-
-  // Construir tabla mensual ordenada
-  const monthly = MONTHS.map(mes => ({
-    mes,
-    mb_real: mbMap[mes]?.mb_real ?? null,
-    eventos: mbMap[mes]?.eventos ?? 0,
-  }));
-
-  res.json({ scenarios, monthly });
+    res.json({ scenarios: scenarios.map(s => ({ ...s, amount: Number(s.amount) })), monthly });
+  } catch (err) { console.error(err); res.status(500).json({ error: 'Error del servidor' }); }
 });
 
-// PUT /api/budget/scenarios/:id — editar monto de un escenario
-router.put('/scenarios/:id', (req, res) => {
-  if (!['director'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso para editar escenarios' });
+router.put('/scenarios/:id', async (req, res) => {
+  if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso para editar escenarios' });
   const { amount, name } = req.body;
   const id = Number(req.params.id);
   if (amount == null || isNaN(amount)) return res.status(400).json({ error: 'Monto inválido' });
-
-  db.prepare('UPDATE budget_scenarios SET amount = ?, name = COALESCE(?, name) WHERE id = ?')
-    .run(Number(amount), name ?? null, id);
-
-  const updated = db.prepare('SELECT * FROM budget_scenarios WHERE id = ?').get(id);
-  res.json(updated);
+  try {
+    await sql`UPDATE budget_scenarios SET amount = ${Number(amount)}, name = COALESCE(${name ?? null}, name) WHERE id = ${id}`;
+    const updated = (await sql`SELECT * FROM budget_scenarios WHERE id = ${id}`)[0];
+    res.json({ ...updated, amount: Number(updated.amount) });
+  } catch (err) { console.error(err); res.status(500).json({ error: 'Error del servidor' }); }
 });
 
-// POST /api/budget/:year/copy — copiar escenarios a un nuevo año
-router.post('/:year/copy', (req, res) => {
+router.post('/:year/copy', async (req, res) => {
   if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso' });
   const year = Number(req.params.year);
   const { fromYear } = req.body;
-
-  db.prepare('DELETE FROM budget_scenarios WHERE year = ?').run(year);
-  const base = db.prepare('SELECT * FROM budget_scenarios WHERE year = ? ORDER BY sort_order').all(fromYear || 2026);
-  const ins = db.prepare(`INSERT INTO budget_scenarios (year, name, amount, color, sort_order) VALUES (?, ?, ?, ?, ?)`);
-  db.exec('BEGIN');
-  for (const s of base) ins.run(year, s.name, s.amount, s.color, s.sort_order);
-  db.exec('COMMIT');
-
-  const scenarios = db.prepare('SELECT * FROM budget_scenarios WHERE year = ? ORDER BY sort_order').all(year);
-  res.json(scenarios);
+  try {
+    await sql`DELETE FROM budget_scenarios WHERE year = ${year}`;
+    const base = await sql`SELECT * FROM budget_scenarios WHERE year = ${fromYear || 2026} ORDER BY sort_order`;
+    for (const s of base) {
+      await sql`INSERT INTO budget_scenarios (year, name, amount, color, sort_order) VALUES (${year}, ${s.name}, ${s.amount}, ${s.color}, ${s.sort_order})`;
+    }
+    const scenarios = await sql`SELECT * FROM budget_scenarios WHERE year = ${year} ORDER BY sort_order`;
+    res.json(scenarios.map(s => ({ ...s, amount: Number(s.amount) })));
+  } catch (err) { console.error(err); res.status(500).json({ error: 'Error del servidor' }); }
 });
 
 export default router;

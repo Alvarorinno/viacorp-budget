@@ -1,17 +1,23 @@
 import { Router } from 'express';
 import jwt from 'jsonwebtoken';
-import db from '../db.js';
+import sql from '../db.js';
 
 const router = Router();
-const SECRET = process.env.JWT_SECRET || 'viacorp_secret_2026';
+const SECRET = process.env.JWT_SECRET || 'mrtom_secret_2026';
 
-router.post('/login', (req, res) => {
-  const { username, password } = req.body;
-  const user = db.prepare('SELECT * FROM users WHERE username = ? AND password = ?').get(username, password);
-  if (!user) return res.status(401).json({ error: 'Credenciales incorrectas' });
-  const payload = { id: user.id, username: user.username, role: user.role, nombre: user.nombre };
-  const token = jwt.sign(payload, SECRET, { expiresIn: '8h' });
-  res.json({ token, user: payload });
+router.post('/login', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const rows = await sql`SELECT * FROM users WHERE username = ${username} AND password = ${password}`;
+    const user = rows[0];
+    if (!user) return res.status(401).json({ error: 'Credenciales incorrectas' });
+    const payload = { id: user.id, username: user.username, role: user.role, nombre: user.nombre };
+    const token = jwt.sign(payload, SECRET, { expiresIn: '8h' });
+    res.json({ token, user: payload });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Error del servidor' });
+  }
 });
 
 export function authMiddleware(req, res, next) {
