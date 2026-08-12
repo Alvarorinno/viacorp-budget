@@ -1,0 +1,55 @@
+name: Backup Neon DB
+
+on:
+  schedule:
+    - cron: '0 6 */3 * *'   # cada 3 días a las 6am UTC
+  workflow_dispatch:          # también se puede lanzar manualmente
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Export Neon DB to JSON
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          node --input-type=module <<'EOF'
+          import { neon } from '@neondatabase/serverless';
+          import { writeFileSync } from 'fs';
+
+          const sql = neon(process.env.DATABASE_URL);
+          const events    = await sql`SELECT * FROM events ORDER BY id`;
+          const users     = await sql`SELECT id, username, role, nombre FROM users`;
+          const scenarios = await sql`SELECT * FROM budget_scenarios ORDER BY year, sort_order`;
+
+          const backup = {
+            fecha: new Date().toISOString(),
+            events:    events.map(e => ({...e, presupuesto: Number(e.presupuesto), costo: Number(e.costo)})),
+            users,
+            scenarios: scenarios.map(s => ({...s, amount: Number(s.amount)}))
+          };
+
+          writeFileSync('scripts/backup_2026.json', JSON.stringify(backup, null, 2));
+          console.log(`✓ Backup: ${events.length} eventos, ${users.length} usuarios`);
+          EOF
+
+      - name: Commit backup if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/backup_2026.json
+          git diff --staged --quiet || git commit -m "backup: actualización automática $(date +'%Y-%m-%d')"
+          git push
