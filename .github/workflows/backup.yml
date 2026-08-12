@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -36,7 +35,7 @@ jobs:
             events: events.map(e => ({...e, presupuesto: Number(e.presupuesto), costo: Number(e.costo)})),
             users, scenarios: scenarios.map(s => ({...s, amount: Number(s.amount)})) };
           writeFileSync('scripts/backup_2026.json', JSON.stringify(backup, null, 2));
-          console.log(`✓ ${events.length} eventos`);
+          console.log(`✓ ${events.length} eventos guardados`);
           EOF
 
       - name: Commit if changed
@@ -44,5 +43,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add scripts/backup_2026.json
-          git diff --staged --quiet || git commit -m "backup: $(date +'%Y-%m-%d')"
-          git push
+          git diff --staged --quiet && echo "Sin cambios" || (git commit -m "backup: $(date +'%Y-%m-%d')" && git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main)
