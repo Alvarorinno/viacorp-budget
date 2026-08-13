@@ -8,7 +8,7 @@ const sql = neon(process.env.DATABASE_URL || '');
 
 // Helper for dynamic parameterized queries (e.g. dynamic SET clauses)
 export async function query(text, params = []) {
-  return sql.unsafe(text, params);
+  return sql.query(text, params);
 }
 
 export default sql;
