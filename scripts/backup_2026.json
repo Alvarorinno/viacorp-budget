@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-08-13T07:19:57.612Z",
+  "fecha": "2026-08-16T06:32:11.805Z",
   "events": [
     {
       "id": 93,
@@ -2191,7 +2191,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-08-12 14:36:36"
+      "updated_at": "2026-08-13 16:48:29"
     }
   ],
   "users": [
@@ -2242,6 +2242,38 @@
     {
       "id": 4,
       "year": 2026,
+      "name": "2023",
+      "amount": 55000000,
+      "color": "orange",
+      "sort_order": 4
+    },
+    {
+      "id": 5,
+      "year": 2027,
+      "name": "Break Even",
+      "amount": 33800000,
+      "color": "green",
+      "sort_order": 1
+    },
+    {
+      "id": 6,
+      "year": 2027,
+      "name": "Promedio Histórico",
+      "amount": 39500000,
+      "color": "blue",
+      "sort_order": 2
+    },
+    {
+      "id": 7,
+      "year": 2027,
+      "name": "Promedio + 15%",
+      "amount": 45425000,
+      "color": "yellow",
+      "sort_order": 3
+    },
+    {
+      "id": 8,
+      "year": 2027,
       "name": "2023",
       "amount": 55000000,
       "color": "orange",
