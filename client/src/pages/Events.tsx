@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { getEvents, updateEvent, createEvent, deleteEvent } from '../api';
 import { useAuth } from '../context/AuthContext';
 import type { Event } from '../types';
-import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown, AlertCircle, Lock } from 'lucide-react';
+import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown, AlertCircle } from 'lucide-react';
 
 const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 const fmtCLP = (n: number | null) => n != null ? `$${n.toLocaleString('es-CL')}` : '—';
@@ -444,18 +444,14 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
                       </div>
                     ) : (
                       <div className="flex gap-1">
-                        {!isViewer && (
-                          isDirector && isDirectorMonthLocked(e.mes_evento)
-                            ? <span title={`Mes cerrado — solo editable desde ${MONTHS[minEditableIdx]} en adelante`} className="p-1.5 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed">
-                                <Lock size={13} />
-                              </span>
-                            : <button
-                                onClick={() => startEdit(e)}
-                                title={isDirector ? 'Editar datos del evento' : 'Editar facturación'}
-                                className={`p-1.5 rounded-lg ${isDirector ? 'bg-blue-100 text-blue-700 hover:bg-blue-200' : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'}`}
-                              >
-                                <Pencil size={13} />
-                              </button>
+                        {!isViewer && !(isDirector && isDirectorMonthLocked(e.mes_evento)) && (
+                          <button
+                            onClick={() => startEdit(e)}
+                            title={isDirector ? 'Editar datos del evento' : 'Editar facturación'}
+                            className={`p-1.5 rounded-lg ${isDirector ? 'bg-blue-100 text-blue-700 hover:bg-blue-200' : 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'}`}
+                          >
+                            <Pencil size={13} />
+                          </button>
                         )}
                         {isDirector && !isDirectorMonthLocked(e.mes_evento) && (
                           <button onClick={() => handleDelete(e.id)} className="p-1.5 bg-red-100 text-red-600 rounded-lg hover:bg-red-200"><Trash2 size={13} /></button>
