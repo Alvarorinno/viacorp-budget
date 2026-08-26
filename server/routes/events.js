@@ -7,6 +7,16 @@ router.use(authMiddleware);
 
 const DIRECTOR_FIELDS = ['estimacion', 'cliente', 'descripcion', 'presupuesto', 'costo', 'mes_evento'];
 const FINANCE_FIELDS  = ['factura', 'fecha_facturacion', 'mes_facturacion', 'estado_pago'];
+const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+
+// Meses anteriores al mes previo al actual están bloqueados para el director.
+// Ejemplo: si hoy es Agosto (idx 7), minEditableIdx = 6 (Julio). Junio y antes = bloqueado.
+const isDirectorMonthLocked = (mes_evento) => {
+  if (!mes_evento) return false;
+  const idx = MONTHS.indexOf(mes_evento);
+  const minEditableIdx = new Date().getMonth() - 1;
+  return idx !== -1 && idx < minEditableIdx;
+};
 
 const toObj = row => row ? { ...row, mb: Number(row.presupuesto || 0) - Number(row.costo || 0) } : null;
 
@@ -37,6 +47,11 @@ router.put('/:id', async (req, res) => {
   const existing = (await sql`SELECT * FROM events WHERE id = ${id}`)[0];
   if (!existing) return res.status(404).json({ error: 'Evento no encontrado' });
   if (req.user.role === 'viewer') return res.status(403).json({ error: 'Sin permiso para editar' });
+
+  // Bloqueo temporal: directores no pueden editar meses cerrados (antes del mes anterior al actual)
+  if (req.user.role === 'director' && isDirectorMonthLocked(existing.mes_evento)) {
+    return res.status(403).json({ error: `Mes cerrado — solo editable desde ${MONTHS[new Date().getMonth() - 1]} en adelante` });
+  }
 
   const allowedFields = req.user.role === 'director' ? DIRECTOR_FIELDS : FINANCE_FIELDS;
   const updates = {};
