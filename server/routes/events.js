@@ -31,6 +31,9 @@ router.post('/', async (req, res) => {
   if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso para crear eventos' });
   const { estimacion, cliente, descripcion, presupuesto, costo, mes_evento } = req.body;
   if (!cliente) return res.status(400).json({ error: 'Cliente es requerido' });
+  if (isDirectorMonthLocked(mes_evento)) {
+    return res.status(403).json({ error: `No se puede crear un evento en un mes cerrado. Mínimo: ${MONTHS[new Date().getMonth() - 1]}` });
+  }
   try {
     const rows = await sql`
       INSERT INTO events (estimacion, cliente, descripcion, presupuesto, costo, mes_evento)

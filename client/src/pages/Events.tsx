@@ -37,9 +37,12 @@ const isDirectorMonthLocked = (mes_evento: string | null | undefined): boolean =
   return idx !== -1 && idx < minEditableIdx;
 };
 
+// Meses disponibles para crear nuevos eventos (director): solo desde mes anterior en adelante
+const EDITABLE_MONTHS = MONTHS.filter((_, idx) => idx >= minEditableIdx);
+
 const EMPTY: Partial<Event> = {
   estimacion: '', cliente: '', descripcion: '', presupuesto: 0, costo: 0,
-  mes_evento: 'Enero', factura: '', fecha_facturacion: '', mes_facturacion: '', estado_pago: ''
+  mes_evento: EDITABLE_MONTHS[0] ?? 'Enero', factura: '', fecha_facturacion: '', mes_facturacion: '', estado_pago: ''
 };
 
 type SortKey = keyof Event;
@@ -278,11 +281,11 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
               className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
             />
             <select
-              value={newData.mes_evento || 'Enero'}
+              value={newData.mes_evento || EDITABLE_MONTHS[0]}
               onChange={e => setNewData(p => ({ ...p, mes_evento: e.target.value }))}
               className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none bg-white"
             >
-              {MONTHS.map(m => <option key={m}>{m}</option>)}
+              {EDITABLE_MONTHS.map(m => <option key={m}>{m}</option>)}
             </select>
           </div>
 
