@@ -56,6 +56,7 @@ const cotoPass = process.env.COTO_PASS || 'cotobtl';
 await sql`INSERT INTO users (username, password, role, nombre) VALUES ('director', ${dirPass}, 'director', 'Director') ON CONFLICT (username) DO NOTHING`;
 await sql`INSERT INTO users (username, password, role, nombre) VALUES ('finanzas', ${finPass}, 'finanzas', 'Gerente de Finanzas') ON CONFLICT (username) DO NOTHING`;
 await sql`INSERT INTO users (username, password, role, nombre) VALUES ('coto', ${cotoPass}, 'viewer', 'Coto') ON CONFLICT (username) DO NOTHING`;
+await sql`INSERT INTO users (username, password, role, nombre) VALUES ('supervisor', 'supervisor123', 'director', 'Supervisor') ON CONFLICT (username) DO NOTHING`;
 console.log('✓ Users seeded');
 
 console.log('Seeding budget scenarios...');
