@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-08-25T06:38:24.816Z",
+  "fecha": "2026-08-28T18:08:16.344Z",
   "events": [
     {
       "id": 93,
@@ -463,7 +463,7 @@
       "por_cobrar": "3079944",
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-08-12 14:36:20",
-      "updated_at": "2026-08-12 14:36:20"
+      "updated_at": "2026-08-26 19:39:58"
     },
     {
       "id": 122,
@@ -1023,7 +1023,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:25",
-      "updated_at": "2026-08-12 14:36:25"
+      "updated_at": "2026-08-26 20:27:28"
     },
     {
       "id": 157,
@@ -2120,14 +2120,14 @@
       "descripcion": "VIAJE SAO PAULO A LA F1 -MOTOROLA",
       "presupuesto": 276943260,
       "costo": 215798000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3534",
+      "fecha_facturacion": "2026-08-19",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Agosto",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-08-20 21:55:54"
+      "updated_at": "2026-08-25 20:40:07"
     },
     {
       "id": 226,
@@ -2165,9 +2165,9 @@
       "id": 229,
       "estimacion": "4032",
       "cliente": "Lenovo",
-      "descripcion": "CONGRESO CAMPUS CABALGATA",
-      "presupuesto": 27107300,
-      "costo": 13071979,
+      "descripcion": "LENOVO CONGRESO CAMPUS CABALGATA",
+      "presupuesto": 27140000,
+      "costo": 13691068,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2175,7 +2175,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-08-18 18:44:50"
+      "updated_at": "2026-08-26 20:00:42"
     },
     {
       "id": 230,
@@ -2244,7 +2244,7 @@
     {
       "id": 234,
       "estimacion": "4035",
-      "cliente": "4035",
+      "cliente": "Nutrisco",
       "descripcion": "CAMPAÑA FLIP SEPTIEMBRE CANAL TRADICIONAL",
       "presupuesto": 11668418,
       "costo": 8095000,
@@ -2255,7 +2255,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-18 18:59:14",
-      "updated_at": "2026-08-18 19:00:10"
+      "updated_at": "2026-08-26 17:58:21"
     },
     {
       "id": 235,
@@ -2288,6 +2288,214 @@
       "estado_pago": null,
       "created_at": "2026-08-18 19:16:07",
       "updated_at": "2026-08-18 19:16:41"
+    },
+    {
+      "id": 237,
+      "estimacion": "4049",
+      "cliente": "Clorox",
+      "descripcion": "CORPOREOS HOLIDAY MEETING",
+      "presupuesto": 310200,
+      "costo": 220000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Agosto",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:33:08",
+      "updated_at": "2026-08-26 17:33:08"
+    },
+    {
+      "id": 238,
+      "estimacion": "4043",
+      "cliente": "Nutrisco",
+      "descripcion": " DESPACHO CAMPAÑA FLIP SEPTIEMBRE -MODERNO SPKM",
+      "presupuesto": 391000,
+      "costo": 224000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:34:14",
+      "updated_at": "2026-08-26 17:34:14"
+    },
+    {
+      "id": 239,
+      "estimacion": "4038",
+      "cliente": "Clorox",
+      "descripcion": "STOPPER WATERMELON",
+      "presupuesto": 703291,
+      "costo": 499500,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:35:25",
+      "updated_at": "2026-08-26 17:35:25"
+    },
+    {
+      "id": 240,
+      "estimacion": "4053",
+      "cliente": "Clorox",
+      "descripcion": "Despacho Extra Elementos HM",
+      "presupuesto": 266147,
+      "costo": 182750,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Agosto",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:36:36",
+      "updated_at": "2026-08-26 18:19:48"
+    },
+    {
+      "id": 241,
+      "estimacion": "4040",
+      "cliente": "P&G",
+      "descripcion": "EVENTO 4D OFICINA P&G",
+      "presupuesto": 21944720,
+      "costo": 13723097,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:38:50",
+      "updated_at": "2026-08-26 17:39:18"
+    },
+    {
+      "id": 242,
+      "estimacion": "3978",
+      "cliente": "Nutrisco",
+      "descripcion": "CAMPAÑA CANAL TT FLIP CONCURSO",
+      "presupuesto": 1595000,
+      "costo": 1100000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Agosto",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:40:17",
+      "updated_at": "2026-08-26 18:21:50"
+    },
+    {
+      "id": 243,
+      "estimacion": "4055",
+      "cliente": "Nutrisco",
+      "descripcion": "Activación Fisherman Teatro Zoco",
+      "presupuesto": 950400,
+      "costo": 389050,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:41:58",
+      "updated_at": "2026-08-26 17:41:58"
+    },
+    {
+      "id": 244,
+      "estimacion": "4054",
+      "cliente": "Nutrisco",
+      "descripcion": "CAMPAÑA SAN JOSE SABORES DEL MAR",
+      "presupuesto": 732550,
+      "costo": 490000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:43:12",
+      "updated_at": "2026-08-26 17:43:12"
+    },
+    {
+      "id": 245,
+      "estimacion": "4051",
+      "cliente": "P&G",
+      "descripcion": "LANZAMIENTO OFICINA HERBAL ESSENCE PITAHAYA",
+      "presupuesto": 9512944,
+      "costo": 7168728,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:44:17",
+      "updated_at": "2026-08-26 17:44:17"
+    },
+    {
+      "id": 246,
+      "estimacion": "4047",
+      "cliente": "IDB",
+      "descripcion": "Team Building Ferrero",
+      "presupuesto": 1512000,
+      "costo": 1000000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:50:50",
+      "updated_at": "2026-08-26 17:50:50"
+    },
+    {
+      "id": 247,
+      "estimacion": "4044",
+      "cliente": "Nutrisco",
+      "descripcion": "DESPACHO CAMPAÑA FLIP SEPTIEMBRE CANAL TRADICIONAL",
+      "presupuesto": 2093000,
+      "costo": 1241065,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:52:32",
+      "updated_at": "2026-08-26 17:53:17"
+    },
+    {
+      "id": 248,
+      "estimacion": "4062",
+      "cliente": "Clorox",
+      "descripcion": "ADICIONALES CONVENCION CLOROX ",
+      "presupuesto": 1164361,
+      "costo": 0,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 17:54:34",
+      "updated_at": "2026-08-26 17:54:34"
+    },
+    {
+      "id": 249,
+      "estimacion": "3989",
+      "cliente": "Conaf",
+      "descripcion": "Activación Conaf Sepriembre",
+      "presupuesto": 21840000,
+      "costo": 11450000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-26 18:17:11",
+      "updated_at": "2026-08-26 18:17:11"
     }
   ],
   "users": [
@@ -2308,6 +2516,12 @@
       "username": "coto",
       "role": "viewer",
       "nombre": "Coto"
+    },
+    {
+      "id": 4,
+      "username": "supervisor",
+      "role": "director",
+      "nombre": "Supervisor"
     }
   ],
   "scenarios": [
