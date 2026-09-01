@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-08-31T12:32:49.877Z",
+  "fecha": "2026-09-01T11:00:08.600Z",
   "events": [
     {
       "id": 93,
@@ -2127,7 +2127,7 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-08-25 20:40:07"
+      "updated_at": "2026-08-31 17:13:47"
     },
     {
       "id": 226,
@@ -2374,8 +2374,8 @@
       "estimacion": "3978",
       "cliente": "Nutrisco",
       "descripcion": "CAMPAÑA CANAL TT FLIP CONCURSO",
-      "presupuesto": 1595000,
-      "costo": 1100000,
+      "presupuesto": 5936700,
+      "costo": 3710000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Agosto",
@@ -2383,7 +2383,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:40:17",
-      "updated_at": "2026-08-26 18:21:50"
+      "updated_at": "2026-08-31 17:07:56"
     },
     {
       "id": 243,
@@ -2439,7 +2439,7 @@
       "cliente": "IDB",
       "descripcion": "Team Building Ferrero",
       "presupuesto": 1512000,
-      "costo": 1000000,
+      "costo": 800000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2447,7 +2447,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:50:50",
-      "updated_at": "2026-08-26 17:50:50"
+      "updated_at": "2026-08-31 17:12:23"
     },
     {
       "id": 247,
@@ -2496,6 +2496,54 @@
       "estado_pago": null,
       "created_at": "2026-08-26 18:17:11",
       "updated_at": "2026-08-26 18:17:11"
+    },
+    {
+      "id": 251,
+      "estimacion": "4065",
+      "cliente": "Minerva",
+      "descripcion": "RRHH ACTIVACION EMBAJADA DE BRASIL",
+      "presupuesto": 847504,
+      "costo": 624000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-31 16:57:14",
+      "updated_at": "2026-08-31 16:57:14"
+    },
+    {
+      "id": 252,
+      "estimacion": "4058",
+      "cliente": "Clorox",
+      "descripcion": "ADAPTACIONES BANNERS Y HERO CLOROX",
+      "presupuesto": 99000,
+      "costo": 0,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-31 16:58:21",
+      "updated_at": "2026-08-31 16:58:21"
+    },
+    {
+      "id": 253,
+      "estimacion": "4061",
+      "cliente": "Clorox",
+      "descripcion": "REIMPRESION CAMPAÑA SAN JOSE ATUN CANAL TRADICIONAL",
+      "presupuesto": 6539990,
+      "costo": 4820000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-08-31 17:03:36",
+      "updated_at": "2026-08-31 17:04:10"
     }
   ],
   "users": [
