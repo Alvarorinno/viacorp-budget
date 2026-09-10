@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-07T11:26:43.884Z",
+  "fecha": "2026-09-10T10:29:32.960Z",
   "events": [
     {
       "id": 93,
@@ -323,11 +323,11 @@
     },
     {
       "id": 113,
-      "estimacion": "3955",
+      "estimacion": "3995",
       "cliente": "Clorox",
       "descripcion": "PROPUESTA ACTIVIDAD ANUAL CLOROX OPCION HOTEL RENAISSANCE",
-      "presupuesto": 25721620,
-      "costo": 13591329,
+      "presupuesto": 24557258,
+      "costo": 13685724,
       "factura": "3536",
       "fecha_facturacion": "2026-08-04",
       "mes_evento": "Agosto",
@@ -335,7 +335,7 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-08-12 14:36:19"
+      "updated_at": "2026-09-07 12:58:50"
     },
     {
       "id": 114,
@@ -1064,14 +1064,14 @@
       "descripcion": "Evento Mascotas Julio 2026",
       "presupuesto": 3328598,
       "costo": 1802854,
-      "factura": null,
+      "factura": "3550",
       "fecha_facturacion": null,
       "mes_evento": "Julio",
       "mes_facturacion": null,
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-09-09 16:17:04"
     },
     {
       "id": 160,
@@ -1176,14 +1176,14 @@
       "descripcion": "CLOROX  FLYER HOLIDAY MEETING",
       "presupuesto": 654500,
       "costo": 450000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3547",
+      "fecha_facturacion": "2026-09-03",
       "mes_evento": "Julio",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:27",
-      "updated_at": "2026-08-12 14:36:27"
+      "updated_at": "2026-09-09 16:30:52"
     },
     {
       "id": 167,
@@ -1320,14 +1320,14 @@
       "descripcion": "Evento Mascotas Junio",
       "presupuesto": 8321494,
       "costo": 4657890,
-      "factura": null,
+      "factura": "3549",
       "fecha_facturacion": null,
       "mes_evento": "Junio",
       "mes_facturacion": null,
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:28",
-      "updated_at": "2026-08-12 14:36:28"
+      "updated_at": "2026-09-09 16:16:55"
     },
     {
       "id": 176,
@@ -2152,14 +2152,14 @@
       "descripcion": "STAND MINERVA ACTIVACION ESTACIONAMIENTO PUL",
       "presupuesto": 13614321,
       "costo": 9150410,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3545",
+      "fecha_facturacion": "2026-08-19",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Agosto",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-08-18 19:07:27"
+      "updated_at": "2026-09-09 16:19:31"
     },
     {
       "id": 229,
@@ -2167,7 +2167,7 @@
       "cliente": "Lenovo",
       "descripcion": "LENOVO CONGRESO CAMPUS CABALGATA",
       "presupuesto": 27140000,
-      "costo": 13691068,
+      "costo": 13679270,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2175,7 +2175,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-08-26 20:00:42"
+      "updated_at": "2026-09-07 13:05:17"
     },
     {
       "id": 230,
@@ -2216,14 +2216,14 @@
       "descripcion": "DESPACHO PRODUCTOS HOLIDAY-MEETING",
       "presupuesto": 112640,
       "costo": 80000,
-      "factura": null,
+      "factura": "3547",
       "fecha_facturacion": null,
       "mes_evento": "Agosto",
       "mes_facturacion": null,
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 18:54:22",
-      "updated_at": "2026-08-18 18:54:22"
+      "updated_at": "2026-09-09 16:30:59"
     },
     {
       "id": 233,
@@ -2232,14 +2232,14 @@
       "descripcion": "ESTANCIA 92 ACTIVACION SEPTIEMBRE TOTTUS",
       "presupuesto": 4879588,
       "costo": 3245920,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3544",
+      "fecha_facturacion": "2026-08-19",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Agosto",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 18:55:52",
-      "updated_at": "2026-08-18 18:55:52"
+      "updated_at": "2026-09-09 16:20:01"
     },
     {
       "id": 234,
@@ -2296,14 +2296,14 @@
       "descripcion": "CORPOREOS HOLIDAY MEETING",
       "presupuesto": 310200,
       "costo": 220000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3547",
+      "fecha_facturacion": "2026-09-03",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:33:08",
-      "updated_at": "2026-08-26 17:33:08"
+      "updated_at": "2026-09-09 16:31:35"
     },
     {
       "id": 238,
@@ -2328,14 +2328,14 @@
       "descripcion": "STOPPER WATERMELON",
       "presupuesto": 703291,
       "costo": 499500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3547",
+      "fecha_facturacion": "2026-09-03",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:35:25",
-      "updated_at": "2026-08-26 17:35:25"
+      "updated_at": "2026-09-09 16:31:15"
     },
     {
       "id": 240,
@@ -2392,14 +2392,14 @@
       "descripcion": "Activación Fisherman Teatro Zoco",
       "presupuesto": 950400,
       "costo": 389050,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3551",
+      "fecha_facturacion": "2026-09-09",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:41:58",
-      "updated_at": "2026-08-26 17:41:58"
+      "updated_at": "2026-09-09 17:32:21"
     },
     {
       "id": 244,
@@ -2486,8 +2486,8 @@
       "estimacion": "3989",
       "cliente": "Conaf",
       "descripcion": "Activación Conaf Sepriembre",
-      "presupuesto": 21840000,
-      "costo": 11450000,
+      "presupuesto": 23452800,
+      "costo": 11275576,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2495,7 +2495,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 18:17:11",
-      "updated_at": "2026-08-26 18:17:11"
+      "updated_at": "2026-09-07 19:38:37"
     },
     {
       "id": 251,
@@ -2536,14 +2536,14 @@
       "descripcion": "REIMPRESION CAMPAÑA SAN JOSE ATUN CANAL TRADICIONAL",
       "presupuesto": 6539990,
       "costo": 4820000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3548",
+      "fecha_facturacion": "2026-09-09",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-31 17:03:36",
-      "updated_at": "2026-08-31 17:04:10"
+      "updated_at": "2026-09-09 17:33:09"
     },
     {
       "id": 254,
