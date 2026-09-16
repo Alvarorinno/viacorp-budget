@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-13T11:00:11.891Z",
+  "fecha": "2026-09-16T10:45:49.701Z",
   "events": [
     {
       "id": 93,
@@ -2198,8 +2198,8 @@
       "estimacion": "4041",
       "cliente": "PyG",
       "descripcion": "MECANIZADO DOWNY Y ARIEL ",
-      "presupuesto": 1004506,
-      "costo": 212000,
+      "presupuesto": 1168769,
+      "costo": 355511,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Agosto",
@@ -2207,7 +2207,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-18 18:53:01",
-      "updated_at": "2026-08-18 18:53:01"
+      "updated_at": "2026-09-15 14:46:10"
     },
     {
       "id": 232,
@@ -2278,8 +2278,8 @@
       "estimacion": "4034",
       "cliente": "Gobierno",
       "descripcion": "EVENTO MASCOTAS AGOSTO 2026",
-      "presupuesto": 10212720,
-      "costo": 5408562,
+      "presupuesto": 5106360,
+      "costo": 2570285,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Agosto",
@@ -2287,7 +2287,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-18 19:16:07",
-      "updated_at": "2026-08-18 19:16:41"
+      "updated_at": "2026-09-15 14:47:52"
     },
     {
       "id": 237,
@@ -2358,8 +2358,8 @@
       "estimacion": "4040",
       "cliente": "P&G",
       "descripcion": "EVENTO 4D OFICINA P&G",
-      "presupuesto": 28420000,
-      "costo": 18911576,
+      "presupuesto": 30672600,
+      "costo": 17203900,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2367,15 +2367,15 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:38:50",
-      "updated_at": "2026-09-04 15:44:26"
+      "updated_at": "2026-09-15 15:08:39"
     },
     {
       "id": 242,
       "estimacion": "3978",
       "cliente": "Nutrisco",
       "descripcion": "CAMPAÑA CANAL TT FLIP CONCURSO",
-      "presupuesto": 5936700,
-      "costo": 3710000,
+      "presupuesto": 7273750,
+      "costo": 4729739,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Agosto",
@@ -2383,7 +2383,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:40:17",
-      "updated_at": "2026-08-31 17:07:56"
+      "updated_at": "2026-09-15 15:10:57"
     },
     {
       "id": 243,
@@ -2391,7 +2391,7 @@
       "cliente": "Nutrisco",
       "descripcion": "Activación Fisherman Teatro Zoco",
       "presupuesto": 950400,
-      "costo": 389050,
+      "costo": 403653,
       "factura": "3551",
       "fecha_facturacion": "2026-09-09",
       "mes_evento": "Septiembre",
@@ -2399,15 +2399,15 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:41:58",
-      "updated_at": "2026-09-09 17:32:21"
+      "updated_at": "2026-09-15 15:13:54"
     },
     {
       "id": 244,
       "estimacion": "4054",
       "cliente": "Nutrisco",
       "descripcion": "CAMPAÑA SAN JOSE SABORES DEL MAR",
-      "presupuesto": 732550,
-      "costo": 490000,
+      "presupuesto": 828230,
+      "costo": 554000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2415,15 +2415,15 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:43:12",
-      "updated_at": "2026-08-26 17:43:12"
+      "updated_at": "2026-09-15 15:15:13"
     },
     {
       "id": 245,
       "estimacion": "4051",
       "cliente": "P&G",
       "descripcion": "LANZAMIENTO OFICINA HERBAL ESSENCE PITAHAYA",
-      "presupuesto": 9512944,
-      "costo": 7168728,
+      "presupuesto": 7535349,
+      "costo": 4537028,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2431,7 +2431,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:44:17",
-      "updated_at": "2026-08-26 17:44:17"
+      "updated_at": "2026-09-15 15:16:31"
     },
     {
       "id": 246,
@@ -2486,8 +2486,8 @@
       "estimacion": "3989",
       "cliente": "Conaf",
       "descripcion": "Activación Conaf Sepriembre",
-      "presupuesto": 23452800,
-      "costo": 11275576,
+      "presupuesto": 24931200,
+      "costo": 9645576,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2495,7 +2495,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 18:17:11",
-      "updated_at": "2026-09-07 19:38:37"
+      "updated_at": "2026-09-15 15:02:01"
     },
     {
       "id": 251,
@@ -2535,7 +2535,7 @@
       "cliente": "Clorox",
       "descripcion": "REIMPRESION CAMPAÑA SAN JOSE ATUN CANAL TRADICIONAL",
       "presupuesto": 6539990,
-      "costo": 4820000,
+      "costo": 4796000,
       "factura": "3548",
       "fecha_facturacion": "2026-09-09",
       "mes_evento": "Septiembre",
@@ -2543,7 +2543,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-31 17:03:36",
-      "updated_at": "2026-09-09 17:33:09"
+      "updated_at": "2026-09-15 15:41:27"
     },
     {
       "id": 254,
@@ -2615,7 +2615,7 @@
       "cliente": "PyG",
       "descripcion": "Feria Alvi 2026",
       "presupuesto": 9723905,
-      "costo": 5839135,
+      "costo": 5769135,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -2623,15 +2623,15 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:55:00",
-      "updated_at": "2026-09-03 21:55:00"
+      "updated_at": "2026-09-15 15:31:13"
     },
     {
       "id": 259,
       "estimacion": "4076",
       "cliente": "PyG",
       "descripcion": "Evento de Capacitación Reyes del Negocio Vip",
-      "presupuesto": 21056000,
-      "costo": 14880000,
+      "presupuesto": 33122656,
+      "costo": 18264090,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2639,7 +2639,103 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:56:53",
-      "updated_at": "2026-09-03 21:56:53"
+      "updated_at": "2026-09-15 17:21:00"
+    },
+    {
+      "id": 260,
+      "estimacion": "4079",
+      "cliente": "Nutrisco",
+      "descripcion": "Adicional Teatro Zoco Fisherman",
+      "presupuesto": 385000,
+      "costo": 250000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-15 15:32:19",
+      "updated_at": "2026-09-15 15:32:19"
+    },
+    {
+      "id": 261,
+      "estimacion": "4084",
+      "cliente": "Minerva",
+      "descripcion": "ELEMENTOS EXTRAS PUL SEPTIEMBRE",
+      "presupuesto": 107640,
+      "costo": 72000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-15 15:34:15",
+      "updated_at": "2026-09-15 15:34:15"
+    },
+    {
+      "id": 262,
+      "estimacion": "4083",
+      "cliente": "Minerva",
+      "descripcion": "MATERIAL PUL WALMART EXTRA CENEFAS",
+      "presupuesto": 136563,
+      "costo": 95000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-15 15:35:21",
+      "updated_at": "2026-09-15 15:35:21"
+    },
+    {
+      "id": 263,
+      "estimacion": "4080",
+      "cliente": "PyG",
+      "descripcion": "Levantamiento Reyes del negocio",
+      "presupuesto": 1478400,
+      "costo": 1048000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-15 15:37:10",
+      "updated_at": "2026-09-15 15:37:33"
+    },
+    {
+      "id": 264,
+      "estimacion": "4057",
+      "cliente": "PAPA JHONS",
+      "descripcion": "Chupallas Septiembre",
+      "presupuesto": 268125,
+      "costo": 180000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-15 15:38:37",
+      "updated_at": "2026-09-15 15:38:37"
+    },
+    {
+      "id": 265,
+      "estimacion": "4093",
+      "cliente": "Gobierno",
+      "descripcion": "Mascotas Mes Septiembre",
+      "presupuesto": 6808480,
+      "costo": 3605798,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-15 15:40:42",
+      "updated_at": "2026-09-15 15:40:42"
     }
   ],
   "users": [
