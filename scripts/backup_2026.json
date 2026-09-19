@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-16T10:45:49.701Z",
+  "fecha": "2026-09-19T10:13:35.942Z",
   "events": [
     {
       "id": 93,
@@ -2143,7 +2143,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-08-18 19:11:18"
+      "updated_at": "2026-09-16 12:56:36"
     },
     {
       "id": 228,
@@ -2168,14 +2168,14 @@
       "descripcion": "LENOVO CONGRESO CAMPUS CABALGATA",
       "presupuesto": 27140000,
       "costo": 13679270,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3553",
+      "fecha_facturacion": "2026-09-11",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-09-07 13:05:17"
+      "updated_at": "2026-09-16 12:19:02"
     },
     {
       "id": 230,
@@ -2568,14 +2568,14 @@
       "descripcion": "GLORIFICADORES JACQUES & JANINE",
       "presupuesto": 1119235,
       "costo": 694220,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3559",
+      "fecha_facturacion": "2026-09-16",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:28:36",
-      "updated_at": "2026-09-03 21:29:38"
+      "updated_at": "2026-09-16 12:21:19"
     },
     {
       "id": 256,
