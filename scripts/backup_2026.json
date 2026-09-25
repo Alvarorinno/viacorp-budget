@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-22T10:52:07.347Z",
+  "fecha": "2026-09-25T11:01:25.359Z",
   "events": [
     {
       "id": 93,
@@ -327,7 +327,7 @@
       "cliente": "Clorox",
       "descripcion": "PROPUESTA ACTIVIDAD ANUAL CLOROX OPCION HOTEL RENAISSANCE",
       "presupuesto": 24557258,
-      "costo": 13685724,
+      "costo": 13709323,
       "factura": "3536",
       "fecha_facturacion": "2026-08-04",
       "mes_evento": "Agosto",
@@ -335,7 +335,7 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-09-07 12:58:50"
+      "updated_at": "2026-09-22 21:06:21"
     },
     {
       "id": 114,
@@ -1065,13 +1065,13 @@
       "presupuesto": 3328598,
       "costo": 1802854,
       "factura": "3550",
-      "fecha_facturacion": null,
+      "fecha_facturacion": "2026-09-09",
       "mes_evento": "Julio",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-09-09 16:17:04"
+      "updated_at": "2026-09-23 16:48:26"
     },
     {
       "id": 160,
@@ -1321,13 +1321,13 @@
       "presupuesto": 8321494,
       "costo": 4657890,
       "factura": "3549",
-      "fecha_facturacion": null,
+      "fecha_facturacion": "2026-09-09",
       "mes_evento": "Junio",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:28",
-      "updated_at": "2026-09-09 16:16:55"
+      "updated_at": "2026-09-23 16:48:15"
     },
     {
       "id": 176,
@@ -2167,7 +2167,7 @@
       "cliente": "Lenovo",
       "descripcion": "LENOVO CONGRESO CAMPUS CABALGATA",
       "presupuesto": 27140000,
-      "costo": 13679270,
+      "costo": 13829270,
       "factura": "3553",
       "fecha_facturacion": "2026-09-11",
       "mes_evento": "Septiembre",
@@ -2175,7 +2175,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-09-16 12:19:02"
+      "updated_at": "2026-09-23 21:11:31"
     },
     {
       "id": 230,
@@ -2504,14 +2504,14 @@
       "descripcion": "RRHH ACTIVACION EMBAJADA DE BRASIL",
       "presupuesto": 847504,
       "costo": 624000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3556",
+      "fecha_facturacion": "2026-09-10",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-31 16:57:14",
-      "updated_at": "2026-08-31 16:57:14"
+      "updated_at": "2026-09-24 22:01:39"
     },
     {
       "id": 252,
@@ -2552,14 +2552,14 @@
       "descripcion": "MATERIAL PUL WALMART",
       "presupuesto": 815201,
       "costo": 519000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3557",
+      "fecha_facturacion": "2026-09-10",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:24:51",
-      "updated_at": "2026-09-03 21:24:51"
+      "updated_at": "2026-09-24 22:01:07"
     },
     {
       "id": 255,
