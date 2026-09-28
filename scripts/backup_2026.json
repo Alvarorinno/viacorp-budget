@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-25T11:01:25.359Z",
+  "fecha": "2026-09-28T12:45:58.986Z",
   "events": [
     {
       "id": 93,
@@ -333,9 +333,9 @@
       "mes_evento": "Agosto",
       "mes_facturacion": "Agosto",
       "por_cobrar": null,
-      "estado_pago": "SALDO X FACTURAR",
+      "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-09-22 21:06:21"
+      "updated_at": "2026-09-26 12:20:16"
     },
     {
       "id": 114,
