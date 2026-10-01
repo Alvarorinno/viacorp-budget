@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-28T12:45:58.986Z",
+  "fecha": "2026-10-01T12:19:43.721Z",
   "events": [
     {
       "id": 93,
@@ -392,14 +392,14 @@
       "descripcion": "GRUPO VALDIVIESO DUMMIERS PATAGON",
       "presupuesto": 289834,
       "costo": 204600,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3578",
+      "fecha_facturacion": "2026-09-29",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:20",
-      "updated_at": "2026-08-12 14:36:20"
+      "updated_at": "2026-09-29 15:50:31"
     },
     {
       "id": 118,
@@ -408,14 +408,14 @@
       "descripcion": "IMPLEMENTACION CAMBIO BASTIDOR DOWNY LA MARGOT",
       "presupuesto": 296800,
       "costo": 100000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3576",
+      "fecha_facturacion": "2026-09-29",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:20",
-      "updated_at": "2026-08-12 14:36:20"
+      "updated_at": "2026-09-29 15:42:12"
     },
     {
       "id": 119,
@@ -424,14 +424,14 @@
       "descripcion": "DESPACHO VITRINA PG MULTIMARCA ",
       "presupuesto": 72800,
       "costo": 50000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3577",
+      "fecha_facturacion": "2026-09-29",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:20",
-      "updated_at": "2026-08-12 14:36:20"
+      "updated_at": "2026-09-29 15:42:31"
     },
     {
       "id": 120,
@@ -1128,14 +1128,14 @@
       "descripcion": "AJUSTE ADAPTACIONES CLOROX ",
       "presupuesto": 148500,
       "costo": 0,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3574",
+      "fecha_facturacion": "2026-09-22",
       "mes_evento": "Julio",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-09-30 16:35:03"
     },
     {
       "id": 164,
@@ -2134,8 +2134,8 @@
       "estimacion": "3968",
       "cliente": "Clorox",
       "descripcion": "EVENTO INNOVATION 2026 OFICINAS CLOROX",
-      "presupuesto": 17761874,
-      "costo": 11444500,
+      "presupuesto": 15577681,
+      "costo": 9483949,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2143,7 +2143,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-09-16 12:56:36"
+      "updated_at": "2026-09-28 21:06:30"
     },
     {
       "id": 228,
@@ -2167,7 +2167,7 @@
       "cliente": "Lenovo",
       "descripcion": "LENOVO CONGRESO CAMPUS CABALGATA",
       "presupuesto": 27140000,
-      "costo": 13829270,
+      "costo": 13948270,
       "factura": "3553",
       "fecha_facturacion": "2026-09-11",
       "mes_evento": "Septiembre",
@@ -2175,7 +2175,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-09-23 21:11:31"
+      "updated_at": "2026-09-29 20:32:11"
     },
     {
       "id": 230,
@@ -2264,14 +2264,14 @@
       "descripcion": "VIBRINES LIVEMORE",
       "presupuesto": 265320,
       "costo": 174000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3539",
+      "fecha_facturacion": "2026-08-22",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Agosto",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 19:05:38",
-      "updated_at": "2026-08-18 19:05:38"
+      "updated_at": "2026-09-30 14:55:07"
     },
     {
       "id": 236,
@@ -2280,14 +2280,14 @@
       "descripcion": "EVENTO MASCOTAS AGOSTO 2026",
       "presupuesto": 5106360,
       "costo": 2570285,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3579",
+      "fecha_facturacion": "2026-09-29",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 19:16:07",
-      "updated_at": "2026-09-15 14:47:52"
+      "updated_at": "2026-09-29 16:51:35"
     },
     {
       "id": 237,
@@ -2358,8 +2358,8 @@
       "estimacion": "4040",
       "cliente": "P&G",
       "descripcion": "EVENTO 4D OFICINA P&G",
-      "presupuesto": 30672600,
-      "costo": 17203900,
+      "presupuesto": 34267800,
+      "costo": 14843900,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2367,7 +2367,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:38:50",
-      "updated_at": "2026-09-15 15:08:39"
+      "updated_at": "2026-09-28 21:08:08"
     },
     {
       "id": 242,
@@ -2376,14 +2376,14 @@
       "descripcion": "CAMPAÑA CANAL TT FLIP CONCURSO",
       "presupuesto": 7273750,
       "costo": 4729739,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3572",
+      "fecha_facturacion": "2026-09-25",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:40:17",
-      "updated_at": "2026-09-15 15:10:57"
+      "updated_at": "2026-09-29 16:51:03"
     },
     {
       "id": 243,
@@ -2422,8 +2422,8 @@
       "estimacion": "4051",
       "cliente": "P&G",
       "descripcion": "LANZAMIENTO OFICINA HERBAL ESSENCE PITAHAYA",
-      "presupuesto": 7535349,
-      "costo": 4537028,
+      "presupuesto": 7273750,
+      "costo": 4729739,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2431,7 +2431,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:44:17",
-      "updated_at": "2026-09-15 15:16:31"
+      "updated_at": "2026-09-28 21:11:10"
     },
     {
       "id": 246,
@@ -2470,24 +2470,24 @@
       "estimacion": "4062",
       "cliente": "Clorox",
       "descripcion": "ADICIONALES CONVENCION CLOROX ",
-      "presupuesto": 1164361,
+      "presupuesto": 1280797,
       "costo": 0,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3574",
+      "fecha_facturacion": "2026-09-29",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:54:34",
-      "updated_at": "2026-08-26 17:54:34"
+      "updated_at": "2026-09-29 16:59:32"
     },
     {
       "id": 249,
       "estimacion": "3989",
       "cliente": "Conaf",
       "descripcion": "Activación Conaf Sepriembre",
-      "presupuesto": 24931200,
-      "costo": 9645576,
+      "presupuesto": 24976000,
+      "costo": 9239580,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2495,7 +2495,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 18:17:11",
-      "updated_at": "2026-09-15 15:02:01"
+      "updated_at": "2026-09-28 19:27:31"
     },
     {
       "id": 251,
@@ -2584,14 +2584,14 @@
       "descripcion": "EXTRAS MINERVA PUL ACTIVIDADES SEPTIEMBRE STAND ",
       "presupuesto": 1136603,
       "costo": 771960,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3555",
+      "fecha_facturacion": "2026-09-10",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:49:41",
-      "updated_at": "2026-09-03 21:49:41"
+      "updated_at": "2026-09-29 16:53:16"
     },
     {
       "id": 257,
@@ -2630,8 +2630,8 @@
       "estimacion": "4076",
       "cliente": "PyG",
       "descripcion": "Evento de Capacitación Reyes del Negocio Vip",
-      "presupuesto": 33122656,
-      "costo": 18264090,
+      "presupuesto": 32983104,
+      "costo": 18119856,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2639,7 +2639,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:56:53",
-      "updated_at": "2026-09-15 17:21:00"
+      "updated_at": "2026-09-29 20:50:35"
     },
     {
       "id": 260,
@@ -2648,14 +2648,14 @@
       "descripcion": "Adicional Teatro Zoco Fisherman",
       "presupuesto": 385000,
       "costo": 250000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3575",
+      "fecha_facturacion": "2026-09-29",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-15 15:32:19",
-      "updated_at": "2026-09-15 15:32:19"
+      "updated_at": "2026-09-29 17:01:18"
     },
     {
       "id": 261,
@@ -2664,14 +2664,14 @@
       "descripcion": "ELEMENTOS EXTRAS PUL SEPTIEMBRE",
       "presupuesto": 107640,
       "costo": 72000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3581",
+      "fecha_facturacion": "2026-09-30",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:34:15",
-      "updated_at": "2026-09-15 15:34:15"
+      "updated_at": "2026-09-30 17:49:10"
     },
     {
       "id": 262,
@@ -2680,14 +2680,14 @@
       "descripcion": "MATERIAL PUL WALMART EXTRA CENEFAS",
       "presupuesto": 136563,
       "costo": 95000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3554",
+      "fecha_facturacion": "2026-09-10",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Septiembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-15 15:35:21",
-      "updated_at": "2026-09-15 15:35:21"
+      "updated_at": "2026-09-29 16:53:43"
     },
     {
       "id": 263,
@@ -2711,7 +2711,7 @@
       "cliente": "PAPA JHONS",
       "descripcion": "Chupallas Septiembre",
       "presupuesto": 268125,
-      "costo": 180000,
+      "costo": 225500,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2719,7 +2719,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:38:37",
-      "updated_at": "2026-09-15 15:38:37"
+      "updated_at": "2026-09-28 21:16:54"
     },
     {
       "id": 265,
@@ -2736,6 +2736,198 @@
       "estado_pago": null,
       "created_at": "2026-09-15 15:40:42",
       "updated_at": "2026-09-15 15:40:42"
+    },
+    {
+      "id": 266,
+      "estimacion": "4086",
+      "cliente": "Clorox",
+      "descripcion": "CABECERAS PREMIUM CAMPAÑA WATERMELON-CLOROGEL",
+      "presupuesto": 1685112,
+      "costo": 1267090,
+      "factura": "3574",
+      "fecha_facturacion": "2026-09-22",
+      "mes_evento": "Septiembre",
+      "mes_facturacion": "Septiembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-09-28 21:20:59",
+      "updated_at": "2026-09-30 16:34:48"
+    },
+    {
+      "id": 267,
+      "estimacion": "4082",
+      "cliente": "Clorox",
+      "descripcion": "Gift Card Regalos Concursos Septiembre",
+      "presupuesto": 4234890,
+      "costo": 3780900,
+      "factura": "4563",
+      "fecha_facturacion": "2026-09-22",
+      "mes_evento": "Septiembre",
+      "mes_facturacion": "Septiembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-09-28 21:22:22",
+      "updated_at": "2026-09-30 16:28:48"
+    },
+    {
+      "id": 268,
+      "estimacion": "4094",
+      "cliente": "Nutrisco",
+      "descripcion": "Campaña Cook Green",
+      "presupuesto": 18655876,
+      "costo": 12390000,
+      "factura": "3571",
+      "fecha_facturacion": "2026-09-25",
+      "mes_evento": "Septiembre",
+      "mes_facturacion": "Septiembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-09-28 21:23:48",
+      "updated_at": "2026-09-30 17:20:14"
+    },
+    {
+      "id": 269,
+      "estimacion": "4091",
+      "cliente": "P&G",
+      "descripcion": "REYES DEL NEGOCIO VIP PLACA CONMEMORATIVA- PASAPORTE",
+      "presupuesto": 5285280,
+      "costo": 3182400,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:24:48",
+      "updated_at": "2026-09-28 21:24:48"
+    },
+    {
+      "id": 270,
+      "estimacion": "4066",
+      "cliente": "Lenovo",
+      "descripcion": "EVENTO LENOBO TAB PRO",
+      "presupuesto": 21080378,
+      "costo": 13625653,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:27:16",
+      "updated_at": "2026-09-28 21:27:16"
+    },
+    {
+      "id": 271,
+      "estimacion": "4045",
+      "cliente": "Lenovo",
+      "descripcion": "EVENTO LANZAMIENTO WORKSTATION P4 LENOVO 2026 ",
+      "presupuesto": 11445950,
+      "costo": 7031300,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:29:36",
+      "updated_at": "2026-09-28 21:29:36"
+    },
+    {
+      "id": 272,
+      "estimacion": "4098",
+      "cliente": "Minerva",
+      "descripcion": "COMPRA CARNE ESTANCIA 92 TOTTUS",
+      "presupuesto": 1080834,
+      "costo": 939856,
+      "factura": "3562",
+      "fecha_facturacion": "2026-09-22",
+      "mes_evento": "Septiembre",
+      "mes_facturacion": "Septiembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-09-28 21:36:51",
+      "updated_at": "2026-09-30 17:49:56"
+    },
+    {
+      "id": 273,
+      "estimacion": "4097",
+      "cliente": "Minerva",
+      "descripcion": "COMPRA CARNE STAND PUL WALMART-SMU",
+      "presupuesto": 826303,
+      "costo": 718524,
+      "factura": "3561",
+      "fecha_facturacion": "2026-09-22",
+      "mes_evento": "Septiembre",
+      "mes_facturacion": "Septiembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-09-28 21:37:44",
+      "updated_at": "2026-09-29 16:55:01"
+    },
+    {
+      "id": 274,
+      "estimacion": "4095",
+      "cliente": "Municipalidad de Colina",
+      "descripcion": "EVENTO EL DIA DE LAS MASCOTAS ",
+      "presupuesto": 1213250,
+      "costo": 627888,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:39:18",
+      "updated_at": "2026-09-28 21:39:35"
+    },
+    {
+      "id": 275,
+      "estimacion": "4099",
+      "cliente": "Clorox",
+      "descripcion": "ETIQUETAS CLOROX-POETT WOLVERINE",
+      "presupuesto": 837844,
+      "costo": 599850,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:40:43",
+      "updated_at": "2026-09-28 21:40:43"
+    },
+    {
+      "id": 276,
+      "estimacion": "4104",
+      "cliente": "Clorox",
+      "descripcion": "DESPACHO NOVICIADO- ENTREGA CLOROX",
+      "presupuesto": 165000,
+      "costo": 60000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:42:06",
+      "updated_at": "2026-09-28 21:42:06"
+    },
+    {
+      "id": 277,
+      "estimacion": "4072",
+      "cliente": "P&G",
+      "descripcion": "REYES DEL NEGOCIO VIP ETAPA INICIAL",
+      "presupuesto": 52817360,
+      "costo": 32519660,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-09-28 21:46:13",
+      "updated_at": "2026-09-29 15:37:27"
     }
   ],
   "users": [
@@ -2765,6 +2957,38 @@
     }
   ],
   "scenarios": [
+    {
+      "id": 9,
+      "year": 2025,
+      "name": "Break Even",
+      "amount": 33800000,
+      "color": "green",
+      "sort_order": 1
+    },
+    {
+      "id": 10,
+      "year": 2025,
+      "name": "Promedio Histórico",
+      "amount": 39500000,
+      "color": "blue",
+      "sort_order": 2
+    },
+    {
+      "id": 11,
+      "year": 2025,
+      "name": "Promedio + 15%",
+      "amount": 45425000,
+      "color": "yellow",
+      "sort_order": 3
+    },
+    {
+      "id": 12,
+      "year": 2025,
+      "name": "2023",
+      "amount": 55000000,
+      "color": "orange",
+      "sort_order": 4
+    },
     {
       "id": 1,
       "year": 2026,
