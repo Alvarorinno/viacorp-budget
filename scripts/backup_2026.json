@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-01T12:19:43.721Z",
+  "fecha": "2026-10-04T11:42:45.666Z",
   "events": [
     {
       "id": 93,
@@ -2136,14 +2136,14 @@
       "descripcion": "EVENTO INNOVATION 2026 OFICINAS CLOROX",
       "presupuesto": 15577681,
       "costo": 9483949,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3583",
+      "fecha_facturacion": "2026-10-01",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-09-28 21:06:30"
+      "updated_at": "2026-10-02 16:36:45"
     },
     {
       "id": 228,
@@ -2488,14 +2488,14 @@
       "descripcion": "Activación Conaf Sepriembre",
       "presupuesto": 24976000,
       "costo": 9239580,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3584",
+      "fecha_facturacion": "2026-10-02",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 18:17:11",
-      "updated_at": "2026-09-28 19:27:31"
+      "updated_at": "2026-10-02 16:45:59"
     },
     {
       "id": 251,
