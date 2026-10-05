@@ -81,7 +81,7 @@ export default function Layout({ page, setPage, children }: Props) {
               {user?.role === 'director' ? 'Director' :
                user?.role === 'viewer'   ? 'Solo lectura' :
                user?.role === 'eventos'  ? 'Eventos' :
-               'Gte. Finanzas'}
+               'Ejecutiva cuenta'}
             </span>
           </div>
           <button
