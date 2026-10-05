@@ -69,7 +69,7 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
 
   const isDirector = user?.role === 'director';
   const isFinance  = user?.role === 'finanzas';
-  const isViewer   = user?.role === 'viewer';
+  const isViewer   = user?.role === 'viewer' || user?.role === 'eventos';
 
   const load = () => getEvents().then(setEvents).finally(() => setLoading(false));
   useEffect(() => { load(); }, []);

@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso para crear eventos' });
+  if (!['director'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso para crear eventos' });
   const { estimacion, cliente, descripcion, presupuesto, costo, mes_evento } = req.body;
   if (!cliente) return res.status(400).json({ error: 'Cliente es requerido' });
   if (isDirectorMonthLocked(mes_evento)) {
@@ -49,7 +49,7 @@ router.put('/:id', async (req, res) => {
   const id = Number(req.params.id);
   const existing = (await sql`SELECT * FROM events WHERE id = ${id}`)[0];
   if (!existing) return res.status(404).json({ error: 'Evento no encontrado' });
-  if (req.user.role === 'viewer') return res.status(403).json({ error: 'Sin permiso para editar' });
+  if (['viewer', 'eventos'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso para editar' });
 
   // Bloqueo temporal: directores no pueden editar meses cerrados (antes del mes anterior al actual)
   if (req.user.role === 'director' && isDirectorMonthLocked(existing.mes_evento)) {
@@ -77,7 +77,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-  if (req.user.role !== 'director') return res.status(403).json({ error: 'Sin permiso' });
+  if (!['director'].includes(req.user.role)) return res.status(403).json({ error: 'Sin permiso' });
   try {
     await sql`DELETE FROM events WHERE id = ${Number(req.params.id)}`;
     res.json({ ok: true });

@@ -14,7 +14,10 @@ export default function Layout({ page, setPage, children }: Props) {
   const { user, logout } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const navItems = [
+  const isEventosOnly = user?.role === 'eventos';
+  const navItems = isEventosOnly ? [
+    { id: 'events' as Page, label: 'Eventos / Proyectos', icon: Table2 },
+  ] : [
     { id: 'dashboard' as Page, label: 'Dashboard', icon: BarChart3 },
     { id: 'events' as Page, label: 'Eventos / Proyectos', icon: Table2 },
     ...(['director', 'viewer'].includes(user?.role ?? '')
@@ -72,9 +75,13 @@ export default function Layout({ page, setPage, children }: Props) {
             <span className={`text-xs px-2 py-0.5 rounded-full mt-1 inline-block ${
               user?.role === 'director' ? 'bg-amber-500/20 text-amber-300' :
               user?.role === 'viewer'   ? 'bg-purple-500/20 text-purple-300' :
+              user?.role === 'eventos'  ? 'bg-sky-500/20 text-sky-300' :
                                           'bg-emerald-500/20 text-emerald-300'
             }`}>
-              {user?.role === 'director' ? 'Director' : user?.role === 'viewer' ? 'Solo lectura' : 'Gte. Finanzas'}
+              {user?.role === 'director' ? 'Director' :
+               user?.role === 'viewer'   ? 'Solo lectura' :
+               user?.role === 'eventos'  ? 'Eventos' :
+               'Gte. Finanzas'}
             </span>
           </div>
           <button
