@@ -19,7 +19,7 @@ export interface Event {
 export interface User {
   id: number;
   username: string;
-  role: 'director' | 'finanzas' | 'viewer';
+  role: 'director' | 'finanzas' | 'viewer' | 'eventos';
   nombre: string;
 }
 
