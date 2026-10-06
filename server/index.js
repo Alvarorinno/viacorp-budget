@@ -28,6 +28,17 @@ app.use('/api/events', eventsRouter);
 app.use('/api/stats', statsRouter);
 app.use('/api/budget', budgetRouter);
 app.use('/api/report', reportRouter);
+app.get('/api/setup/create-lucia', async (req, res) => {
+  if (req.query.secret !== 'setup_lucia_2026') return res.status(403).json({ error: 'Forbidden' });
+  try {
+    const { default: sql } = await import('./db.js');
+    await sql`INSERT INTO users (username, password, role, nombre)
+      VALUES ('lucia', 'LU123', 'eventos', 'Lucia')
+      ON CONFLICT (username) DO UPDATE SET password = 'LU123', role = 'eventos', nombre = 'Lucia'`;
+    const users = await sql`SELECT id, username, role, nombre FROM users ORDER BY id`;
+    res.json({ ok: true, users });
+  } catch (err) { res.status(500).json({ error: String(err) }); }
+});
 app.get('/api/health', (_, res) => res.json({ ok: true, platform: isVercel ? 'vercel' : 'local' }));
 
 if (isProd && !isVercel) {

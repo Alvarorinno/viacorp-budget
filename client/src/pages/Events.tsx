@@ -67,9 +67,9 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
   const [formError, setFormError] = useState('');
   const [editError, setEditError] = useState('');
 
-  const isDirector = user?.role === 'director';
+  const isDirector = user?.role === 'director' || user?.role === 'eventos';
   const isFinance  = user?.role === 'finanzas';
-  const isViewer   = user?.role === 'viewer' || user?.role === 'eventos';
+  const isViewer   = user?.role === 'viewer';
 
   const load = () => getEvents().then(setEvents).finally(() => setLoading(false));
   useEffect(() => { load(); }, []);
