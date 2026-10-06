@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { getEvents, updateEvent, createEvent, deleteEvent } from '../api';
 import { useAuth } from '../context/AuthContext';
 import type { Event } from '../types';
-import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown, AlertCircle } from 'lucide-react';
+import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown, AlertCircle, Download } from 'lucide-react';
 
 const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 const fmtCLP = (n: number | null) => n != null ? `$${n.toLocaleString('es-CL')}` : '—';
@@ -104,6 +104,34 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
     });
     return data;
   }, [events, search, filterMonth, filterClient, filterFactura, sort]);
+
+  const exportExcel = async () => {
+    const XLSX = await import('xlsx');
+    const rows = filtered.map(e => ({
+      'Estim.': e.estimacion ?? '',
+      'Cliente': e.cliente,
+      'Descripción': e.descripcion ?? '',
+      'Mes Evento': e.mes_evento ?? '',
+      'Presupuesto': e.presupuesto,
+      'Costo': e.costo,
+      'MB $': e.mb,
+      'MB %': e.presupuesto > 0 ? e.mb / e.presupuesto : '',
+      'Factura': e.factura ?? '',
+      'Fec. Fact.': e.fecha_facturacion ? fmtDate(e.fecha_facturacion) : '',
+      'Mes Fact.': e.fecha_facturacion || e.mes_facturacion ? mesFact(e) : '',
+      'Estado Pago': e.estado_pago ?? '',
+    }));
+    const ws = XLSX.utils.json_to_sheet(rows);
+    ws['!cols'] = [8, 24, 40, 14, 14, 14, 14, 8, 14, 12, 12, 14].map(wch => ({ wch }));
+    const range = XLSX.utils.decode_range(ws['!ref'] || 'A1');
+    for (let r = 1; r <= range.e.r; r++) {
+      for (const c of [4, 5, 6]) { const cell = ws[XLSX.utils.encode_cell({ r, c })]; if (cell) cell.z = '"$"#,##0'; }
+      const pct = ws[XLSX.utils.encode_cell({ r, c: 7 })]; if (pct && typeof pct.v === 'number') pct.z = '0.0%';
+    }
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Eventos');
+    XLSX.writeFile(wb, `eventos_proyectos_${new Date().toISOString().slice(0, 10)}.xlsx`);
+  };
 
   const handleSort = (key: SortKey) => {
     setSort(prev => prev.key === key ? { key, dir: prev.dir === 'asc' ? 'desc' : 'asc' } : { key, dir: 'asc' });
@@ -223,14 +251,23 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
           </div>
           <span className="text-xs text-gray-400">{filtered.length} registros</span>
         </div>
-        {isDirector && (
+        <div className="flex items-center gap-2">
           <button
-            onClick={() => setShowNew(true)}
-            className="flex items-center gap-2 bg-brand-800 hover:bg-brand-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            onClick={exportExcel}
+            disabled={filtered.length === 0}
+            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            <Plus size={16} /> Nuevo Evento
+            <Download size={16} /> Descargar Excel
           </button>
-        )}
+          {isDirector && (
+            <button
+              onClick={() => setShowNew(true)}
+              className="flex items-center gap-2 bg-brand-800 hover:bg-brand-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              <Plus size={16} /> Nuevo Evento
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Leyenda roles */}

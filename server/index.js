@@ -30,19 +30,6 @@ app.use('/api/budget', budgetRouter);
 app.use('/api/report', reportRouter);
 app.get('/api/health', (_, res) => res.json({ ok: true, platform: isVercel ? 'vercel' : 'local' }));
 
-// Endpoint temporal — crear usuario alejandra (eliminar después de usar)
-app.get('/api/setup/create-alejandra', async (req, res) => {
-  if (req.query.secret !== 'setup_ale_2026') return res.status(403).json({ error: 'Forbidden' });
-  try {
-    const { default: sql } = await import('./db.js');
-    await sql`INSERT INTO users (username, password, role, nombre)
-      VALUES ('alejandra', 'ale2026', 'eventos', 'Alejandra Hormazabal')
-      ON CONFLICT (username) DO UPDATE SET password = 'ale2026', role = 'eventos', nombre = 'Alejandra Hormazabal'`;
-    const users = await sql`SELECT id, username, role, nombre FROM users ORDER BY id`;
-    res.json({ ok: true, users });
-  } catch (err) { res.status(500).json({ error: String(err) }); }
-});
-
 if (isProd && !isVercel) {
   const distPath = join(__dirname, '../client/dist');
   app.use(express.static(distPath));
