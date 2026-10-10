@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-07T12:33:09.676Z",
+  "fecha": "2026-10-10T11:48:59.612Z",
   "events": [
     {
       "id": 93,
@@ -1663,7 +1663,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:31",
-      "updated_at": "2026-08-12 14:36:31"
+      "updated_at": "2026-10-08 21:05:33"
     },
     {
       "id": 197,
@@ -2143,7 +2143,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-10-02 16:36:45"
+      "updated_at": "2026-10-07 20:40:01"
     },
     {
       "id": 228,
@@ -2436,18 +2436,18 @@
     {
       "id": 246,
       "estimacion": "4047",
-      "cliente": "IDB",
+      "cliente": "ICB",
       "descripcion": "Team Building Ferrero",
       "presupuesto": 1512000,
       "costo": 800000,
-      "factura": null,
+      "factura": "3592",
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
       "mes_facturacion": null,
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:50:50",
-      "updated_at": "2026-08-31 17:12:23"
+      "updated_at": "2026-10-08 21:07:15"
     },
     {
       "id": 247,
@@ -2600,14 +2600,14 @@
       "descripcion": "ADICIONALES CHOCOLATES PREMIOS ",
       "presupuesto": 154000,
       "costo": 133000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3593",
+      "fecha_facturacion": "2026-10-07",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:53:39",
-      "updated_at": "2026-09-03 21:53:39"
+      "updated_at": "2026-10-08 21:05:19"
     },
     {
       "id": 258,
@@ -2630,7 +2630,7 @@
       "estimacion": "4076",
       "cliente": "PyG",
       "descripcion": "Evento de Capacitación Reyes del Negocio Vip",
-      "presupuesto": 33194280,
+      "presupuesto": 32981480,
       "costo": 18140948,
       "factura": "3591",
       "fecha_facturacion": "2026-10-06",
@@ -2639,7 +2639,7 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-09-03 21:56:53",
-      "updated_at": "2026-10-06 18:42:42"
+      "updated_at": "2026-10-07 13:20:06"
     },
     {
       "id": 260,
@@ -2790,8 +2790,8 @@
       "estimacion": "4091",
       "cliente": "P&G",
       "descripcion": "REYES DEL NEGOCIO VIP PLACA CONMEMORATIVA- PASAPORTE",
-      "presupuesto": 5285280,
-      "costo": 3182400,
+      "presupuesto": 5496667,
+      "costo": 3302400,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2799,15 +2799,15 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:24:48",
-      "updated_at": "2026-09-28 21:24:48"
+      "updated_at": "2026-10-08 17:43:49"
     },
     {
       "id": 270,
       "estimacion": "4066",
       "cliente": "Lenovo",
       "descripcion": "EVENTO LENOBO TAB PRO",
-      "presupuesto": 21502888,
-      "costo": 13956763,
+      "presupuesto": 22080000,
+      "costo": 14512528,
       "factura": "3582",
       "fecha_facturacion": "2026-09-30",
       "mes_evento": "Septiembre",
@@ -2815,7 +2815,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:27:16",
-      "updated_at": "2026-10-06 15:06:17"
+      "updated_at": "2026-10-07 15:23:27"
     },
     {
       "id": 271,
@@ -3008,6 +3008,38 @@
       "estado_pago": null,
       "created_at": "2026-10-05 19:47:00",
       "updated_at": "2026-10-05 19:47:00"
+    },
+    {
+      "id": 284,
+      "estimacion": "4116",
+      "cliente": "minerva",
+      "descripcion": "MINERVA ESTANCIA 92 MATERIAL POP TOTTUS OCTUBRE",
+      "presupuesto": 923.183,
+      "costo": 640.8,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-08 17:36:05",
+      "updated_at": "2026-10-08 17:36:05"
+    },
+    {
+      "id": 285,
+      "estimacion": "4048",
+      "cliente": "Nutrisco",
+      "descripcion": "NUTRISCO GANCHERA COLGANTE FLIP-UNDERFIVE",
+      "presupuesto": 264371,
+      "costo": 189990,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-08 17:39:07",
+      "updated_at": "2026-10-08 17:39:07"
     }
   ],
   "users": [
