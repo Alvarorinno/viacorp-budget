@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-13T13:26:30.551Z",
+  "fecha": "2026-10-16T10:34:57.265Z",
   "events": [
     {
       "id": 93,
@@ -2103,7 +2103,7 @@
       "cliente": "PyG",
       "descripcion": "VIAJE BRASIL GILLETE- NOVIEMBRE V2",
       "presupuesto": 107928544,
-      "costo": 66409320,
+      "costo": 66233940,
       "factura": "3530",
       "fecha_facturacion": null,
       "mes_evento": "Noviembre",
@@ -2111,7 +2111,7 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-10-06 16:41:00"
+      "updated_at": "2026-10-15 20:09:17"
     },
     {
       "id": 225,
@@ -2356,10 +2356,10 @@
     {
       "id": 241,
       "estimacion": "4110",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "EVENTO 4D OFICINA P&G",
-      "presupuesto": 32067896,
-      "costo": 16474052,
+      "presupuesto": 45312456,
+      "costo": 28956746,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2367,7 +2367,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:38:50",
-      "updated_at": "2026-10-12 23:38:19"
+      "updated_at": "2026-10-15 18:55:46"
     },
     {
       "id": 242,
@@ -2614,8 +2614,8 @@
       "estimacion": "4074",
       "cliente": "PyG",
       "descripcion": "Feria Alvi 2026",
-      "presupuesto": 9723905,
-      "costo": 5769135,
+      "presupuesto": 11883203,
+      "costo": 7037980,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -2623,7 +2623,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:55:00",
-      "updated_at": "2026-09-15 15:31:13"
+      "updated_at": "2026-10-15 20:12:37"
     },
     {
       "id": 259,
@@ -2639,7 +2639,7 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-09-03 21:56:53",
-      "updated_at": "2026-10-07 13:20:06"
+      "updated_at": "2026-10-15 18:54:30"
     },
     {
       "id": 260,
@@ -2695,7 +2695,7 @@
       "cliente": "PyG",
       "descripcion": "Levantamiento Reyes del negocio",
       "presupuesto": 1478400,
-      "costo": 1048000,
+      "costo": 1035000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2703,7 +2703,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:37:10",
-      "updated_at": "2026-09-15 15:37:33"
+      "updated_at": "2026-10-13 15:04:11"
     },
     {
       "id": 264,
@@ -2726,8 +2726,8 @@
       "estimacion": "4093",
       "cliente": "Gobierno",
       "descripcion": "Mascotas Mes Septiembre",
-      "presupuesto": 6808480,
-      "costo": 3605798,
+      "presupuesto": 8321494,
+      "costo": 4655895,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2735,7 +2735,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:40:42",
-      "updated_at": "2026-09-15 15:40:42"
+      "updated_at": "2026-10-15 17:13:22"
     },
     {
       "id": 266,
@@ -2807,7 +2807,7 @@
       "cliente": "Lenovo",
       "descripcion": "EVENTO LENOBO TAB PRO",
       "presupuesto": 22080000,
-      "costo": 14512528,
+      "costo": 14759028,
       "factura": "3582",
       "fecha_facturacion": "2026-09-30",
       "mes_evento": "Septiembre",
@@ -2815,7 +2815,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:27:16",
-      "updated_at": "2026-10-07 15:23:27"
+      "updated_at": "2026-10-13 15:08:25"
     },
     {
       "id": 271,
@@ -2887,7 +2887,7 @@
       "cliente": "Clorox",
       "descripcion": "DESPACHO NOVICIADO- ENTREGA CLOROX",
       "presupuesto": 165000,
-      "costo": 60000,
+      "costo": 80000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2895,7 +2895,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:42:06",
-      "updated_at": "2026-09-28 21:42:06"
+      "updated_at": "2026-10-13 14:56:22"
     },
     {
       "id": 277,
@@ -3014,16 +3014,16 @@
       "estimacion": "4116",
       "cliente": "minerva",
       "descripcion": "MINERVA ESTANCIA 92 MATERIAL POP TOTTUS OCTUBRE",
-      "presupuesto": 923.183,
-      "costo": 640.8,
+      "presupuesto": 923183,
+      "costo": 640800,
       "factura": null,
       "fecha_facturacion": null,
-      "mes_evento": "Septiembre",
+      "mes_evento": "Octubre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-08 17:36:05",
-      "updated_at": "2026-10-08 17:36:05"
+      "updated_at": "2026-10-13 15:18:09"
     },
     {
       "id": 285,
@@ -3056,6 +3056,86 @@
       "estado_pago": null,
       "created_at": "2026-10-12 23:41:17",
       "updated_at": "2026-10-12 23:41:17"
+    },
+    {
+      "id": 287,
+      "estimacion": "4107",
+      "cliente": "clorox",
+      "descripcion": "FLEJERAS CARTULINA CLOROX-POETT",
+      "presupuesto": 156306,
+      "costo": 111950,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-13 14:54:12",
+      "updated_at": "2026-10-13 14:54:12"
+    },
+    {
+      "id": 288,
+      "estimacion": "4106",
+      "cliente": "CLOROX",
+      "descripcion": "ETIQUETAS CLOROX MAGNOLIAS",
+      "presupuesto": 258456,
+      "costo": 184500,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-13 14:55:37",
+      "updated_at": "2026-10-13 14:55:37"
+    },
+    {
+      "id": 289,
+      "estimacion": "4059",
+      "cliente": "FAUNABTL",
+      "descripcion": "18 DE SEPTIEMBRE LA CASA 2026",
+      "presupuesto": 1641340,
+      "costo": 1646738,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Septiembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-13 15:10:03",
+      "updated_at": "2026-10-13 15:10:03"
+    },
+    {
+      "id": 290,
+      "estimacion": "4121",
+      "cliente": "CLOROX",
+      "descripcion": "CLOROX STOPPER WATERMELON OCT",
+      "presupuesto": 344977,
+      "costo": 224900,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-13 15:13:52",
+      "updated_at": "2026-10-13 15:15:23"
+    },
+    {
+      "id": 291,
+      "estimacion": "4119",
+      "cliente": "TS GROUP",
+      "descripcion": "ARREGLO ELEMENTOS TS GROUP",
+      "presupuesto": 186048,
+      "costo": 127780,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-13 15:15:05",
+      "updated_at": "2026-10-14 15:17:40"
     }
   ],
   "users": [
