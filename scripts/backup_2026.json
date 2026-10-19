@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-16T10:34:57.265Z",
+  "fecha": "2026-10-19T11:57:48.464Z",
   "events": [
     {
       "id": 93,
@@ -2344,14 +2344,14 @@
       "descripcion": "Despacho Extra Elementos HM",
       "presupuesto": 266147,
       "costo": 182750,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3597",
+      "fecha_facturacion": "2026-10-15",
       "mes_evento": "Agosto",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:36:36",
-      "updated_at": "2026-08-26 18:19:48"
+      "updated_at": "2026-10-16 17:37:57"
     },
     {
       "id": 241,
@@ -3016,14 +3016,14 @@
       "descripcion": "MINERVA ESTANCIA 92 MATERIAL POP TOTTUS OCTUBRE",
       "presupuesto": 923183,
       "costo": 640800,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3596",
+      "fecha_facturacion": "2026-10-13",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-08 17:36:05",
-      "updated_at": "2026-10-13 15:18:09"
+      "updated_at": "2026-10-16 17:40:10"
     },
     {
       "id": 285,
@@ -3064,14 +3064,14 @@
       "descripcion": "FLEJERAS CARTULINA CLOROX-POETT",
       "presupuesto": 156306,
       "costo": 111950,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3594",
+      "fecha_facturacion": "2026-10-13",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-13 14:54:12",
-      "updated_at": "2026-10-13 14:54:12"
+      "updated_at": "2026-10-16 17:39:40"
     },
     {
       "id": 288,
@@ -3112,14 +3112,14 @@
       "descripcion": "CLOROX STOPPER WATERMELON OCT",
       "presupuesto": 344977,
       "costo": 224900,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3597",
+      "fecha_facturacion": "2026-10-15",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-13 15:13:52",
-      "updated_at": "2026-10-13 15:15:23"
+      "updated_at": "2026-10-16 17:38:10"
     },
     {
       "id": 291,
