@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-22T11:03:26.841Z",
+  "fecha": "2026-10-25T10:36:35.279Z",
   "events": [
     {
       "id": 93,
@@ -2119,7 +2119,7 @@
       "cliente": "Motorola",
       "descripcion": "VIAJE SAO PAULO A LA F1 -MOTOROLA",
       "presupuesto": 276943260,
-      "costo": 215798000,
+      "costo": 216538110,
       "factura": "3534",
       "fecha_facturacion": "2026-08-19",
       "mes_evento": "Noviembre",
@@ -2127,7 +2127,7 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-08-31 17:13:47"
+      "updated_at": "2026-10-22 19:12:38"
     },
     {
       "id": 226,
@@ -2135,7 +2135,7 @@
       "cliente": "Clorox",
       "descripcion": "EVENTO INNOVATION 2026 OFICINAS CLOROX",
       "presupuesto": 15577681,
-      "costo": 7294227,
+      "costo": 7418603,
       "factura": "3583",
       "fecha_facturacion": "2026-10-01",
       "mes_evento": "Septiembre",
@@ -2143,7 +2143,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-10-12 23:45:32"
+      "updated_at": "2026-10-22 17:01:28"
     },
     {
       "id": 228,
@@ -2358,8 +2358,8 @@
       "estimacion": "4110",
       "cliente": "PYG",
       "descripcion": "EVENTO 4D OFICINA P&G",
-      "presupuesto": 45312456,
-      "costo": 28956746,
+      "presupuesto": 39395516,
+      "costo": 22410748,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2367,7 +2367,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:38:50",
-      "updated_at": "2026-10-15 18:55:46"
+      "updated_at": "2026-10-22 17:05:05"
     },
     {
       "id": 242,
@@ -2394,12 +2394,12 @@
       "costo": 403653,
       "factura": "3551",
       "fecha_facturacion": "2026-09-09",
-      "mes_evento": "Septiembre",
+      "mes_evento": "Agosto",
       "mes_facturacion": "Septiembre",
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:41:58",
-      "updated_at": "2026-09-15 15:13:54"
+      "updated_at": "2026-10-22 19:05:46"
     },
     {
       "id": 244,
@@ -2410,20 +2410,20 @@
       "costo": 554000,
       "factura": "3565",
       "fecha_facturacion": "2026-09-22",
-      "mes_evento": "Septiembre",
+      "mes_evento": "Agosto",
       "mes_facturacion": "Septiembre",
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:43:12",
-      "updated_at": "2026-10-06 15:20:25"
+      "updated_at": "2026-10-22 19:06:05"
     },
     {
       "id": 245,
       "estimacion": "4051",
       "cliente": "P&G",
       "descripcion": "LANZAMIENTO OFICINA HERBAL ESSENCE PITAHAYA",
-      "presupuesto": 7273750,
-      "costo": 4729739,
+      "presupuesto": 7305749,
+      "costo": 4130822,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2431,7 +2431,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:44:17",
-      "updated_at": "2026-09-28 21:11:10"
+      "updated_at": "2026-10-22 17:06:46"
     },
     {
       "id": 246,
@@ -2442,12 +2442,12 @@
       "costo": 800000,
       "factura": "3592",
       "fecha_facturacion": null,
-      "mes_evento": "Septiembre",
+      "mes_evento": "Agosto",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:50:50",
-      "updated_at": "2026-10-08 21:07:15"
+      "updated_at": "2026-10-22 19:15:50"
     },
     {
       "id": 247,
@@ -2727,7 +2727,7 @@
       "cliente": "Gobierno",
       "descripcion": "Mascotas Mes Septiembre",
       "presupuesto": 8321494,
-      "costo": 4655895,
+      "costo": 4559125,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2735,7 +2735,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:40:42",
-      "updated_at": "2026-10-15 17:13:22"
+      "updated_at": "2026-10-22 17:12:13"
     },
     {
       "id": 266,
@@ -2794,12 +2794,12 @@
       "costo": 3302400,
       "factura": null,
       "fecha_facturacion": null,
-      "mes_evento": "Septiembre",
+      "mes_evento": "Octubre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:24:48",
-      "updated_at": "2026-10-08 17:43:49"
+      "updated_at": "2026-10-22 16:27:16"
     },
     {
       "id": 270,
@@ -3034,12 +3034,12 @@
       "costo": 189990,
       "factura": null,
       "fecha_facturacion": null,
-      "mes_evento": "Septiembre",
+      "mes_evento": "Octubre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-08 17:39:07",
-      "updated_at": "2026-10-08 17:39:07"
+      "updated_at": "2026-10-22 16:42:25"
     },
     {
       "id": 286,
@@ -3143,7 +3143,7 @@
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO EXPO INCLUSION",
       "presupuesto": 1373091,
-      "costo": 640796,
+      "costo": 827696,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3151,7 +3151,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:37:36",
-      "updated_at": "2026-10-20 16:20:37"
+      "updated_at": "2026-10-22 16:35:04"
     },
     {
       "id": 293,
@@ -3159,7 +3159,7 @@
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO FERIA LABORAL FEN U. DE CHILE",
       "presupuesto": 324800,
-      "costo": 170000,
+      "costo": 140000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3167,7 +3167,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:38:27",
-      "updated_at": "2026-10-20 15:38:27"
+      "updated_at": "2026-10-22 16:36:16"
     },
     {
       "id": 294,
@@ -3175,7 +3175,7 @@
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO MATEO BOCELLI",
       "presupuesto": 845600,
-      "costo": 214396,
+      "costo": 226195,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3183,15 +3183,15 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:39:26",
-      "updated_at": "2026-10-20 15:39:26"
+      "updated_at": "2026-10-22 16:37:11"
     },
     {
       "id": 295,
       "estimacion": "4142",
       "cliente": "P&G",
       "descripcion": "STAND GILLETTE 2026",
-      "presupuesto": 20999440,
-      "costo": 11394166,
+      "presupuesto": 21609840,
+      "costo": 12669564,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3199,7 +3199,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:40:11",
-      "updated_at": "2026-10-20 23:12:11"
+      "updated_at": "2026-10-22 16:34:03"
     },
     {
       "id": 296,
@@ -3232,6 +3232,70 @@
       "estado_pago": null,
       "created_at": "2026-10-20 15:41:46",
       "updated_at": "2026-10-20 15:41:46"
+    },
+    {
+      "id": 298,
+      "estimacion": "4137",
+      "cliente": "Clorox",
+      "descripcion": "CLOROX CHEQUE ALVI",
+      "presupuesto": 99968,
+      "costo": 73290,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-22 16:21:27",
+      "updated_at": "2026-10-22 16:21:27"
+    },
+    {
+      "id": 299,
+      "estimacion": "4153",
+      "cliente": "CLOROX",
+      "descripcion": "CLOROX CABECERA PREMIUM PUENTE ALTO",
+      "presupuesto": 226622,
+      "costo": 162000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-22 16:22:12",
+      "updated_at": "2026-10-22 16:22:12"
+    },
+    {
+      "id": 300,
+      "estimacion": "4155",
+      "cliente": "LENOVO",
+      "descripcion": "LENOVO EVENTO INDUSTRIA RED HAT 2026",
+      "presupuesto": 1091530,
+      "costo": 519132,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-22 16:23:00",
+      "updated_at": "2026-10-22 16:23:00"
+    },
+    {
+      "id": 301,
+      "estimacion": "4067",
+      "cliente": "NUTRISCO",
+      "descripcion": "NUTRISCO CAMPAA NUTRISA NO SELLOS PARTE 1",
+      "presupuesto": 1045000,
+      "costo": 500000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-22 16:28:26",
+      "updated_at": "2026-10-22 16:28:46"
     }
   ],
   "users": [
