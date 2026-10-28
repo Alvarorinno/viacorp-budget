@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-25T10:36:35.279Z",
+  "fecha": "2026-10-28T12:01:10.624Z",
   "events": [
     {
       "id": 93,
@@ -2359,7 +2359,7 @@
       "cliente": "PYG",
       "descripcion": "EVENTO 4D OFICINA P&G",
       "presupuesto": 39395516,
-      "costo": 22410748,
+      "costo": 22657992,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2367,7 +2367,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:38:50",
-      "updated_at": "2026-10-22 17:05:05"
+      "updated_at": "2026-10-27 00:16:21"
     },
     {
       "id": 242,
@@ -2727,7 +2727,7 @@
       "cliente": "Gobierno",
       "descripcion": "Mascotas Mes Septiembre",
       "presupuesto": 8321494,
-      "costo": 4559125,
+      "costo": 5280130,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
@@ -2735,7 +2735,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:40:42",
-      "updated_at": "2026-10-22 17:12:13"
+      "updated_at": "2026-10-26 15:13:49"
     },
     {
       "id": 266,
@@ -2888,14 +2888,14 @@
       "descripcion": "DESPACHO NOVICIADO- ENTREGA CLOROX",
       "presupuesto": 165000,
       "costo": 80000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3603",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:42:06",
-      "updated_at": "2026-10-13 14:56:22"
+      "updated_at": "2026-10-26 18:44:32"
     },
     {
       "id": 277,
@@ -2920,14 +2920,14 @@
       "descripcion": "Regalo diplomas",
       "presupuesto": 260040,
       "costo": 213940,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3608",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-05 19:34:55",
-      "updated_at": "2026-10-05 19:34:55"
+      "updated_at": "2026-10-26 18:40:27"
     },
     {
       "id": 279,
@@ -2936,14 +2936,14 @@
       "descripcion": "Despacho Campaña Cookgreen",
       "presupuesto": 1861275,
       "costo": 1291561,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3605",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-05 19:36:41",
-      "updated_at": "2026-10-05 19:36:41"
+      "updated_at": "2026-10-26 18:40:49"
     },
     {
       "id": 280,
@@ -2968,14 +2968,14 @@
       "descripcion": "MARKET CAMBIO DE GRAFICAS",
       "presupuesto": 285727,
       "costo": 188500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3608",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PAGADO",
       "created_at": "2026-10-05 19:41:57",
-      "updated_at": "2026-10-05 19:41:57"
+      "updated_at": "2026-10-26 18:41:28"
     },
     {
       "id": 282,
@@ -3032,14 +3032,14 @@
       "descripcion": "NUTRISCO GANCHERA COLGANTE FLIP-UNDERFIVE",
       "presupuesto": 264371,
       "costo": 189990,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3607",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-08 17:39:07",
-      "updated_at": "2026-10-22 16:42:25"
+      "updated_at": "2026-10-26 18:40:05"
     },
     {
       "id": 286,
@@ -3048,14 +3048,14 @@
       "descripcion": "ESTANCIA 92 ACTIVACION OCTUBRE TOTTUS",
       "presupuesto": 5999012,
       "costo": 3955600,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3604",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-12 23:41:17",
-      "updated_at": "2026-10-12 23:41:17"
+      "updated_at": "2026-10-26 18:48:47"
     },
     {
       "id": 287,
@@ -3080,14 +3080,14 @@
       "descripcion": "ETIQUETAS CLOROX MAGNOLIAS",
       "presupuesto": 258456,
       "costo": 184500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3603",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-13 14:55:37",
-      "updated_at": "2026-10-13 14:55:37"
+      "updated_at": "2026-10-26 18:44:43"
     },
     {
       "id": 289,
@@ -3096,14 +3096,14 @@
       "descripcion": "18 DE SEPTIEMBRE LA CASA 2026",
       "presupuesto": 1641340,
       "costo": 1646738,
-      "factura": null,
+      "factura": "3001",
       "fecha_facturacion": null,
       "mes_evento": "Septiembre",
       "mes_facturacion": null,
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-13 15:10:03",
-      "updated_at": "2026-10-13 15:10:03"
+      "updated_at": "2026-10-26 18:48:16"
     },
     {
       "id": 290,
@@ -3128,14 +3128,14 @@
       "descripcion": "ARREGLO ELEMENTOS TS GROUP",
       "presupuesto": 186048,
       "costo": 127780,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3601",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-13 15:15:05",
-      "updated_at": "2026-10-14 15:17:40"
+      "updated_at": "2026-10-26 18:43:29"
     },
     {
       "id": 292,
@@ -3191,7 +3191,7 @@
       "cliente": "P&G",
       "descripcion": "STAND GILLETTE 2026",
       "presupuesto": 21609840,
-      "costo": 12669564,
+      "costo": 12858355,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3199,7 +3199,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:40:11",
-      "updated_at": "2026-10-22 16:34:03"
+      "updated_at": "2026-10-26 13:40:01"
     },
     {
       "id": 296,
@@ -3208,14 +3208,14 @@
       "descripcion": "NUTRISCO FLYER LIVEMORE",
       "presupuesto": 99619,
       "costo": 68900,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3602",
+      "fecha_facturacion": "2026-10-21",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PAGADO",
       "created_at": "2026-10-20 15:41:04",
-      "updated_at": "2026-10-20 15:41:04"
+      "updated_at": "2026-10-26 18:41:49"
     },
     {
       "id": 297,
@@ -3296,6 +3296,54 @@
       "estado_pago": null,
       "created_at": "2026-10-22 16:28:26",
       "updated_at": "2026-10-22 16:28:46"
+    },
+    {
+      "id": 302,
+      "estimacion": "4163",
+      "cliente": "Banco Estado",
+      "descripcion": "FERIA CONVENIO EDIFICIO BICENTENARIO",
+      "presupuesto": 324800,
+      "costo": 110000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-26 13:41:39",
+      "updated_at": "2026-10-26 13:41:39"
+    },
+    {
+      "id": 303,
+      "estimacion": "4141",
+      "cliente": "Nutrisco",
+      "descripcion": "ESQUINEROS ATUN SAN JOSE",
+      "presupuesto": 1788160,
+      "costo": 1280000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-26 13:43:17",
+      "updated_at": "2026-10-26 13:43:17"
+    },
+    {
+      "id": 304,
+      "estimacion": "4162",
+      "cliente": "Nutrisco",
+      "descripcion": "LOMO NAVE SMOOTHIE LIVEMORE SPID ",
+      "presupuesto": 87120,
+      "costo": 62500,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-26 13:44:28",
+      "updated_at": "2026-10-26 13:44:28"
     }
   ],
   "users": [
