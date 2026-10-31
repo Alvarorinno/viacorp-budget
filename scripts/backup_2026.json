@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-28T12:01:10.624Z",
+  "fecha": "2026-10-31T11:36:57.503Z",
   "events": [
     {
       "id": 93,
@@ -2424,14 +2424,14 @@
       "descripcion": "LANZAMIENTO OFICINA HERBAL ESSENCE PITAHAYA",
       "presupuesto": 7305749,
       "costo": 4130822,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3609",
+      "fecha_facturacion": "2026-10-29",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:44:17",
-      "updated_at": "2026-10-22 17:06:46"
+      "updated_at": "2026-10-29 19:10:11"
     },
     {
       "id": 246,
@@ -2791,7 +2791,7 @@
       "cliente": "P&G",
       "descripcion": "REYES DEL NEGOCIO VIP PLACA CONMEMORATIVA- PASAPORTE",
       "presupuesto": 5496667,
-      "costo": 3302400,
+      "costo": 3892380,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -2799,7 +2799,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:24:48",
-      "updated_at": "2026-10-22 16:27:16"
+      "updated_at": "2026-10-30 17:09:58"
     },
     {
       "id": 270,
@@ -3143,7 +3143,7 @@
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO EXPO INCLUSION",
       "presupuesto": 1373091,
-      "costo": 827696,
+      "costo": 693590,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3151,7 +3151,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:37:36",
-      "updated_at": "2026-10-22 16:35:04"
+      "updated_at": "2026-10-29 14:53:29"
     },
     {
       "id": 293,
@@ -3159,7 +3159,7 @@
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO FERIA LABORAL FEN U. DE CHILE",
       "presupuesto": 324800,
-      "costo": 140000,
+      "costo": 0,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3167,15 +3167,15 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:38:27",
-      "updated_at": "2026-10-22 16:36:16"
+      "updated_at": "2026-10-30 17:14:13"
     },
     {
       "id": 294,
       "estimacion": "4144",
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO MATEO BOCELLI",
-      "presupuesto": 845600,
-      "costo": 226195,
+      "presupuesto": 677600,
+      "costo": 117994,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3183,7 +3183,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:39:26",
-      "updated_at": "2026-10-22 16:37:11"
+      "updated_at": "2026-10-29 14:54:18"
     },
     {
       "id": 295,
@@ -3199,7 +3199,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:40:11",
-      "updated_at": "2026-10-26 13:40:01"
+      "updated_at": "2026-10-30 17:15:33"
     },
     {
       "id": 296,
@@ -3240,14 +3240,14 @@
       "descripcion": "CLOROX CHEQUE ALVI",
       "presupuesto": 99968,
       "costo": 73290,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3610",
+      "fecha_facturacion": "2026-10-29",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-22 16:21:27",
-      "updated_at": "2026-10-22 16:21:27"
+      "updated_at": "2026-10-29 19:10:46"
     },
     {
       "id": 299,
@@ -3270,8 +3270,8 @@
       "estimacion": "4155",
       "cliente": "LENOVO",
       "descripcion": "LENOVO EVENTO INDUSTRIA RED HAT 2026",
-      "presupuesto": 1091530,
-      "costo": 519132,
+      "presupuesto": 1135530,
+      "costo": 517388,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3279,7 +3279,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-22 16:23:00",
-      "updated_at": "2026-10-22 16:23:00"
+      "updated_at": "2026-10-29 14:51:46"
     },
     {
       "id": 301,
@@ -3303,7 +3303,7 @@
       "cliente": "Banco Estado",
       "descripcion": "FERIA CONVENIO EDIFICIO BICENTENARIO",
       "presupuesto": 324800,
-      "costo": 110000,
+      "costo": 136195,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3311,7 +3311,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-26 13:41:39",
-      "updated_at": "2026-10-26 13:41:39"
+      "updated_at": "2026-10-29 14:49:57"
     },
     {
       "id": 303,
@@ -3320,14 +3320,14 @@
       "descripcion": "ESQUINEROS ATUN SAN JOSE",
       "presupuesto": 1788160,
       "costo": 1280000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3611",
+      "fecha_facturacion": "2026-10-29",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-26 13:43:17",
-      "updated_at": "2026-10-26 13:43:17"
+      "updated_at": "2026-10-29 19:11:22"
     },
     {
       "id": 304,
@@ -3344,6 +3344,102 @@
       "estado_pago": null,
       "created_at": "2026-10-26 13:44:28",
       "updated_at": "2026-10-26 13:44:28"
+    },
+    {
+      "id": 305,
+      "estimacion": "4176",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "BANCO ESTADO CONCIERTO CAMILOCOMBO TORTUGA",
+      "presupuesto": 5960080,
+      "costo": 3266452,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-29 14:46:02",
+      "updated_at": "2026-10-30 17:18:08"
+    },
+    {
+      "id": 306,
+      "estimacion": "4175",
+      "cliente": "PYG",
+      "descripcion": "STAND GILLETTE CLARO ARENA 2026",
+      "presupuesto": 14164058,
+      "costo": 6977174,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-29 14:47:07",
+      "updated_at": "2026-10-30 17:19:27"
+    },
+    {
+      "id": 307,
+      "estimacion": "4170",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "FEE OCTUBRE 2026 BANCO ESTADO",
+      "presupuesto": 1862401,
+      "costo": 750000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-29 14:47:52",
+      "updated_at": "2026-10-29 14:47:52"
+    },
+    {
+      "id": 308,
+      "estimacion": "4168",
+      "cliente": "MINERVA",
+      "descripcion": "MINERVA ESTANCIA 92 STOPPER",
+      "presupuesto": 59133,
+      "costo": 37800,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-29 14:48:35",
+      "updated_at": "2026-10-29 14:48:35"
+    },
+    {
+      "id": 310,
+      "estimacion": "4159",
+      "cliente": "LENOVO",
+      "descripcion": "TRAINING INTERNO LENOVO",
+      "presupuesto": 1001000,
+      "costo": 424550,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-29 14:50:56",
+      "updated_at": "2026-10-29 14:50:56"
+    },
+    {
+      "id": 311,
+      "estimacion": "4149",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "BANCO ESTADO PREMIACIN 100 LIDERES MAYORES",
+      "presupuesto": 3172960,
+      "costo": 1881030,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-10-29 14:52:52",
+      "updated_at": "2026-10-29 14:52:52"
     }
   ],
   "users": [
