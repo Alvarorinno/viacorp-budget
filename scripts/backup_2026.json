@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-04T13:42:17.764Z",
+  "fecha": "2026-11-07T12:20:54.415Z",
   "events": [
     {
       "id": 93,
@@ -2103,7 +2103,7 @@
       "cliente": "PyG",
       "descripcion": "VIAJE BRASIL GILLETE- NOVIEMBRE V2",
       "presupuesto": 110347744,
-      "costo": 70725930,
+      "costo": 70775930,
       "factura": "3530",
       "fecha_facturacion": null,
       "mes_evento": "Noviembre",
@@ -2111,7 +2111,7 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-11-02 16:15:13"
+      "updated_at": "2026-11-04 15:34:21"
     },
     {
       "id": 225,
@@ -2127,7 +2127,7 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-11-02 16:16:09"
+      "updated_at": "2026-11-04 15:33:11"
     },
     {
       "id": 226,
@@ -2520,14 +2520,14 @@
       "descripcion": "ADAPTACIONES BANNERS Y HERO CLOROX",
       "presupuesto": 99000,
       "costo": 0,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3610",
+      "fecha_facturacion": "2026-10-29",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Octubre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-31 16:58:21",
-      "updated_at": "2026-08-31 16:58:21"
+      "updated_at": "2026-11-05 18:07:01"
     },
     {
       "id": 253,
@@ -2615,7 +2615,7 @@
       "cliente": "P&G",
       "descripcion": "Feria Alvi 2026",
       "presupuesto": 11883203,
-      "costo": 7037980,
+      "costo": 7371444,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -2623,7 +2623,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:55:00",
-      "updated_at": "2026-10-20 16:23:39"
+      "updated_at": "2026-11-04 18:47:32"
     },
     {
       "id": 259,
@@ -3000,14 +3000,14 @@
       "descripcion": "GLORIFICADORES JACQUES JANINE NO MORE FRIZZ",
       "presupuesto": 1127000,
       "costo": 705000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3613",
+      "fecha_facturacion": "2026-11-04",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-05 19:47:00",
-      "updated_at": "2026-10-05 19:47:00"
+      "updated_at": "2026-11-05 18:07:42"
     },
     {
       "id": 284,
@@ -3142,7 +3142,7 @@
       "estimacion": "4148",
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO EXPO INCLUSION",
-      "presupuesto": 1373091,
+      "presupuesto": 879200,
       "costo": 693590,
       "factura": null,
       "fecha_facturacion": null,
@@ -3151,7 +3151,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:37:36",
-      "updated_at": "2026-10-29 14:53:29"
+      "updated_at": "2026-11-06 21:18:26"
     },
     {
       "id": 293,
@@ -3350,8 +3350,8 @@
       "estimacion": "4176",
       "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO CONCIERTO CAMILOCOMBO TORTUGA",
-      "presupuesto": 5960080,
-      "costo": 3366452,
+      "presupuesto": 6051920,
+      "costo": 3419428,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3359,7 +3359,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:46:02",
-      "updated_at": "2026-11-02 16:11:08"
+      "updated_at": "2026-11-04 15:04:14"
     },
     {
       "id": 306,
@@ -3367,7 +3367,7 @@
       "cliente": "PYG",
       "descripcion": "STAND GILLETTE CLARO ARENA 2026",
       "presupuesto": 14164058,
-      "costo": 8527174,
+      "costo": 8558470,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3375,7 +3375,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:47:07",
-      "updated_at": "2026-11-02 16:10:37"
+      "updated_at": "2026-11-04 15:05:42"
     },
     {
       "id": 307,
@@ -3430,8 +3430,8 @@
       "estimacion": "4149",
       "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO PREMIACIN 100 LIDERES MAYORES",
-      "presupuesto": 3172960,
-      "costo": 1792191,
+      "presupuesto": 3253555,
+      "costo": 2176026,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3439,7 +3439,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:52:52",
-      "updated_at": "2026-11-02 16:06:55"
+      "updated_at": "2026-11-04 17:44:23"
     },
     {
       "id": 312,
@@ -3447,7 +3447,7 @@
       "cliente": "BANCO ESTADO",
       "descripcion": "CONGRESO EJERCITO 3 Y 4 NOVIEMBRE",
       "presupuesto": 1404480,
-      "costo": 577994,
+      "costo": 515000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3455,7 +3455,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-02 15:58:13",
-      "updated_at": "2026-11-02 15:58:13"
+      "updated_at": "2026-11-04 15:08:51"
     },
     {
       "id": 313,
@@ -3463,7 +3463,7 @@
       "cliente": "BANCO ESTADO ",
       "descripcion": "BANCO ESTADO CONCIERTO TAEMIN",
       "presupuesto": 845600,
-      "costo": 243997,
+      "costo": 320000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3471,7 +3471,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-02 16:00:08",
-      "updated_at": "2026-11-02 16:00:08"
+      "updated_at": "2026-11-04 15:09:45"
     },
     {
       "id": 314,
@@ -3511,7 +3511,7 @@
       "cliente": "Lenovo",
       "descripcion": "ACTIVACIÓN MALL PZA VESPUCIO - TAB NOVIEMBRE",
       "presupuesto": 24476870,
-      "costo": 17014384,
+      "costo": 13747975,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Noviembre",
@@ -3519,7 +3519,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-03 23:48:16",
-      "updated_at": "2026-11-03 23:48:16"
+      "updated_at": "2026-11-06 21:20:05"
     },
     {
       "id": 317,
@@ -3536,6 +3536,102 @@
       "estado_pago": null,
       "created_at": "2026-11-03 23:50:21",
       "updated_at": "2026-11-03 23:50:21"
+    },
+    {
+      "id": 318,
+      "estimacion": "4190",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "BANCO ESTADO FERIA LABORAL INACAP 10 Y 11 NOV",
+      "presupuesto": 593600,
+      "costo": 252390,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-04 15:27:48",
+      "updated_at": "2026-11-04 15:27:48"
+    },
+    {
+      "id": 319,
+      "estimacion": "4188",
+      "cliente": "CLOROX",
+      "descripcion": "CLOROX ENTREGA PREMIO FERIA ALVI",
+      "presupuesto": 400400,
+      "costo": 280000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-04 15:28:28",
+      "updated_at": "2026-11-04 15:28:28"
+    },
+    {
+      "id": 320,
+      "estimacion": "4186",
+      "cliente": "CLOROX",
+      "descripcion": "CLOROX STOPPER WATERMELON NOVIEMBRE",
+      "presupuesto": 829442,
+      "costo": 562250,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-04 15:29:11",
+      "updated_at": "2026-11-04 15:29:11"
+    },
+    {
+      "id": 321,
+      "estimacion": "4183",
+      "cliente": "BANCOESTADO",
+      "descripcion": "EXPO BIENESTAR GENDARMERIA DE CHILE",
+      "presupuesto": 1070720,
+      "costo": 582607,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-04 15:29:56",
+      "updated_at": "2026-11-04 15:29:56"
+    },
+    {
+      "id": 322,
+      "estimacion": "4181",
+      "cliente": "P&G",
+      "descripcion": "ENVIOS INFLUENCER GILLETTE Y SECRET",
+      "presupuesto": 235200,
+      "costo": 58997,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-04 15:30:35",
+      "updated_at": "2026-11-04 15:30:35"
+    },
+    {
+      "id": 323,
+      "estimacion": "4191",
+      "cliente": "Banco Estado",
+      "descripcion": "FERIA LABORAL USACH 11 NOV",
+      "presupuesto": 324800,
+      "costo": 126195,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-04 18:36:00",
+      "updated_at": "2026-11-04 18:36:00"
     }
   ],
   "users": [
