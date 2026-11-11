@@ -31,6 +31,10 @@ const mesFact = (e: Event) =>
 const currentMonthIdx = new Date().getMonth();
 const minEditableIdx  = currentMonthIdx - 1; // mes anterior inclusive es editable
 
+// Proyectos que siguen editables aunque su mes esté cerrado
+const LOCK_EXEMPT = ['3884', '3968', '4066'];
+const isLockExempt = (e: Event) => LOCK_EXEMPT.includes(String(e.estimacion ?? '').trim());
+
 const isDirectorMonthLocked = (mes_evento: string | null | undefined): boolean => {
   if (!mes_evento) return false;
   const idx = MONTHS.indexOf(mes_evento);
@@ -38,6 +42,8 @@ const isDirectorMonthLocked = (mes_evento: string | null | undefined): boolean =
 };
 
 // Meses disponibles para crear nuevos eventos (director): solo desde mes anterior en adelante
+const isEventLocked = (e: Event) => !isLockExempt(e) && isDirectorMonthLocked(e.mes_evento);
+
 const EDITABLE_MONTHS = MONTHS.filter((_, idx) => idx >= minEditableIdx);
 
 const EMPTY: Partial<Event> = {
@@ -484,7 +490,7 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
                       </div>
                     ) : (
                       <div className="flex gap-1">
-                        {!isViewer && !(isDirector && isDirectorMonthLocked(e.mes_evento)) && (
+                        {!isViewer && !(isDirector && isEventLocked(e)) && (
                           <button
                             onClick={() => startEdit(e)}
                             title={isDirector ? 'Editar datos del evento' : 'Editar facturación'}
@@ -493,7 +499,7 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
                             <Pencil size={13} />
                           </button>
                         )}
-                        {isDirector && !isDirectorMonthLocked(e.mes_evento) && (
+                        {isDirector && !isEventLocked(e) && (
                           <button onClick={() => handleDelete(e.id)} className="p-1.5 bg-red-100 text-red-600 rounded-lg hover:bg-red-200"><Trash2 size={13} /></button>
                         )}
                       </div>

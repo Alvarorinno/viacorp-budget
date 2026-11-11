@@ -18,6 +18,9 @@ const isDirectorMonthLocked = (mes_evento) => {
   return idx !== -1 && idx < minEditableIdx;
 };
 
+// Proyectos que siguen editables aunque su mes esté cerrado
+const LOCK_EXEMPT = ['3884', '3968', '4066'];
+
 const isDirectorLike = role => role === 'director' || role === 'eventos';
 
 const toObj = row => row ? { ...row, mb: Number(row.presupuesto || 0) - Number(row.costo || 0) } : null;
@@ -54,7 +57,7 @@ router.put('/:id', async (req, res) => {
   if (req.user.role === 'viewer') return res.status(403).json({ error: 'Sin permiso para editar' });
 
   // Bloqueo temporal: directores no pueden editar meses cerrados (antes del mes anterior al actual)
-  if (isDirectorLike(req.user.role) && isDirectorMonthLocked(existing.mes_evento)) {
+  if (isDirectorLike(req.user.role) && !LOCK_EXEMPT.includes(String(existing.estimacion ?? '').trim()) && isDirectorMonthLocked(existing.mes_evento)) {
     return res.status(403).json({ error: `Mes cerrado — solo editable desde ${MONTHS[new Date().getMonth() - 1]} en adelante` });
   }
 
