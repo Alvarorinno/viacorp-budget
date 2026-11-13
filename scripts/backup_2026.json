@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-10T14:13:01.771Z",
+  "fecha": "2026-11-13T13:50:40.550Z",
   "events": [
     {
       "id": 93,
@@ -2118,8 +2118,8 @@
       "estimacion": "4012",
       "cliente": "Motorola",
       "descripcion": "VIAJE SAO PAULO A LA F1 -MOTOROLA",
-      "presupuesto": 282499900,
-      "costo": 221557200,
+      "presupuesto": 285200060,
+      "costo": 220669740,
       "factura": "3534",
       "fecha_facturacion": "2026-08-19",
       "mes_evento": "Noviembre",
@@ -2127,7 +2127,7 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-11-04 15:33:11"
+      "updated_at": "2026-11-11 15:04:19"
     },
     {
       "id": 226,
@@ -2902,8 +2902,8 @@
       "estimacion": "4072",
       "cliente": "P&G",
       "descripcion": "REYES DEL NEGOCIO VIP ETAPA INICIAL",
-      "presupuesto": 52817360,
-      "costo": 32519660,
+      "presupuesto": 30000000,
+      "costo": 21000000,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -2911,7 +2911,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:46:13",
-      "updated_at": "2026-09-29 15:37:27"
+      "updated_at": "2026-11-11 16:38:14"
     },
     {
       "id": 278,
@@ -3159,7 +3159,7 @@
       "cliente": "Banco Estado",
       "descripcion": "BANCO ESTADO FERIA LABORAL FEN U. DE CHILE",
       "presupuesto": 324800,
-      "costo": 0,
+      "costo": 35398,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3167,7 +3167,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:38:27",
-      "updated_at": "2026-10-30 17:14:13"
+      "updated_at": "2026-11-11 15:34:16"
     },
     {
       "id": 294,
@@ -3176,14 +3176,14 @@
       "descripcion": "BANCO ESTADO MATEO BOCELLI",
       "presupuesto": 677600,
       "costo": 117994,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3621",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-20 15:39:26",
-      "updated_at": "2026-10-29 14:54:18"
+      "updated_at": "2026-11-11 20:29:30"
     },
     {
       "id": 295,
@@ -3191,7 +3191,7 @@
       "cliente": "P&G",
       "descripcion": "STAND GILLETTE 2026",
       "presupuesto": 21609840,
-      "costo": 12999948,
+      "costo": 13082544,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3199,7 +3199,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:40:11",
-      "updated_at": "2026-11-02 16:05:50"
+      "updated_at": "2026-11-11 15:35:42"
     },
     {
       "id": 296,
@@ -3304,14 +3304,14 @@
       "descripcion": "FERIA CONVENIO EDIFICIO BICENTENARIO",
       "presupuesto": 324800,
       "costo": 136195,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3616",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-26 13:41:39",
-      "updated_at": "2026-10-29 14:49:57"
+      "updated_at": "2026-11-11 20:34:20"
     },
     {
       "id": 303,
@@ -3351,15 +3351,15 @@
       "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO CONCIERTO CAMILOCOMBO TORTUGA",
       "presupuesto": 6051920,
-      "costo": 3419428,
-      "factura": null,
-      "fecha_facturacion": null,
+      "costo": 3341902,
+      "factura": "3624",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PAGADO",
       "created_at": "2026-10-29 14:46:02",
-      "updated_at": "2026-11-04 15:04:14"
+      "updated_at": "2026-11-11 20:28:28"
     },
     {
       "id": 306,
@@ -3367,7 +3367,7 @@
       "cliente": "PYG",
       "descripcion": "STAND GILLETTE CLARO ARENA 2026",
       "presupuesto": 14164058,
-      "costo": 8558470,
+      "costo": 8689870,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3375,7 +3375,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:47:07",
-      "updated_at": "2026-11-04 15:05:42"
+      "updated_at": "2026-11-11 15:37:48"
     },
     {
       "id": 307,
@@ -3383,7 +3383,7 @@
       "cliente": "BANCO ESTADO",
       "descripcion": "FEE OCTUBRE 2026 BANCO ESTADO",
       "presupuesto": 1862401,
-      "costo": 750000,
+      "costo": 1180500,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
@@ -3391,7 +3391,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:47:52",
-      "updated_at": "2026-10-29 14:47:52"
+      "updated_at": "2026-11-11 15:38:24"
     },
     {
       "id": 308,
@@ -3432,14 +3432,14 @@
       "descripcion": "BANCO ESTADO PREMIACIN 100 LIDERES MAYORES",
       "presupuesto": 3253555,
       "costo": 2176026,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3618",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-29 14:52:52",
-      "updated_at": "2026-11-04 17:44:23"
+      "updated_at": "2026-11-11 20:32:59"
     },
     {
       "id": 312,
@@ -3447,15 +3447,15 @@
       "cliente": "BANCO ESTADO",
       "descripcion": "CONGRESO EJERCITO 3 Y 4 NOVIEMBRE",
       "presupuesto": 1404480,
-      "costo": 515000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "costo": 803268,
+      "factura": "3619",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-11-02 15:58:13",
-      "updated_at": "2026-11-04 15:08:51"
+      "updated_at": "2026-11-11 20:32:40"
     },
     {
       "id": 313,
@@ -3464,14 +3464,14 @@
       "descripcion": "BANCO ESTADO CONCIERTO TAEMIN",
       "presupuesto": 845600,
       "costo": 320000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3620",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-11-02 16:00:08",
-      "updated_at": "2026-11-04 15:09:45"
+      "updated_at": "2026-11-11 20:32:22"
     },
     {
       "id": 314,
@@ -3480,14 +3480,14 @@
       "descripcion": "ACTIVO ARCO PARA CONCIERTOS- BANCO ESTADO",
       "presupuesto": 2788800,
       "costo": 2000000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3622",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-11-02 16:08:46",
-      "updated_at": "2026-11-02 16:08:46"
+      "updated_at": "2026-11-11 20:29:05"
     },
     {
       "id": 315,
@@ -3510,8 +3510,8 @@
       "estimacion": "4184",
       "cliente": "Lenovo",
       "descripcion": "ACTIVACIÓN MALL PZA VESPUCIO - TAB NOVIEMBRE",
-      "presupuesto": 24476870,
-      "costo": 13747975,
+      "presupuesto": 26280720,
+      "costo": 12791749,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Noviembre",
@@ -3519,14 +3519,14 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-03 23:48:16",
-      "updated_at": "2026-11-06 21:20:05"
+      "updated_at": "2026-11-11 15:02:45"
     },
     {
       "id": 317,
       "estimacion": "4179",
       "cliente": "Colun",
       "descripcion": "CAMPAÑA DE LANZAMIENTO CANAL TRADICIONAL",
-      "presupuesto": 24981840,
+      "presupuesto": 24942400,
       "costo": 15810000,
       "factura": null,
       "fecha_facturacion": null,
@@ -3535,7 +3535,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-03 23:50:21",
-      "updated_at": "2026-11-03 23:50:21"
+      "updated_at": "2026-11-11 15:12:43"
     },
     {
       "id": 318,
@@ -3591,7 +3591,7 @@
       "cliente": "BANCOESTADO",
       "descripcion": "EXPO BIENESTAR GENDARMERIA DE CHILE",
       "presupuesto": 1070720,
-      "costo": 582607,
+      "costo": 469794,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Noviembre",
@@ -3599,7 +3599,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-04 15:29:56",
-      "updated_at": "2026-11-04 15:29:56"
+      "updated_at": "2026-11-11 15:44:16"
     },
     {
       "id": 322,
@@ -3624,14 +3624,190 @@
       "descripcion": "FERIA LABORAL USACH 11 NOV",
       "presupuesto": 324800,
       "costo": 126195,
+      "factura": "3617",
+      "fecha_facturacion": "2026-11-10",
+      "mes_evento": "Noviembre",
+      "mes_facturacion": "Noviembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-11-04 18:36:00",
+      "updated_at": "2026-11-11 20:33:16"
+    },
+    {
+      "id": 324,
+      "estimacion": "4201",
+      "cliente": "clorox",
+      "descripcion": "CLOROX FERIA DIMERC NOV 2026",
+      "presupuesto": 4629598,
+      "costo": 3316980,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Noviembre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
-      "created_at": "2026-11-04 18:36:00",
-      "updated_at": "2026-11-04 18:36:00"
+      "created_at": "2026-11-11 15:46:56",
+      "updated_at": "2026-11-12 22:58:10"
+    },
+    {
+      "id": 325,
+      "estimacion": "4199",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "ENCUENTRO ECOSISTEMAS CORFO",
+      "presupuesto": 3662555,
+      "costo": 1927237,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 15:48:10",
+      "updated_at": "2026-11-12 22:50:45"
+    },
+    {
+      "id": 326,
+      "estimacion": "4197",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "PATOS CORPOREOS-BANCO ESTADO",
+      "presupuesto": 2498720,
+      "costo": 1360000,
+      "factura": "3625",
+      "fecha_facturacion": "2026-11-10",
+      "mes_evento": "Noviembre",
+      "mes_facturacion": "Noviembre",
+      "por_cobrar": null,
+      "estado_pago": "PENDIENTE",
+      "created_at": "2026-11-11 15:48:44",
+      "updated_at": "2026-11-11 20:28:01"
+    },
+    {
+      "id": 327,
+      "estimacion": "4194",
+      "cliente": "GRUPO VALDIVIESO",
+      "descripcion": "GRUPO VALDIVIESO GIFTCARD",
+      "presupuesto": 2168900,
+      "costo": 1800000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 15:49:28",
+      "updated_at": "2026-11-11 15:49:28"
+    },
+    {
+      "id": 328,
+      "estimacion": "4192",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "BANCO ESTADO JORNADA POR LA REHABILITACION EN MAGALLANES",
+      "presupuesto": 1551200,
+      "costo": 870000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 15:51:24",
+      "updated_at": "2026-11-11 15:51:24"
+    },
+    {
+      "id": 329,
+      "estimacion": "4187",
+      "cliente": "MINERVA",
+      "descripcion": "MINERVA LEVANTAMIENTO COOLER CABAA LAS LILAS",
+      "presupuesto": 52325,
+      "costo": 35000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 15:52:38",
+      "updated_at": "2026-11-11 15:52:38"
+    },
+    {
+      "id": 330,
+      "estimacion": "4172",
+      "cliente": "BANCO ESTADO",
+      "descripcion": "BANCO ESTADO CONCIERTO DEF LEPPARD",
+      "presupuesto": 845600,
+      "costo": 295398,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 15:53:37",
+      "updated_at": "2026-11-11 15:53:37"
+    },
+    {
+      "id": 331,
+      "estimacion": "4207",
+      "cliente": "GOBIERNO",
+      "descripcion": "Evento Mascotas Octubre 2026",
+      "presupuesto": 16993936,
+      "costo": 8069447,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Octubre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 16:30:28",
+      "updated_at": "2026-11-12 22:56:34"
+    },
+    {
+      "id": 332,
+      "estimacion": "4208",
+      "cliente": "GOBIERNO",
+      "descripcion": "Eventos Mascotas Noviembre 2026",
+      "presupuesto": 4992885,
+      "costo": 3687252,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-11 16:32:41",
+      "updated_at": "2026-11-11 16:32:41"
+    },
+    {
+      "id": 333,
+      "estimacion": "4150",
+      "cliente": "Lenovo",
+      "descripcion": "TRAINING LENOVO SMB LENOVO",
+      "presupuesto": 8740000,
+      "costo": 5994396,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-12 22:52:28",
+      "updated_at": "2026-11-12 22:52:28"
+    },
+    {
+      "id": 334,
+      "estimacion": "4203",
+      "cliente": "Colun",
+      "descripcion": "CAMPAÑA  CANAL MODERNO WALMART",
+      "presupuesto": 5122967,
+      "costo": 3637160,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Noviembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-12 22:53:46",
+      "updated_at": "2026-11-12 22:53:46"
     }
   ],
   "users": [
