@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-16T14:37:00.341Z",
+  "fecha": "2026-11-19T15:08:45.181Z",
   "events": [
     {
       "id": 93,
@@ -2616,14 +2616,14 @@
       "descripcion": "Feria Alvi 2026",
       "presupuesto": 11883203,
       "costo": 7371444,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3631",
+      "fecha_facturacion": "2026-11-18",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:55:00",
-      "updated_at": "2026-11-04 18:47:32"
+      "updated_at": "2026-11-18 13:28:29"
     },
     {
       "id": 259,
@@ -3144,14 +3144,14 @@
       "descripcion": "BANCO ESTADO EXPO INCLUSION",
       "presupuesto": 879200,
       "costo": 693590,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3629",
+      "fecha_facturacion": "2026-11-16",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-20 15:37:36",
-      "updated_at": "2026-11-06 21:18:26"
+      "updated_at": "2026-11-16 17:53:41"
     },
     {
       "id": 293,
@@ -3160,14 +3160,14 @@
       "descripcion": "BANCO ESTADO FERIA LABORAL FEN U. DE CHILE",
       "presupuesto": 324800,
       "costo": 35398,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3617",
+      "fecha_facturacion": "2026-11-09",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:38:27",
-      "updated_at": "2026-11-11 15:34:16"
+      "updated_at": "2026-11-16 17:54:01"
     },
     {
       "id": 294,
@@ -3272,14 +3272,14 @@
       "descripcion": "LENOVO EVENTO INDUSTRIA RED HAT 2026",
       "presupuesto": 1135530,
       "costo": 517388,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3633",
+      "fecha_facturacion": "2026-11-18",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-22 16:23:00",
-      "updated_at": "2026-10-29 14:51:46"
+      "updated_at": "2026-11-18 13:28:13"
     },
     {
       "id": 301,
@@ -3336,14 +3336,14 @@
       "descripcion": "LOMO NAVE SMOOTHIE LIVEMORE SPID ",
       "presupuesto": 87120,
       "costo": 62500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3630",
+      "fecha_facturacion": "2026-11-16",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-26 13:44:28",
-      "updated_at": "2026-10-26 13:44:28"
+      "updated_at": "2026-11-16 18:13:52"
     },
     {
       "id": 305,
@@ -3592,14 +3592,14 @@
       "descripcion": "EXPO BIENESTAR GENDARMERIA DE CHILE",
       "presupuesto": 1070720,
       "costo": 469794,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3623",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-04 15:29:56",
-      "updated_at": "2026-11-11 15:44:16"
+      "updated_at": "2026-11-16 17:54:55"
     },
     {
       "id": 322,
@@ -3736,14 +3736,14 @@
       "descripcion": "BANCO ESTADO CONCIERTO DEF LEPPARD",
       "presupuesto": 845600,
       "costo": 295398,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3625",
+      "fecha_facturacion": "2026-11-10",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-11-11 15:53:37",
-      "updated_at": "2026-11-11 15:53:37"
+      "updated_at": "2026-11-16 17:55:30"
     },
     {
       "id": 331,
