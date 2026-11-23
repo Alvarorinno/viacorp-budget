@@ -31,10 +31,6 @@ const mesFact = (e: Event) =>
 const currentMonthIdx = new Date().getMonth();
 const minEditableIdx  = currentMonthIdx - 1; // mes anterior inclusive es editable
 
-// Proyectos que siguen editables aunque su mes esté cerrado
-const LOCK_EXEMPT = ['3884', '3968', '4066'];
-const isLockExempt = (e: Event) => LOCK_EXEMPT.includes(String(e.estimacion ?? '').trim());
-
 const isDirectorMonthLocked = (mes_evento: string | null | undefined): boolean => {
   if (!mes_evento) return false;
   const idx = MONTHS.indexOf(mes_evento);
@@ -42,7 +38,7 @@ const isDirectorMonthLocked = (mes_evento: string | null | undefined): boolean =
 };
 
 // Meses disponibles para crear nuevos eventos (director): solo desde mes anterior en adelante
-const isEventLocked = (e: Event) => !isLockExempt(e) && isDirectorMonthLocked(e.mes_evento);
+const isEventLocked = (e: Event) => isDirectorMonthLocked(e.mes_evento);
 
 const EDITABLE_MONTHS = MONTHS.filter((_, idx) => idx >= minEditableIdx);
 
