@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-22T13:57:38.017Z",
+  "fecha": "2026-11-25T16:42:52.689Z",
   "events": [
     {
       "id": 93,
@@ -1974,8 +1974,8 @@
       "estimacion": "3884",
       "cliente": "PFIZER",
       "descripcion": "KIT PFIZER 2026",
-      "presupuesto": 5257225,
-      "costo": 2111920,
+      "presupuesto": 4895320,
+      "costo": 1987180,
       "factura": "3443",
       "fecha_facturacion": "2026-05-20 00:00:00",
       "mes_evento": "Mayo",
@@ -1983,7 +1983,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:34",
-      "updated_at": "2026-08-12 14:36:34"
+      "updated_at": "2026-11-23 17:04:37"
     },
     {
       "id": 217,
@@ -2135,7 +2135,7 @@
       "cliente": "Clorox",
       "descripcion": "EVENTO INNOVATION 2026 OFICINAS CLOROX",
       "presupuesto": 15577681,
-      "costo": 7418603,
+      "costo": 7281629,
       "factura": "3583",
       "fecha_facturacion": "2026-10-01",
       "mes_evento": "Septiembre",
@@ -2143,7 +2143,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-10-22 17:01:28"
+      "updated_at": "2026-11-23 17:06:43"
     },
     {
       "id": 228,
@@ -2807,7 +2807,7 @@
       "cliente": "Lenovo",
       "descripcion": "EVENTO LENOBO TAB PRO",
       "presupuesto": 22080000,
-      "costo": 14759028,
+      "costo": 14924348,
       "factura": "3582",
       "fecha_facturacion": "2026-09-30",
       "mes_evento": "Septiembre",
@@ -2815,7 +2815,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:27:16",
-      "updated_at": "2026-10-13 15:08:25"
+      "updated_at": "2026-11-23 17:08:39"
     },
     {
       "id": 271,
@@ -3382,7 +3382,7 @@
       "estimacion": "4170",
       "cliente": "BANCO ESTADO",
       "descripcion": "FEE OCTUBRE 2026 BANCO ESTADO",
-      "presupuesto": 1862401,
+      "presupuesto": 1662858,
       "costo": 1180500,
       "factura": null,
       "fecha_facturacion": null,
@@ -3391,7 +3391,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:47:52",
-      "updated_at": "2026-11-11 15:38:24"
+      "updated_at": "2026-11-23 19:52:01"
     },
     {
       "id": 308,
@@ -3416,14 +3416,14 @@
       "descripcion": "TRAINING INTERNO LENOVO",
       "presupuesto": 1001000,
       "costo": 424550,
-      "factura": null,
+      "factura": "3637",
       "fecha_facturacion": null,
       "mes_evento": "Octubre",
       "mes_facturacion": null,
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-29 14:50:56",
-      "updated_at": "2026-10-29 14:50:56"
+      "updated_at": "2026-11-23 17:20:23"
     },
     {
       "id": 311,
@@ -3528,14 +3528,14 @@
       "descripcion": "CAMPAÑA DE LANZAMIENTO CANAL TRADICIONAL",
       "presupuesto": 24942400,
       "costo": 15810000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3235",
+      "fecha_facturacion": "2026-11-23",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-03 23:50:21",
-      "updated_at": "2026-11-11 15:12:43"
+      "updated_at": "2026-11-23 17:20:46"
     },
     {
       "id": 318,
@@ -3688,14 +3688,14 @@
       "descripcion": "GRUPO VALDIVIESO GIFTCARD",
       "presupuesto": 2168900,
       "costo": 1800000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3636",
+      "fecha_facturacion": "2026-11-23",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-11 15:49:28",
-      "updated_at": "2026-11-11 15:49:28"
+      "updated_at": "2026-11-23 17:21:05"
     },
     {
       "id": 328,
@@ -3814,16 +3814,16 @@
       "estimacion": "4227",
       "cliente": "BANCO ESTADO",
       "descripcion": "FEE NOVIEMBRE 2026 BANCO ESTADO",
-      "presupuesto": 1862401,
-      "costo": 1180500,
+      "presupuesto": 1662858,
+      "costo": 430500,
       "factura": null,
       "fecha_facturacion": null,
-      "mes_evento": "Diciembre",
+      "mes_evento": "Noviembre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:09:39",
-      "updated_at": "2026-11-20 23:13:12"
+      "updated_at": "2026-11-23 19:54:13"
     },
     {
       "id": 336,
@@ -3846,8 +3846,8 @@
       "estimacion": "4222",
       "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO CONCIERTO MAN",
-      "presupuesto": 6973120,
-      "costo": 4747477,
+      "presupuesto": 5931520,
+      "costo": 4341477,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Diciembre",
@@ -3855,7 +3855,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:14:33",
-      "updated_at": "2026-11-20 23:14:33"
+      "updated_at": "2026-11-23 19:30:53"
     },
     {
       "id": 338,
@@ -3910,8 +3910,8 @@
       "estimacion": "4215",
       "cliente": "COLUN",
       "descripcion": "COLUN CAMPAA DE LANZAMIENTO CANAL MODERNO",
-      "presupuesto": 11291034,
-      "costo": 7815230,
+      "presupuesto": 3983549,
+      "costo": 2766200,
       "factura": null,
       "fecha_facturacion": null,
       "mes_evento": "Diciembre",
@@ -3919,7 +3919,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:17:12",
-      "updated_at": "2026-11-20 23:17:12"
+      "updated_at": "2026-11-23 22:56:18"
     },
     {
       "id": 342,
@@ -4096,6 +4096,86 @@
       "estado_pago": null,
       "created_at": "2026-11-20 23:23:56",
       "updated_at": "2026-11-20 23:23:56"
+    },
+    {
+      "id": 354,
+      "estimacion": "4233",
+      "cliente": "COLUN",
+      "descripcion": "COLUN IMPRESION CAMPAÑA DE LANZAMIENTO CANAL MODERNO TOTTUS-SMU",
+      "presupuesto": 8288858,
+      "costo": 5756420,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-23 19:20:18",
+      "updated_at": "2026-11-23 19:20:18"
+    },
+    {
+      "id": 355,
+      "estimacion": "4216",
+      "cliente": "Nutrisco",
+      "descripcion": "ESQUINEROS ATUN SAN JOSE INSTALACION",
+      "presupuesto": 2763450,
+      "costo": 1962677,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-23 19:22:02",
+      "updated_at": "2026-11-23 19:22:02"
+    },
+    {
+      "id": 356,
+      "estimacion": "4231",
+      "cliente": "Nutrisco",
+      "descripcion": "IMPLEMENTACION SPID FLIP DICIEMBRE",
+      "presupuesto": 388936,
+      "costo": 267850,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-23 19:23:41",
+      "updated_at": "2026-11-23 19:23:41"
+    },
+    {
+      "id": 357,
+      "estimacion": "4234",
+      "cliente": "PyG",
+      "descripcion": "Distribuidoras Pantene",
+      "presupuesto": 2478963,
+      "costo": 902400,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-23 19:25:20",
+      "updated_at": "2026-11-23 19:25:20"
+    },
+    {
+      "id": 358,
+      "estimacion": "4236",
+      "cliente": "Grupo Valdivieso",
+      "descripcion": "GIFTCARD IGUAZU",
+      "presupuesto": 172500,
+      "costo": 150000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-23 19:26:54",
+      "updated_at": "2026-11-23 19:26:54"
     }
   ],
   "users": [
