@@ -28,17 +28,6 @@ app.use('/api/events', eventsRouter);
 app.use('/api/stats', statsRouter);
 app.use('/api/budget', budgetRouter);
 app.use('/api/report', reportRouter);
-app.get('/api/setup/unify-pyg', async (req, res) => {
-  if (req.query.secret !== 'e02e52ef027b115a816c41e43eed45eb') return res.status(403).json({ error: 'Forbidden' });
-  try {
-    const { default: sql } = await import('./db.js');
-    const changed = await sql`UPDATE events SET cliente = 'PYG', updated_at = to_char(NOW(), 'YYYY-MM-DD HH24:MI:SS')
-      WHERE regexp_replace(upper(cliente), '[^A-Z&]', '', 'g') IN ('PYG', 'P&G') AND cliente <> 'PYG'
-      RETURNING id, estimacion, mes_evento`;
-    const total = await sql`SELECT COUNT(*) AS n FROM events WHERE cliente = 'PYG'`;
-    res.json({ ok: true, changed, totalPYG: Number(total[0].n) });
-  } catch (err) { console.error(err); res.status(500).json({ error: 'Error del servidor' }); }
-});
 app.get('/api/health', (_, res) => res.json({ ok: true, platform: isVercel ? 'vercel' : 'local' }));
 
 if (isProd && !isVercel) {
