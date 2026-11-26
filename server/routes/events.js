@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import sql, { query } from '../db.js';
 import { authMiddleware } from './auth.js';
+import { normalizeCliente } from '../clientes.js';
 
 const router = Router();
 router.use(authMiddleware);
@@ -39,7 +40,7 @@ router.post('/', async (req, res) => {
   try {
     const rows = await sql`
       INSERT INTO events (estimacion, cliente, descripcion, presupuesto, costo, mes_evento)
-      VALUES (${estimacion ?? null}, ${cliente}, ${descripcion ?? null}, ${presupuesto || 0}, ${costo || 0}, ${mes_evento ?? null})
+      VALUES (${estimacion ?? null}, ${normalizeCliente(cliente)}, ${descripcion ?? null}, ${presupuesto || 0}, ${costo || 0}, ${mes_evento ?? null})
       RETURNING id
     `;
     const event = (await sql`SELECT *, (presupuesto - costo) as mb FROM events WHERE id = ${rows[0].id}`)[0];
@@ -63,6 +64,7 @@ router.put('/:id', async (req, res) => {
   for (const field of allowedFields) {
     if (req.body[field] !== undefined) updates[field] = req.body[field];
   }
+  if (updates.cliente) updates.cliente = normalizeCliente(updates.cliente);
   if (Object.keys(updates).length === 0) return res.status(400).json({ error: 'Sin campos para actualizar' });
 
   try {

@@ -28,6 +28,20 @@ app.use('/api/events', eventsRouter);
 app.use('/api/stats', statsRouter);
 app.use('/api/budget', budgetRouter);
 app.use('/api/report', reportRouter);
+app.get('/api/setup/unify-clientes', async (req, res) => {
+  if (req.query.secret !== '54633a768cc20155b8b32a4bf9e91d7e') return res.status(403).json({ error: 'Forbidden' });
+  try {
+    const { default: sql } = await import('./db.js');
+    const { normalizeCliente } = await import('./clientes.js');
+    const rows = await sql`SELECT id, cliente FROM events`;
+    const changed = rows.map(r => ({ id: r.id, de: r.cliente, a: normalizeCliente(r.cliente) })).filter(r => r.de !== r.a);
+    for (const r of changed) {
+      await sql`UPDATE events SET cliente = ${r.a}, updated_at = to_char(NOW(), 'YYYY-MM-DD HH24:MI:SS') WHERE id = ${r.id}`;
+    }
+    const clientes = await sql`SELECT cliente, COUNT(*) AS n FROM events GROUP BY cliente ORDER BY cliente`;
+    res.json({ ok: true, cambiados: changed.length, clientes });
+  } catch (err) { console.error(err); res.status(500).json({ error: 'Error del servidor' }); }
+});
 app.get('/api/health', (_, res) => res.json({ ok: true, platform: isVercel ? 'vercel' : 'local' }));
 
 if (isProd && !isVercel) {
