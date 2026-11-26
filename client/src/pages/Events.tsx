@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { getEvents, updateEvent, createEvent, deleteEvent } from '../api';
 import { useAuth } from '../context/AuthContext';
 import type { Event } from '../types';
+import ClientSelect from '../components/ClientSelect';
 import { Plus, Pencil, Trash2, Check, X, Search, ChevronUp, ChevronDown, AlertCircle, Download } from 'lucide-react';
 
 const MONTHS = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -144,6 +145,7 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
 
   const saveEdit = async () => {
     if (!editId) return;
+    if (!editData.cliente?.trim()) { setEditError('El campo Cliente es obligatorio.'); return; }
     setSaving(true);
     setEditError('');
     try {
@@ -293,10 +295,10 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
               onChange={e => setNewData(p => ({ ...p, estimacion: e.target.value }))}
               className="text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
             />
-            <input
-              placeholder="Cliente *"
+            <ClientSelect
+              clients={clients}
               value={newData.cliente || ''}
-              onChange={e => { setNewData(p => ({ ...p, cliente: e.target.value })); setFormError(''); }}
+              onChange={cliente => { setNewData(p => ({ ...p, cliente })); setFormError(''); }}
               className={`text-sm border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none ${formError && !newData.cliente?.trim() ? 'border-red-400 bg-red-50' : ''}`}
             />
             <input
@@ -387,7 +389,7 @@ export default function Events({ initialMonth = '' }: { initialMonth?: string })
                   </td>
                   <td className="py-2 px-3 bg-blue-50/30">
                     {isEditing(e) && isDirector
-                      ? <input value={editData.cliente ?? ''} onChange={ev => setEditData(p => ({ ...p, cliente: ev.target.value }))} className="w-28 text-xs border border-blue-300 rounded px-1.5 py-1 outline-none" />
+                      ? <ClientSelect clients={clients} value={editData.cliente ?? ''} onChange={cliente => setEditData(p => ({ ...p, cliente }))} className="w-36 text-xs border border-blue-300 rounded px-1.5 py-1 outline-none" />
                       : <span className="font-semibold text-gray-800">{e.cliente}</span>}
                   </td>
                   <td className="py-2 px-3 max-w-xs bg-blue-50/30">
