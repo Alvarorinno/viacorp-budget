@@ -24,7 +24,9 @@ const CustomLabel = ({ cx, cy, midAngle, outerRadius, pct }: any) => {
   );
 };
 
-export default function SalesByClientPie({ data }: Props) {
+export default function SalesByClientPie({ data: allData }: Props) {
+  const data = allData.filter(c => c.pct >= 1);
+
   return (
     <ResponsiveContainer width="100%" height={340}>
       <PieChart>
