@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-25T16:42:52.689Z",
+  "fecha": "2026-11-28T14:57:50.876Z",
   "events": [
     {
       "id": 93,
@@ -324,7 +324,7 @@
     {
       "id": 113,
       "estimacion": "3995",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "PROPUESTA ACTIVIDAD ANUAL CLOROX OPCION HOTEL RENAISSANCE",
       "presupuesto": 24557258,
       "costo": 13709323,
@@ -335,12 +335,12 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-09-26 12:20:16"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 114,
       "estimacion": "3991",
-      "cliente": "Grupo Valdivieso",
+      "cliente": "GRUPO VALDIVIESO",
       "descripcion": "COLLARIN TIPO NECKER GIN PATAGON",
       "presupuesto": 934864,
       "costo": 536000,
@@ -351,12 +351,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-08-12 14:36:19"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 115,
       "estimacion": "3994",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "RRHH HOLIDAY MEETING CLOROX",
       "presupuesto": 11824725,
       "costo": 8280265,
@@ -367,12 +367,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-08-19 20:10:10"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 116,
       "estimacion": "3996",
-      "cliente": "Redbull",
+      "cliente": "REDBULL",
       "descripcion": "EVENTO TEAM BUILDING REDBULL JULIO 2026",
       "presupuesto": 9108288,
       "costo": 5672730,
@@ -383,12 +383,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:19",
-      "updated_at": "2026-08-18 19:19:02"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 117,
       "estimacion": "4009",
-      "cliente": "Viña Valdivieso",
+      "cliente": "GRUPO VALDIVIESO",
       "descripcion": "GRUPO VALDIVIESO DUMMIERS PATAGON",
       "presupuesto": 289834,
       "costo": 204600,
@@ -399,7 +399,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:20",
-      "updated_at": "2026-09-29 15:50:31"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 118,
@@ -436,7 +436,7 @@
     {
       "id": 120,
       "estimacion": "4029",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "NUTRISCO CAMPAÑA FLIP SEPTIEMBRE SPKM",
       "presupuesto": 2365608,
       "costo": 1624000,
@@ -447,7 +447,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:20",
-      "updated_at": "2026-08-18 19:20:42"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 121,
@@ -740,7 +740,7 @@
     {
       "id": 139,
       "estimacion": "3957",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "MUEBLES COLGANTES TURBO LIQUIDO 300ML JUN",
       "presupuesto": 1585650,
       "costo": 1197500,
@@ -751,7 +751,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:23",
-      "updated_at": "2026-08-12 14:36:23"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 140,
@@ -1028,7 +1028,7 @@
     {
       "id": 157,
       "estimacion": "3971",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "MERCH MINERVA ESTANCIA 92 ",
       "presupuesto": 595109,
       "costo": 402220,
@@ -1039,12 +1039,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:25",
-      "updated_at": "2026-08-12 14:36:25"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 158,
       "estimacion": "3967",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "DESPACHO-MAQUILA CLOROX CAMPAÑA TRADICIONAL JUNIO 26",
       "presupuesto": 4105405,
       "costo": 2809765,
@@ -1055,12 +1055,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:25",
-      "updated_at": "2026-08-12 14:36:25"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 159,
       "estimacion": "3937",
-      "cliente": "Gobierno",
+      "cliente": "GOBIERNO",
       "descripcion": "Evento Mascotas Julio 2026",
       "presupuesto": 3328598,
       "costo": 1802854,
@@ -1071,12 +1071,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-09-23 16:48:26"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 160,
       "estimacion": "3990",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "KV AJUSTE CLORO GEL",
       "presupuesto": 49500,
       "costo": 0,
@@ -1087,12 +1087,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 161,
       "estimacion": "3988",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "Activación PUL Walmart",
       "presupuesto": 4844437,
       "costo": 3523790,
@@ -1103,12 +1103,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 162,
       "estimacion": "3977",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "Pizarra Nutrisco",
       "presupuesto": 140404,
       "costo": 92000,
@@ -1119,12 +1119,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 163,
       "estimacion": "3992",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "AJUSTE ADAPTACIONES CLOROX ",
       "presupuesto": 148500,
       "costo": 0,
@@ -1135,12 +1135,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-09-30 16:35:03"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 164,
       "estimacion": "3998",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "EDICION DE VIDEO CLOROX HOLIDAY MEETING",
       "presupuesto": 97790,
       "costo": 70000,
@@ -1151,12 +1151,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 165,
       "estimacion": "4003",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "COMPRA CARNE ACTIVACION PUL WALMART",
       "presupuesto": 591231,
       "costo": 514114,
@@ -1167,7 +1167,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:26",
-      "updated_at": "2026-08-12 14:36:26"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 166,
@@ -1316,7 +1316,7 @@
     {
       "id": 175,
       "estimacion": "3925",
-      "cliente": "Gobierno",
+      "cliente": "GOBIERNO",
       "descripcion": "Evento Mascotas Junio",
       "presupuesto": 8321494,
       "costo": 4657890,
@@ -1327,7 +1327,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:28",
-      "updated_at": "2026-09-23 16:48:15"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 176,
@@ -1444,7 +1444,7 @@
     {
       "id": 183,
       "estimacion": "3941",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "PLANOGRAMA MERCADERISTAS DIGITAL CLOROX",
       "presupuesto": 5945500,
       "costo": 4700000,
@@ -1455,12 +1455,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:29",
-      "updated_at": "2026-08-12 14:36:29"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 184,
       "estimacion": "3936",
-      "cliente": "Papa Johns",
+      "cliente": "PAPA JOHNS",
       "descripcion": "ACTIVACION TOY STORY PAPA JOHNS",
       "presupuesto": 5586196,
       "costo": 3599194,
@@ -1471,12 +1471,12 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:29",
-      "updated_at": "2026-08-12 14:36:29"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 185,
       "estimacion": "3956",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "EXTRAS LENOVO LEADERS CLUB KARAI BY MITSUHARU- 11 DE JUNIO- SALON NOSSO",
       "presupuesto": 1594395,
       "costo": 1195000,
@@ -1487,12 +1487,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:29",
-      "updated_at": "2026-08-12 14:36:29"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 186,
       "estimacion": "3947",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": " ESTANCIA 92 ACTIVIDAD INTERNA TOTTUS EXTRAS",
       "presupuesto": 358899,
       "costo": 242220,
@@ -1503,12 +1503,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:29",
-      "updated_at": "2026-08-18 19:16:00"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 187,
       "estimacion": "3953",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "LOMO NAVE JUAN VALDEZ",
       "presupuesto": 45595,
       "costo": 31500,
@@ -1519,12 +1519,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-12 14:36:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 188,
       "estimacion": "3951",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "CABECERAS PREMIUM CAMPAÑA POETT-TURBO",
       "presupuesto": 2980841,
       "costo": 2233110,
@@ -1535,12 +1535,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-12 14:36:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 189,
       "estimacion": "3958",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "LOMO NAVE+ STOPPER SMOOTHIE LIVEMORE SPID ",
       "presupuesto": 111760,
       "costo": 80000,
@@ -1551,12 +1551,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-12 14:36:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 190,
       "estimacion": "3939",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "WV SPID LIVEMORE",
       "presupuesto": 1953631,
       "costo": 1424760,
@@ -1567,12 +1567,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-12 14:36:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 191,
       "estimacion": "3952",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": " CAMPAÑA TRADICIONAL JUNIO 26",
       "presupuesto": 20601460,
       "costo": 15645000,
@@ -1583,12 +1583,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-12 14:36:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 192,
       "estimacion": "3909",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "",
       "presupuesto": 444818,
       "costo": 189970,
@@ -1599,12 +1599,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-12 14:36:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 193,
       "estimacion": "3960",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "ACTIVACION FISHERMAN CASA COSTANERA 20 DE JUNIO",
       "presupuesto": 885500,
       "costo": 468446,
@@ -1615,7 +1615,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:30",
-      "updated_at": "2026-08-18 19:18:10"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 194,
@@ -2100,7 +2100,7 @@
     {
       "id": 224,
       "estimacion": "3980",
-      "cliente": "PyG",
+      "cliente": "PYG",
       "descripcion": "VIAJE BRASIL GILLETE- NOVIEMBRE V2",
       "presupuesto": 110347744,
       "costo": 70775930,
@@ -2111,12 +2111,12 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-11-04 15:34:21"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 225,
       "estimacion": "4012",
-      "cliente": "Motorola",
+      "cliente": "MOTOROLA",
       "descripcion": "VIAJE SAO PAULO A LA F1 -MOTOROLA",
       "presupuesto": 285200060,
       "costo": 220669740,
@@ -2127,12 +2127,12 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-11-11 15:04:19"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 226,
       "estimacion": "3968",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "EVENTO INNOVATION 2026 OFICINAS CLOROX",
       "presupuesto": 15577681,
       "costo": 7281629,
@@ -2143,12 +2143,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-11-23 17:06:43"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 228,
       "estimacion": "4010",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "STAND MINERVA ACTIVACION ESTACIONAMIENTO PUL",
       "presupuesto": 13614321,
       "costo": 9150410,
@@ -2159,12 +2159,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-12 14:36:35",
-      "updated_at": "2026-09-09 16:19:31"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 229,
       "estimacion": "4032",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "LENOVO CONGRESO CAMPUS CABALGATA",
       "presupuesto": 27140000,
       "costo": 13948270,
@@ -2175,12 +2175,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-12 14:36:36",
-      "updated_at": "2026-09-29 20:32:11"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 230,
       "estimacion": "4039",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "MARCO LIVEMORE PRONTO COPEC",
       "presupuesto": 52910,
       "costo": 37000,
@@ -2191,12 +2191,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-18 18:51:39",
-      "updated_at": "2026-10-06 15:19:38"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 231,
       "estimacion": "4041",
-      "cliente": "PyG",
+      "cliente": "PYG",
       "descripcion": "MECANIZADO DOWNY Y ARIEL ",
       "presupuesto": 1168769,
       "costo": 355511,
@@ -2207,12 +2207,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-18 18:53:01",
-      "updated_at": "2026-09-15 14:46:10"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 232,
       "estimacion": "4042",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "DESPACHO PRODUCTOS HOLIDAY-MEETING",
       "presupuesto": 112640,
       "costo": 80000,
@@ -2223,12 +2223,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 18:54:22",
-      "updated_at": "2026-09-09 16:30:59"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 233,
       "estimacion": "4033",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "ESTANCIA 92 ACTIVACION SEPTIEMBRE TOTTUS",
       "presupuesto": 4879588,
       "costo": 3245920,
@@ -2239,12 +2239,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 18:55:52",
-      "updated_at": "2026-09-09 16:20:01"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 234,
       "estimacion": "4035",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "CAMPAÑA FLIP SEPTIEMBRE CANAL TRADICIONAL",
       "presupuesto": 11668418,
       "costo": 8095000,
@@ -2255,12 +2255,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 18:59:14",
-      "updated_at": "2026-10-06 18:49:18"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 235,
       "estimacion": "4020",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "VIBRINES LIVEMORE",
       "presupuesto": 265320,
       "costo": 174000,
@@ -2271,12 +2271,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 19:05:38",
-      "updated_at": "2026-09-30 14:55:07"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 236,
       "estimacion": "4034",
-      "cliente": "Gobierno",
+      "cliente": "GOBIERNO",
       "descripcion": "EVENTO MASCOTAS AGOSTO 2026",
       "presupuesto": 5106360,
       "costo": 2570285,
@@ -2287,12 +2287,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-18 19:16:07",
-      "updated_at": "2026-09-29 16:51:35"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 237,
       "estimacion": "4049",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "CORPOREOS HOLIDAY MEETING",
       "presupuesto": 310200,
       "costo": 220000,
@@ -2303,12 +2303,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:33:08",
-      "updated_at": "2026-09-09 16:31:35"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 238,
       "estimacion": "4043",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": " DESPACHO CAMPAÑA FLIP SEPTIEMBRE -MODERNO SPKM",
       "presupuesto": 391000,
       "costo": 224000,
@@ -2319,12 +2319,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:34:14",
-      "updated_at": "2026-10-05 12:05:37"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 239,
       "estimacion": "4038",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "STOPPER WATERMELON",
       "presupuesto": 703291,
       "costo": 499500,
@@ -2335,12 +2335,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:35:25",
-      "updated_at": "2026-09-09 16:31:15"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 240,
       "estimacion": "4053",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "Despacho Extra Elementos HM",
       "presupuesto": 266147,
       "costo": 182750,
@@ -2351,7 +2351,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:36:36",
-      "updated_at": "2026-10-16 17:37:57"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 241,
@@ -2372,7 +2372,7 @@
     {
       "id": 242,
       "estimacion": "3978",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "CAMPAÑA CANAL TT FLIP CONCURSO",
       "presupuesto": 7273750,
       "costo": 4729739,
@@ -2383,12 +2383,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:40:17",
-      "updated_at": "2026-09-29 16:51:03"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 243,
       "estimacion": "4055",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "Activación Fisherman Teatro Zoco",
       "presupuesto": 950400,
       "costo": 403653,
@@ -2399,12 +2399,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:41:58",
-      "updated_at": "2026-10-22 19:05:46"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 244,
       "estimacion": "4054",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "CAMPAÑA SAN JOSE SABORES DEL MAR",
       "presupuesto": 828230,
       "costo": 554000,
@@ -2415,12 +2415,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:43:12",
-      "updated_at": "2026-10-22 19:06:05"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 245,
       "estimacion": "4051",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "LANZAMIENTO OFICINA HERBAL ESSENCE PITAHAYA",
       "presupuesto": 7305749,
       "costo": 4130822,
@@ -2431,7 +2431,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-26 17:44:17",
-      "updated_at": "2026-10-29 19:10:11"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 246,
@@ -2452,7 +2452,7 @@
     {
       "id": 247,
       "estimacion": "4044",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "DESPACHO CAMPAÑA FLIP SEPTIEMBRE CANAL TRADICIONAL",
       "presupuesto": 2093000,
       "costo": 1241065,
@@ -2463,12 +2463,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:52:32",
-      "updated_at": "2026-10-05 12:04:03"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 248,
       "estimacion": "4062",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "ADICIONALES CONVENCION CLOROX ",
       "presupuesto": 1280797,
       "costo": 0,
@@ -2479,12 +2479,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 17:54:34",
-      "updated_at": "2026-09-29 16:59:32"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 249,
       "estimacion": "3989",
-      "cliente": "Conaf",
+      "cliente": "CONAF",
       "descripcion": "Activación Conaf Sepriembre",
       "presupuesto": 24976000,
       "costo": 9239580,
@@ -2495,12 +2495,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-26 18:17:11",
-      "updated_at": "2026-10-02 16:45:59"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 251,
       "estimacion": "4065",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "RRHH ACTIVACION EMBAJADA DE BRASIL",
       "presupuesto": 847504,
       "costo": 624000,
@@ -2511,12 +2511,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-31 16:57:14",
-      "updated_at": "2026-09-24 22:01:39"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 252,
       "estimacion": "4058",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "ADAPTACIONES BANNERS Y HERO CLOROX",
       "presupuesto": 99000,
       "costo": 0,
@@ -2527,12 +2527,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-08-31 16:58:21",
-      "updated_at": "2026-11-05 18:07:01"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 253,
       "estimacion": "4061",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "REIMPRESION CAMPAÑA SAN JOSE ATUN CANAL TRADICIONAL",
       "presupuesto": 6539990,
       "costo": 4796000,
@@ -2543,12 +2543,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-08-31 17:03:36",
-      "updated_at": "2026-09-15 15:41:27"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 254,
       "estimacion": "4069",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "MATERIAL PUL WALMART",
       "presupuesto": 815201,
       "costo": 519000,
@@ -2559,7 +2559,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:24:51",
-      "updated_at": "2026-09-24 22:01:07"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 255,
@@ -2580,7 +2580,7 @@
     {
       "id": 256,
       "estimacion": "4068",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "EXTRAS MINERVA PUL ACTIVIDADES SEPTIEMBRE STAND ",
       "presupuesto": 1136603,
       "costo": 771960,
@@ -2591,12 +2591,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:49:41",
-      "updated_at": "2026-09-29 16:53:16"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 257,
       "estimacion": "4077",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "ADICIONALES CHOCOLATES PREMIOS ",
       "presupuesto": 154000,
       "costo": 133000,
@@ -2607,12 +2607,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-03 21:53:39",
-      "updated_at": "2026-10-08 21:05:19"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 258,
       "estimacion": "4074",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "Feria Alvi 2026",
       "presupuesto": 11883203,
       "costo": 7371444,
@@ -2623,12 +2623,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-03 21:55:00",
-      "updated_at": "2026-11-18 13:28:29"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 259,
       "estimacion": "4076",
-      "cliente": "PyG",
+      "cliente": "PYG",
       "descripcion": "Evento de Capacitación Reyes del Negocio Vip",
       "presupuesto": 32981480,
       "costo": 18140948,
@@ -2639,12 +2639,12 @@
       "por_cobrar": null,
       "estado_pago": "SALDO X FACTURAR",
       "created_at": "2026-09-03 21:56:53",
-      "updated_at": "2026-10-15 18:54:30"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 260,
       "estimacion": "4079",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "Adicional Teatro Zoco Fisherman",
       "presupuesto": 385000,
       "costo": 250000,
@@ -2655,12 +2655,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-15 15:32:19",
-      "updated_at": "2026-09-29 17:01:18"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 261,
       "estimacion": "4084",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "ELEMENTOS EXTRAS PUL SEPTIEMBRE",
       "presupuesto": 107640,
       "costo": 72000,
@@ -2671,12 +2671,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:34:15",
-      "updated_at": "2026-09-30 17:49:10"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 262,
       "estimacion": "4083",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "MATERIAL PUL WALMART EXTRA CENEFAS",
       "presupuesto": 136563,
       "costo": 95000,
@@ -2687,44 +2687,44 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-15 15:35:21",
-      "updated_at": "2026-09-29 16:53:43"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 263,
       "estimacion": "4080",
-      "cliente": "PyG",
+      "cliente": "PYG",
       "descripcion": "Levantamiento Reyes del negocio",
       "presupuesto": 1478400,
       "costo": 1035000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3646",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:37:10",
-      "updated_at": "2026-10-13 15:04:11"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 264,
       "estimacion": "4057",
-      "cliente": "PAPA JHONS",
+      "cliente": "PAPA JOHNS",
       "descripcion": "Chupallas Septiembre",
       "presupuesto": 268125,
       "costo": 225500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3650",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Septiembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:38:37",
-      "updated_at": "2026-09-28 21:16:54"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 265,
       "estimacion": "4093",
-      "cliente": "Gobierno",
+      "cliente": "GOBIERNO",
       "descripcion": "Mascotas Mes Septiembre",
       "presupuesto": 8321494,
       "costo": 5280130,
@@ -2735,12 +2735,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-15 15:40:42",
-      "updated_at": "2026-10-26 15:13:49"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 266,
       "estimacion": "4086",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "CABECERAS PREMIUM CAMPAÑA WATERMELON-CLOROGEL",
       "presupuesto": 1685112,
       "costo": 1267090,
@@ -2751,12 +2751,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:20:59",
-      "updated_at": "2026-09-30 16:34:48"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 267,
       "estimacion": "4082",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "Gift Card Regalos Concursos Septiembre",
       "presupuesto": 4234890,
       "costo": 3780900,
@@ -2767,12 +2767,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:22:22",
-      "updated_at": "2026-09-30 16:28:48"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 268,
       "estimacion": "4094",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "Campaña Cook Green",
       "presupuesto": 18655876,
       "costo": 12390000,
@@ -2783,28 +2783,28 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:23:48",
-      "updated_at": "2026-09-30 17:20:14"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 269,
       "estimacion": "4091",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "REYES DEL NEGOCIO VIP PLACA CONMEMORATIVA- PASAPORTE",
       "presupuesto": 5496667,
       "costo": 3892380,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3647",
+      "fecha_facturacion": "2026-11-24",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:24:48",
-      "updated_at": "2026-10-30 17:09:58"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 270,
       "estimacion": "4066",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "EVENTO LENOBO TAB PRO",
       "presupuesto": 22080000,
       "costo": 14924348,
@@ -2815,12 +2815,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:27:16",
-      "updated_at": "2026-11-23 17:08:39"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 271,
       "estimacion": "4045",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "EVENTO LANZAMIENTO WORKSTATION P4 LENOVO 2026 ",
       "presupuesto": 11445950,
       "costo": 8031300,
@@ -2831,12 +2831,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:29:36",
-      "updated_at": "2026-10-06 18:43:48"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 272,
       "estimacion": "4098",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "COMPRA CARNE ESTANCIA 92 TOTTUS",
       "presupuesto": 1080834,
       "costo": 939856,
@@ -2847,12 +2847,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:36:51",
-      "updated_at": "2026-09-30 17:49:56"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 273,
       "estimacion": "4097",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "COMPRA CARNE STAND PUL WALMART-SMU",
       "presupuesto": 826303,
       "costo": 718524,
@@ -2863,12 +2863,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:37:44",
-      "updated_at": "2026-09-29 16:55:01"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 275,
       "estimacion": "4099",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "ETIQUETAS CLOROX-POETT WOLVERINE",
       "presupuesto": 837844,
       "costo": 599850,
@@ -2879,12 +2879,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:40:43",
-      "updated_at": "2026-10-13 13:24:17"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 276,
       "estimacion": "4104",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "DESPACHO NOVICIADO- ENTREGA CLOROX",
       "presupuesto": 165000,
       "costo": 80000,
@@ -2895,28 +2895,28 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-09-28 21:42:06",
-      "updated_at": "2026-10-26 18:44:32"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 277,
       "estimacion": "4072",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "REYES DEL NEGOCIO VIP ETAPA INICIAL",
       "presupuesto": 30000000,
       "costo": 21000000,
       "factura": null,
       "fecha_facturacion": null,
-      "mes_evento": "Octubre",
+      "mes_evento": "Diciembre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-09-28 21:46:13",
-      "updated_at": "2026-11-11 16:38:14"
+      "updated_at": "2026-11-26 15:14:57"
     },
     {
       "id": 278,
       "estimacion": "4103",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "Regalo diplomas",
       "presupuesto": 260040,
       "costo": 213940,
@@ -2927,12 +2927,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-05 19:34:55",
-      "updated_at": "2026-10-26 18:40:27"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 279,
       "estimacion": "4109",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "Despacho Campaña Cookgreen",
       "presupuesto": 1861275,
       "costo": 1291561,
@@ -2943,12 +2943,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-05 19:36:41",
-      "updated_at": "2026-10-26 18:40:49"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 280,
       "estimacion": "4087",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "MERCH FERIA ALVI CLOROX 2026",
       "presupuesto": 11373545,
       "costo": 8109801,
@@ -2959,12 +2959,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-05 19:40:18",
-      "updated_at": "2026-10-06 15:16:17"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 281,
       "estimacion": "4100",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "MARKET CAMBIO DE GRAFICAS",
       "presupuesto": 285727,
       "costo": 188500,
@@ -2975,12 +2975,12 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-10-05 19:41:57",
-      "updated_at": "2026-10-26 18:41:28"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 282,
       "estimacion": "4101",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "Adaptaciones Banners",
       "presupuesto": 495000,
       "costo": 0,
@@ -2991,12 +2991,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-05 19:44:09",
-      "updated_at": "2026-10-13 13:24:31"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 283,
       "estimacion": "4108",
-      "cliente": "TS Group SpA",
+      "cliente": "TS GROUP",
       "descripcion": "GLORIFICADORES JACQUES JANINE NO MORE FRIZZ",
       "presupuesto": 1127000,
       "costo": 705000,
@@ -3007,12 +3007,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-05 19:47:00",
-      "updated_at": "2026-11-05 18:07:42"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 284,
       "estimacion": "4116",
-      "cliente": "minerva",
+      "cliente": "MINERVA",
       "descripcion": "MINERVA ESTANCIA 92 MATERIAL POP TOTTUS OCTUBRE",
       "presupuesto": 923183,
       "costo": 640800,
@@ -3023,12 +3023,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-08 17:36:05",
-      "updated_at": "2026-10-16 17:40:10"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 285,
       "estimacion": "4048",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "NUTRISCO GANCHERA COLGANTE FLIP-UNDERFIVE",
       "presupuesto": 264371,
       "costo": 189990,
@@ -3039,12 +3039,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-08 17:39:07",
-      "updated_at": "2026-10-26 18:40:05"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 286,
       "estimacion": "4117",
-      "cliente": "Minerva",
+      "cliente": "MINERVA",
       "descripcion": "ESTANCIA 92 ACTIVACION OCTUBRE TOTTUS",
       "presupuesto": 5999012,
       "costo": 3955600,
@@ -3055,12 +3055,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-12 23:41:17",
-      "updated_at": "2026-10-26 18:48:47"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 287,
       "estimacion": "4107",
-      "cliente": "clorox",
+      "cliente": "CLOROX",
       "descripcion": "FLEJERAS CARTULINA CLOROX-POETT",
       "presupuesto": 156306,
       "costo": 111950,
@@ -3071,7 +3071,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-13 14:54:12",
-      "updated_at": "2026-10-16 17:39:40"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 288,
@@ -3140,7 +3140,7 @@
     {
       "id": 292,
       "estimacion": "4148",
-      "cliente": "Banco Estado",
+      "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO EXPO INCLUSION",
       "presupuesto": 879200,
       "costo": 693590,
@@ -3151,12 +3151,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-20 15:37:36",
-      "updated_at": "2026-11-16 17:53:41"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 293,
       "estimacion": "4145",
-      "cliente": "Banco Estado",
+      "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO FERIA LABORAL FEN U. DE CHILE",
       "presupuesto": 324800,
       "costo": 35398,
@@ -3167,12 +3167,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:38:27",
-      "updated_at": "2026-11-16 17:54:01"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 294,
       "estimacion": "4144",
-      "cliente": "Banco Estado",
+      "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO MATEO BOCELLI",
       "presupuesto": 677600,
       "costo": 117994,
@@ -3183,12 +3183,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-20 15:39:26",
-      "updated_at": "2026-11-11 20:29:30"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 295,
       "estimacion": "4142",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "STAND GILLETTE 2026",
       "presupuesto": 21609840,
       "costo": 13082544,
@@ -3199,12 +3199,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-20 15:40:11",
-      "updated_at": "2026-11-11 15:35:42"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 296,
       "estimacion": "4136",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "NUTRISCO FLYER LIVEMORE",
       "presupuesto": 99619,
       "costo": 68900,
@@ -3215,28 +3215,28 @@
       "por_cobrar": null,
       "estado_pago": "PAGADO",
       "created_at": "2026-10-20 15:41:04",
-      "updated_at": "2026-10-26 18:41:49"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 297,
       "estimacion": "4120",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "NUTRISCO CAMPAA NUTRISA NO SELLOS PARTE 2",
       "presupuesto": 669240,
       "costo": 480000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3652",
+      "fecha_facturacion": "2026-11-26",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "PENDIENTE",
       "created_at": "2026-10-20 15:41:46",
-      "updated_at": "2026-10-20 15:41:46"
+      "updated_at": "2026-11-26 15:39:04"
     },
     {
       "id": 298,
       "estimacion": "4137",
-      "cliente": "Clorox",
+      "cliente": "CLOROX",
       "descripcion": "CLOROX CHEQUE ALVI",
       "presupuesto": 99968,
       "costo": 73290,
@@ -3247,7 +3247,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-22 16:21:27",
-      "updated_at": "2026-10-29 19:10:46"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 299,
@@ -3256,14 +3256,14 @@
       "descripcion": "CLOROX CABECERA PREMIUM PUENTE ALTO",
       "presupuesto": 226622,
       "costo": 162000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3645",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-22 16:22:12",
-      "updated_at": "2026-10-22 16:22:12"
+      "updated_at": "2026-11-26 14:39:16"
     },
     {
       "id": 300,
@@ -3288,19 +3288,19 @@
       "descripcion": "NUTRISCO CAMPAA NUTRISA NO SELLOS PARTE 1",
       "presupuesto": 1045000,
       "costo": 500000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3651",
+      "fecha_facturacion": "2026-11-26",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-22 16:28:26",
-      "updated_at": "2026-10-22 16:28:46"
+      "updated_at": "2026-11-26 15:38:50"
     },
     {
       "id": 302,
       "estimacion": "4163",
-      "cliente": "Banco Estado",
+      "cliente": "BANCO ESTADO",
       "descripcion": "FERIA CONVENIO EDIFICIO BICENTENARIO",
       "presupuesto": 324800,
       "costo": 136195,
@@ -3311,12 +3311,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-10-26 13:41:39",
-      "updated_at": "2026-11-11 20:34:20"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 303,
       "estimacion": "4141",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "ESQUINEROS ATUN SAN JOSE",
       "presupuesto": 1788160,
       "costo": 1280000,
@@ -3327,12 +3327,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-26 13:43:17",
-      "updated_at": "2026-10-29 19:11:22"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 304,
       "estimacion": "4162",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "LOMO NAVE SMOOTHIE LIVEMORE SPID ",
       "presupuesto": 87120,
       "costo": 62500,
@@ -3343,7 +3343,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-26 13:44:28",
-      "updated_at": "2026-11-16 18:13:52"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 305,
@@ -3384,14 +3384,14 @@
       "descripcion": "FEE OCTUBRE 2026 BANCO ESTADO",
       "presupuesto": 1662858,
       "costo": 1180500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3639",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:47:52",
-      "updated_at": "2026-11-23 19:52:01"
+      "updated_at": "2026-11-26 14:32:32"
     },
     {
       "id": 308,
@@ -3400,14 +3400,14 @@
       "descripcion": "MINERVA ESTANCIA 92 STOPPER",
       "presupuesto": 59133,
       "costo": 37800,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3642",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Octubre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-10-29 14:48:35",
-      "updated_at": "2026-10-29 14:48:35"
+      "updated_at": "2026-11-26 14:44:51"
     },
     {
       "id": 310,
@@ -3460,7 +3460,7 @@
     {
       "id": 313,
       "estimacion": "4180",
-      "cliente": "BANCO ESTADO ",
+      "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO CONCIERTO TAEMIN",
       "presupuesto": 845600,
       "costo": 320000,
@@ -3471,7 +3471,7 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-11-02 16:00:08",
-      "updated_at": "2026-11-11 20:32:22"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 314,
@@ -3508,23 +3508,23 @@
     {
       "id": 316,
       "estimacion": "4184",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "ACTIVACIÓN MALL PZA VESPUCIO - TAB NOVIEMBRE",
       "presupuesto": 26280720,
-      "costo": 12990499,
-      "factura": null,
-      "fecha_facturacion": null,
+      "costo": 12801767,
+      "factura": "3649",
+      "fecha_facturacion": "2026-11-23",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
-      "estado_pago": null,
+      "estado_pago": "",
       "created_at": "2026-11-03 23:48:16",
-      "updated_at": "2026-11-20 23:30:25"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 317,
       "estimacion": "4179",
-      "cliente": "Colun",
+      "cliente": "COLUN",
       "descripcion": "CAMPAÑA DE LANZAMIENTO CANAL TRADICIONAL",
       "presupuesto": 24942400,
       "costo": 15810000,
@@ -3535,7 +3535,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-03 23:50:21",
-      "updated_at": "2026-11-23 17:20:46"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 318,
@@ -3560,14 +3560,14 @@
       "descripcion": "CLOROX ENTREGA PREMIO FERIA ALVI",
       "presupuesto": 400400,
       "costo": 280000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3645",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-04 15:28:28",
-      "updated_at": "2026-11-04 15:28:28"
+      "updated_at": "2026-11-26 14:39:24"
     },
     {
       "id": 320,
@@ -3576,19 +3576,19 @@
       "descripcion": "CLOROX STOPPER WATERMELON NOVIEMBRE",
       "presupuesto": 829442,
       "costo": 562250,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3645",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-04 15:29:11",
-      "updated_at": "2026-11-04 15:29:11"
+      "updated_at": "2026-11-26 14:39:33"
     },
     {
       "id": 321,
       "estimacion": "4183",
-      "cliente": "BANCOESTADO",
+      "cliente": "BANCO ESTADO",
       "descripcion": "EXPO BIENESTAR GENDARMERIA DE CHILE",
       "presupuesto": 1070720,
       "costo": 469794,
@@ -3599,12 +3599,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-04 15:29:56",
-      "updated_at": "2026-11-16 17:54:55"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 322,
       "estimacion": "4181",
-      "cliente": "P&G",
+      "cliente": "PYG",
       "descripcion": "ENVIOS INFLUENCER GILLETTE Y SECRET",
       "presupuesto": 235200,
       "costo": 58997,
@@ -3615,12 +3615,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-04 15:30:35",
-      "updated_at": "2026-11-04 15:30:35"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 323,
       "estimacion": "4191",
-      "cliente": "Banco Estado",
+      "cliente": "BANCO ESTADO",
       "descripcion": "FERIA LABORAL USACH 11 NOV",
       "presupuesto": 324800,
       "costo": 126195,
@@ -3631,12 +3631,12 @@
       "por_cobrar": null,
       "estado_pago": "PENDIENTE",
       "created_at": "2026-11-04 18:36:00",
-      "updated_at": "2026-11-11 20:33:16"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 324,
       "estimacion": "4201",
-      "cliente": "clorox",
+      "cliente": "CLOROX",
       "descripcion": "CLOROX FERIA DIMERC NOV 2026",
       "presupuesto": 4629598,
       "costo": 3166980,
@@ -3647,7 +3647,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-11 15:46:56",
-      "updated_at": "2026-11-20 23:29:12"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 325,
@@ -3656,14 +3656,14 @@
       "descripcion": "ENCUENTRO ECOSISTEMAS CORFO",
       "presupuesto": 3662555,
       "costo": 2032637,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3641",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-11 15:48:10",
-      "updated_at": "2026-11-20 23:29:42"
+      "updated_at": "2026-11-26 14:27:10"
     },
     {
       "id": 326,
@@ -3780,7 +3780,7 @@
     {
       "id": 333,
       "estimacion": "4150",
-      "cliente": "Lenovo",
+      "cliente": "LENOVO",
       "descripcion": "TRAINING LENOVO SMB LENOVO",
       "presupuesto": 8740000,
       "costo": 5994396,
@@ -3791,12 +3791,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-12 22:52:28",
-      "updated_at": "2026-11-12 22:52:28"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 334,
       "estimacion": "4203",
-      "cliente": "Colun",
+      "cliente": "COLUN",
       "descripcion": "CAMPAÑA  CANAL MODERNO WALMART",
       "presupuesto": 5122967,
       "costo": 3637160,
@@ -3807,7 +3807,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-12 22:53:46",
-      "updated_at": "2026-11-12 22:53:46"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 335,
@@ -3816,21 +3816,21 @@
       "descripcion": "FEE NOVIEMBRE 2026 BANCO ESTADO",
       "presupuesto": 1662858,
       "costo": 430500,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3640",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Noviembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:09:39",
-      "updated_at": "2026-11-23 19:54:13"
+      "updated_at": "2026-11-26 14:32:47"
     },
     {
       "id": 336,
       "estimacion": "4223",
       "cliente": "BANCO ESTADO",
       "descripcion": "BANCO ESTADO CONCIERTO KID VOODOO",
-      "presupuesto": 8004237,
+      "presupuesto": 8348077,
       "costo": 5113477,
       "factura": null,
       "fecha_facturacion": null,
@@ -3839,7 +3839,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:12:26",
-      "updated_at": "2026-11-20 23:12:26"
+      "updated_at": "2026-11-26 14:45:46"
     },
     {
       "id": 337,
@@ -3864,14 +3864,14 @@
       "descripcion": "MINERVA CABAAS LAS LILAS COOLER",
       "presupuesto": 5705548,
       "costo": 3894000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3643",
+      "fecha_facturacion": "2026-11-24",
       "mes_evento": "Diciembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:15:06",
-      "updated_at": "2026-11-20 23:15:06"
+      "updated_at": "2026-11-26 14:25:37"
     },
     {
       "id": 339,
@@ -3944,19 +3944,19 @@
       "descripcion": "CORRIDA TECHO BANCO ESTADO",
       "presupuesto": 8536740,
       "costo": 6035834,
-      "factura": null,
+      "factura": "3638",
       "fecha_facturacion": null,
       "mes_evento": "Diciembre",
       "mes_facturacion": null,
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:18:19",
-      "updated_at": "2026-11-20 23:18:19"
+      "updated_at": "2026-11-26 14:24:35"
     },
     {
       "id": 344,
       "estimacion": "4221",
-      "cliente": "NUTRISCO ",
+      "cliente": "NUTRISCO",
       "descripcion": "NUTRISCO FLYER NUTRISCOMARKET",
       "presupuesto": 74750,
       "costo": 50000,
@@ -3967,7 +3967,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:19:04",
-      "updated_at": "2026-11-20 23:19:04"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 345,
@@ -3988,7 +3988,7 @@
     {
       "id": 346,
       "estimacion": "4207",
-      "cliente": "GOBIERNO ",
+      "cliente": "GOBIERNO",
       "descripcion": "EVENTO MASCOTAS OCTUBRE 2026",
       "presupuesto": 16993936,
       "costo": 8069447,
@@ -3999,7 +3999,7 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:20:17",
-      "updated_at": "2026-11-20 23:20:17"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 347,
@@ -4008,14 +4008,14 @@
       "descripcion": "MINERVA WALMART CABAA LAS LILAS-PUL",
       "presupuesto": 2739024,
       "costo": 1938000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3644",
+      "fecha_facturacion": "2026-11-25",
       "mes_evento": "Diciembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:20:49",
-      "updated_at": "2026-11-20 23:20:49"
+      "updated_at": "2026-11-26 14:28:15"
     },
     {
       "id": 348,
@@ -4024,14 +4024,14 @@
       "descripcion": "MINERVA WALMART CABAA LAS LILAS-PUL",
       "presupuesto": 2739024,
       "costo": 1938000,
-      "factura": null,
-      "fecha_facturacion": null,
+      "factura": "3644",
+      "fecha_facturacion": "2026-11-24",
       "mes_evento": "Diciembre",
-      "mes_facturacion": null,
+      "mes_facturacion": "Noviembre",
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-20 23:21:38",
-      "updated_at": "2026-11-20 23:21:38"
+      "updated_at": "2026-11-26 17:18:23"
     },
     {
       "id": 349,
@@ -4116,7 +4116,7 @@
     {
       "id": 355,
       "estimacion": "4216",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "ESQUINEROS ATUN SAN JOSE INSTALACION",
       "presupuesto": 2763450,
       "costo": 1962677,
@@ -4127,12 +4127,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-23 19:22:02",
-      "updated_at": "2026-11-23 19:22:02"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 356,
       "estimacion": "4231",
-      "cliente": "Nutrisco",
+      "cliente": "NUTRISCO",
       "descripcion": "IMPLEMENTACION SPID FLIP DICIEMBRE",
       "presupuesto": 388936,
       "costo": 267850,
@@ -4143,12 +4143,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-23 19:23:41",
-      "updated_at": "2026-11-23 19:23:41"
+      "updated_at": "2026-11-26 15:16:11"
     },
     {
       "id": 357,
       "estimacion": "4234",
-      "cliente": "PyG",
+      "cliente": "PYG",
       "descripcion": "Distribuidoras Pantene",
       "presupuesto": 2478963,
       "costo": 902400,
@@ -4159,12 +4159,12 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-23 19:25:20",
-      "updated_at": "2026-11-23 19:25:20"
+      "updated_at": "2026-11-26 15:02:00"
     },
     {
       "id": 358,
       "estimacion": "4236",
-      "cliente": "Grupo Valdivieso",
+      "cliente": "GRUPO VALDIVIESO",
       "descripcion": "GIFTCARD IGUAZU",
       "presupuesto": 172500,
       "costo": 150000,
@@ -4175,7 +4175,71 @@
       "por_cobrar": null,
       "estado_pago": null,
       "created_at": "2026-11-23 19:26:54",
-      "updated_at": "2026-11-23 19:26:54"
+      "updated_at": "2026-11-26 15:16:11"
+    },
+    {
+      "id": 359,
+      "estimacion": "4238",
+      "cliente": "COLUN",
+      "descripcion": "DESPACHO COLUN CAMPAA DE LANZAMIENTO CANAL TRADICIONAL",
+      "presupuesto": 1861018,
+      "costo": 1385679,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-26 14:38:28",
+      "updated_at": "2026-11-26 14:38:39"
+    },
+    {
+      "id": 360,
+      "estimacion": "4237",
+      "cliente": "WELOVETRADE",
+      "descripcion": "PAPA JOHNS TRASLADO MONTAJE QUINTA REGION",
+      "presupuesto": 709500,
+      "costo": 500000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-26 14:39:38",
+      "updated_at": "2026-11-26 14:39:38"
+    },
+    {
+      "id": 361,
+      "estimacion": "4232",
+      "cliente": "MINERVA",
+      "descripcion": "MINERVA COMPRA CARNE ESTANCIA 92 OCT-NOV",
+      "presupuesto": 1328148,
+      "costo": 1154911,
+      "factura": "3648",
+      "fecha_facturacion": "2026-11-25",
+      "mes_evento": "Diciembre",
+      "mes_facturacion": "Noviembre",
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-26 14:40:24",
+      "updated_at": "2026-11-26 14:54:20"
+    },
+    {
+      "id": 362,
+      "estimacion": "4226",
+      "cliente": "CLOROX",
+      "descripcion": "CLOROX FERIA DIMERC EXTRA  GRAFICAS",
+      "presupuesto": 620400,
+      "costo": 564000,
+      "factura": null,
+      "fecha_facturacion": null,
+      "mes_evento": "Diciembre",
+      "mes_facturacion": null,
+      "por_cobrar": null,
+      "estado_pago": null,
+      "created_at": "2026-11-26 14:41:35",
+      "updated_at": "2026-11-26 14:41:35"
     }
   ],
   "users": [
